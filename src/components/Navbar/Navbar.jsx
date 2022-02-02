@@ -6,7 +6,7 @@ export const Navbar = () => {
   const burgerRef = useRef();
   useEffect(() => {
     gsap.from(burgerRef.current, {
-      y: -1000,
+      y: -100,
       opacity: 0,
     });
   });
