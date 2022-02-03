@@ -1,0 +1,52 @@
+.partnerwithus {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  h1 {
+    margin-top: 6rem;
+    font-size: 7rem;
+    color: white;
+    width: 30%;
+    margin-left: 10rem;
+  }
+  .partner-value1 {
+    padding: 10rem 9rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .partner-content {
+      padding: 8rem;
+      h2 {
+        color: #fff;
+        font-size: 5.625rem;
+        padding-bottom: 5rem;
+      }
+      p {
+        color: #fff;
+        width: 40rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .partner-value2 {
+    padding: 10rem 9rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    .partner-content {
+      padding: 8rem;
+      h2 {
+        color: #fff;
+        font-size: 5.625rem;
+        padding-bottom: 5rem;
+      }
+      p {
+        color: #fff;
+        width: 40rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
