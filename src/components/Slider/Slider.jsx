@@ -71,7 +71,7 @@ export const SliderSlide = () => {
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <img src="/img/next.svg" alt="mext" />
+            <img src="/img/next.svg" alt="next" />
             <span class="visually-hidden">Next</span>
           </button>
         </div>

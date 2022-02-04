@@ -1,87 +1,70 @@
 import React from "react";
+import Slider from "react-slick";
 import { LeaderCard } from "./LeaderCard/LeaderCard";
 import "./Leadership.scss";
 export const Leadership = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
   return (
     <>
       <div className="leadership">
         <div className="leadership-team">
           <h1>LEADERSHIP TEAM</h1>
         </div>
-        {/* <LeaderCard
-        name="HARDEEP SAWHNEY"
-        position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-        img="/img/Leadership.png"
-      /> */}
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+        <div className="leadership-change">
+          <div className="leadership-bar">
+            <input type="range" />
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <LeaderCard
-                name="HARDEEP SAWHNEY"
-                position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-                img="/img/Leadership.png"
-              />
-            </div>
-            <div class="carousel-item">
-              <LeaderCard
-                name="HARDEEP SAWHNEY"
-                position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-                img="/img/Leadership.png"
-              />
-            </div>
-            <div class="carousel-item">
-              <LeaderCard
-                name="HARDEEP SAWHNEY"
-                position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-                img="/img/Leadership.png"
-              />
-            </div>
+          <div className="leadership-button">
+            <img src="/img/prev.svg" alt="previous" />
+            <img src="/img/next.svg" alt="next" />
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <img src="/img/prev.svg" alt="next" />
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <img src="/img/next.svg" alt="mext" />
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+        <Slider {...settings}>
+          <div>
+            <LeaderCard
+              name="HARDEEP SAWHNEY"
+              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
+              img="/img/Leadership.png"
+            />
+          </div>
+          <div>
+            <LeaderCard
+              name="HARDEEP SAWHNEY"
+              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
+              img="/img/Leadership.png"
+            />
+          </div>
+          <div>
+            <LeaderCard
+              name="HARDEEP SAWHNEY"
+              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
+              img="/img/Leadership.png"
+            />
+          </div>
+          <div>
+            <LeaderCard
+              name="HARDEEP SAWHNEY"
+              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
+              img="/img/Leadership.png"
+            />
+          </div>
+          <div>
+            <LeaderCard
+              name="HARDEEP SAWHNEY"
+              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
+              img="/img/Leadership.png"
+            />
+          </div>
+        </Slider>
       </div>
     </>
   );

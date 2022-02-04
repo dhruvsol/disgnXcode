@@ -5,8 +5,10 @@ export const LeaderCard = ({ img, name, position }) => {
     <>
       <div className="leadercard">
         <img src={img} alt={name} />
-        <h2>{name}</h2>
-        <p>{position}</p>
+        <div className="leader-details">
+          <h2>{name}</h2>
+          <p>{position}</p>
+        </div>
       </div>
     </>
   );
