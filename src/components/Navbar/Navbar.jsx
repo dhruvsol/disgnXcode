@@ -1,12 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Navbar.scss";
 import gsap from "gsap";
+import { Menu } from "../menu/Menu";
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const burgerRef = useRef();
   useEffect(() => {
     gsap.from(burgerRef.current, {
-      y: -100,
+      y: -10,
       opacity: 0,
     });
   });
@@ -24,40 +25,7 @@ export const Navbar = () => {
           <div className="line-4"></div>
         </div>
       </div>
-      {navbar && (
-        <div className="menu-main" ref={burgerRef}>
-          {/* <div className="menu-close">X</div> */}
-          <div className="menu">
-            <div className="menu-pages menu-inner">
-              <h2>Pages</h2>
-              <a href="/aboutus">About us</a>
-              <a href="/blogs">Blogs</a>
-            </div>
-            <div className="menu-kitchens menu-inner">
-              <h2>Kitchens</h2>
-              <a href="/interwood">Interwood</a>
-              <a href="/interwoodplus">Interwood Plus</a>
-            </div>
-            <div className="menu-bedroom menu-inner">
-              <h2>Bedroom</h2>
-              <a href="/interwood">Interwood</a>
-              <a href="/wodrobs">wardrobs</a>
-              <a href="/interwoodplus">Interwood Plus wardrobe</a>
-              <a href="/tvunits">TV Units</a>
-              <a href="/Variables">Variables</a>
-            </div>
-            <div className="menu-brands menu-inner">
-              <h2>Brands</h2>
-              <a href="/interwood">Interwood</a>
-              <a href="/interwoodplus">Interwood Plus</a>
-            </div>
-            <div className="menu-image menu-inner">
-              image
-              {/* <img src="" alt="" /> */}
-            </div>
-          </div>
-        </div>
-      )}
+      {navbar && <Menu ref={burgerRef} />}
     </>
   );
 };

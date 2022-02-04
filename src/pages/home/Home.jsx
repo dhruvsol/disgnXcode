@@ -5,14 +5,15 @@ import { HeroSection } from "../../components/Home/HeroSection";
 import { Footer } from "../../components/footer/Footer";
 import { Blog } from "../../components/Blogs/Blog";
 import { Testimonials } from "../../components/Testimonials/Testimonials";
-
+import { OurBrands } from "../../components/our brand/OurBrands";
 const Home = () => {
   return (
-    <div>
+    <div className="Home-page">
       <div className="HeroSection">
         <Navbar />
         <HeroSection />
       </div>
+      <OurBrands />
       <Testimonials />
       <Blog />
       <Footer />

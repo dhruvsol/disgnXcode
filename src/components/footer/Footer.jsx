@@ -37,7 +37,7 @@ export const Footer = () => {
           <div className="footer-contact-input">
             <input type="text" />
             <button>
-              <img src="./arrow.svg" alt="logo" />
+              <img src="/img/arrow.svg" alt="logo" />
             </button>
           </div>
           <p>support@interwood.in</p>

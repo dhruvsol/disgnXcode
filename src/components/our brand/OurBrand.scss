@@ -1,0 +1,35 @@
+.ourbrand {
+  width: 100%;
+  height: 250vh;
+  .ourbrand-title {
+    padding: 5rem 7rem;
+    span {
+      font-family: Ivy Mode;
+      font-style: normal;
+      font-weight: normal;
+      color: white;
+      font-size: 113px;
+      line-height: 143px;
+      text-align: justify;
+      letter-spacing: 0.04em;
+    }
+  }
+  .ourbrand-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .ourbrand-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 2rem;
+    }
+    .brand1 {
+      grid-row: 1 / 3;
+    }
+  }
+  .brandyoutube {
+    display: flex;
+    padding-top: 10rem;
+    justify-content: center;
+  }
+}

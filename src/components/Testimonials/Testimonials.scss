@@ -1,9 +1,33 @@
 .testimonials {
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   background-color: #171717;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // align-items: center;
+
   h1 {
     color: white;
     font-size: 3rem;
+    padding-top: 3rem;
+    margin-left: 5rem;
+    align-items: flex-start;
+    font-family: Ivy Mode;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 113px;
+    line-height: 143px;
+    text-align: justify;
+    letter-spacing: 0.04em;
+  }
+  .slider {
+    margin-top: -5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li.slick-active button {
+      display: none;
+    }
   }
 }

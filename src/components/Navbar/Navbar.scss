@@ -3,7 +3,6 @@
   background-color: #171717;
   display: flex;
   height: 10rem;
-  z-index: 10;
   justify-content: space-between;
   padding: 0.5rem 4rem;
   width: 100%;
@@ -15,42 +14,6 @@
       border-radius: 1rem;
       width: 2.4rem;
       margin: 0.2rem 0;
-    }
-  }
-}
-.menu-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // .menu-close {
-  //   color: #fff;
-  //   z-index: 10;
-  // }
-  .menu {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #292929;
-    height: 35rem;
-    margin-top: -12rem;
-    width: 100%;
-    cursor: pointer;
-    padding: 4rem 0;
-    .menu-inner {
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      h2 {
-        font-size: 2rem;
-      }
-      a {
-        color: #fff;
-        padding: 1rem 0;
-        text-decoration: none;
-      }
-    }
-    .menu-inner {
-      width: 15%;
-      height: 40rem;
     }
   }
 }

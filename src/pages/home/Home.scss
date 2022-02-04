@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-.HeroSection {
-  background-image: url("../img/home.svg");
+.Home-page {
+  background-color: #171717;
+  .HeroSection {
+    background-image: url("../img/home.svg");
+  }
 }
