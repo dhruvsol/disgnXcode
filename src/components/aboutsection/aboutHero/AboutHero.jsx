@@ -30,7 +30,7 @@ export const AboutHero = () => {
         ></iframe>
       </div>
       <div className="abouthero-aboutinterwood">
-        <h1>ABOUT INTERWOOD</h1>
+        <span>ABOUT INTERWOOD</span>
         <p>
           Since 1989, Interwood has inspired fragments of your life stories with
           the finest kitchens, wardrobes, bedroom sets and living & dining

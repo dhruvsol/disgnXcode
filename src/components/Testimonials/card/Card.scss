@@ -1,9 +1,9 @@
 .testimonial-card {
-  height: 35rem;
-  width: 20rem;
+  height: 40rem;
+  width: 30rem;
 
   background-color: #292929;
-  border-radius: 14px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11,10 +11,10 @@
   h2 {
     color: #fff;
     font-size: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   p {
-    padding: 1.5rem;
+    padding: 1.5rem 4.5rem;
     text-align: justify;
     color: #fff;
     font-size: 1.3rem;

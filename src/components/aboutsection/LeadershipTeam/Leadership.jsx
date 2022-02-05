@@ -5,8 +5,8 @@ import "./Leadership.scss";
 export const Leadership = () => {
   const settings = {
     dots: false,
-    infinite: true,
-    slidesToShow: 3,
+    infinite: false,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
@@ -27,20 +27,6 @@ export const Leadership = () => {
           </div>
         </div>
         <Slider {...settings}>
-          <div>
-            <LeaderCard
-              name="HARDEEP SAWHNEY"
-              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-              img="/img/Leadership.png"
-            />
-          </div>
-          <div>
-            <LeaderCard
-              name="HARDEEP SAWHNEY"
-              position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
-              img="/img/Leadership.png"
-            />
-          </div>
           <div>
             <LeaderCard
               name="HARDEEP SAWHNEY"

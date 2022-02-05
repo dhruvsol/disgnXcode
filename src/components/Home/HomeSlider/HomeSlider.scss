@@ -10,6 +10,7 @@
       font-style: normal;
       font-weight: 600;
       font-size: 1.8rem;
+      padding-left: 4.5rem;
       line-height: 4rem;
       color: #fff;
     }
@@ -17,8 +18,9 @@
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
-      font-size: 5.5rem;
-      line-height: 7.5rem;
+      font-size: 5rem;
+      padding-left: 4.5rem;
+      line-height: 7rem;
       letter-spacing: 0.04em;
       color: #fff;
     }
@@ -26,12 +28,14 @@
   .homeslider-content {
     width: 656px;
     p {
+      padding-left: 1.8rem;
       color: #fff;
       font-family: Poppins;
       font-style: normal;
       font-weight: normal;
       font-size: 1.6rem;
       line-height: 2rem;
+      width: 35vw;
       text-align: justify;
     }
   }
@@ -45,12 +49,13 @@
   align-items: center;
   justify-content: space-evenly;
   p {
-    width: 25rem;
+    width: 30vw;
     font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2rem;
+    margin-left: -4.5rem;
     text-align: justify;
     color: #fff;
   }
