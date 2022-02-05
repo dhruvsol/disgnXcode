@@ -23,8 +23,6 @@ export const AboutHero = () => {
       </div>
       <div className="abouthero-video">
         <iframe
-          width="1670"
-          height="1045"
           src="https://www.youtube.com/embed/YMopu-z7T54"
           title="YouTube video player"
           frameBorder="0"

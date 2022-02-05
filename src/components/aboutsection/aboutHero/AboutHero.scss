@@ -1,22 +1,22 @@
 .abouthero {
-  height: 60rem;
-  width: 102.188rem;
+  height: 40rem;
+  width: 60rem;
   background-color: #292929;
 }
 .abouthero-card1 {
   background-color: #c4c4c4;
-  height: 31.625rem;
-  width: 44.125rem;
+  height: 25rem;
+  width: 35rem;
   float: right;
-  margin-top: -17rem;
-  margin-right: 10rem;
+  margin-top: -14rem;
+  margin-right: 9rem;
 }
 .abouthero-card2 {
   background-color: #c4c4c4;
-  height: 41.125rem;
-  width: 32.438rem;
-  margin-top: 14rem;
-  margin-left: 14rem;
+  height: 35rem;
+  width: 25rem;
+  margin-top: 12rem;
+  margin-left: 10rem;
 }
 .abouthero-ourstory {
   margin-top: 10rem;
@@ -43,7 +43,14 @@
   }
 }
 .abouthero-video {
-  margin-top: 5rem;
+  display: flex;
+  padding-top: 10rem;
+  height: 40rem;
+
+  justify-content: center;
+  iframe {
+    width: 55rem;
+  }
 }
 .abouthero-aboutinterwood {
   display: flex;
@@ -55,8 +62,8 @@
   h1 {
     color: white;
     width: 30%;
-    font-size: 7rem;
-    line-height: 143px;
+    font-size: 5.5rem;
+    line-height: 2rem;
 
     font-family: Ivy Mode;
     font-style: normal;

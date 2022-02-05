@@ -4,7 +4,6 @@ export const Menu = () => {
   return (
     <>
       <div className="menu-main">
-        {/* <div className="menu-close">X</div> */}
         <div className="menu">
           <div className="menu-pages menu-inner">
             <h2>Pages</h2>

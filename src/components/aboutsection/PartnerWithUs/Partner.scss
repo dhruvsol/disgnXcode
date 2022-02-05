@@ -2,29 +2,33 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  h1 {
-    margin-top: 6rem;
-    font-size: 7rem;
-    color: white;
-    font-family: Ivy Mode;
-    font-style: normal;
-    font-weight: normal;
-    width: 30%;
-    margin-left: 10rem;
+  .partner-heading {
+    margin-top: 5rem;
+    width: 90%;
+    align-items: flex-start;
+    h1 {
+      font-size: 5.5rem;
+      color: white;
+      font-family: Ivy Mode;
+      font-style: normal;
+      font-weight: normal;
+      width: 35vw;
+    }
   }
   .partner-value1 {
-    padding: 10rem 9rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    img {
+      width: 25rem;
+    }
     .partner-content {
       padding: 12rem;
-
       h2 {
         color: #fff;
-        font-size: 5.625rem;
+        font-size: 3.5rem;
         padding-bottom: 5rem;
         font-family: Ivy Mode;
         font-style: normal;
@@ -42,16 +46,18 @@
     }
   }
   .partner-value2 {
-    padding: 10rem 9rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
+    img {
+      width: 25rem;
+    }
     .partner-content {
-      padding: 8rem;
+      padding-right:12rem ;
       h2 {
         color: #fff;
-        font-size: 5.625rem;
+        font-size: 3.5rem;
         padding-bottom: 5rem;
         font-family: Ivy Mode;
         font-style: normal;

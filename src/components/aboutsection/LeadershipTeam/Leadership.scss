@@ -1,14 +1,13 @@
 .leadership {
   width: 100%;
-  height: 200vh;
-  .leadership-team {
-    padding-top: 10rem;
+  height: 150vh;
 
-    padding: 15rem 5rem;
+  .leadership-team {
+    padding: 9rem 5rem;
     h1 {
       color: white;
-      font-size: 113px;
-      line-height: 143px;
+      font-size: 5.5rem;
+      line-height: 2rem;
       letter-spacing: 0.04em;
       font-family: Ivy Mode;
       font-style: normal;
@@ -22,13 +21,13 @@
     padding: 3rem 7rem;
     .leadership-bar {
       display: flex;
-      width: 1062px;
+      width: 50rem;
       height: 8px;
       background-color: #ef1b1c;
       border-radius: 8px;
     }
     .leadership-button {
-      width: 20%;
+      width: 25%;
       display: flex;
       justify-content: space-evenly;
     }

@@ -17,3 +17,52 @@
     }
   }
 }
+.menu-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #292929;
+  z-index: 20;
+  .X {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 3rem;
+    span {
+      color: #fff;
+      font-size: 3rem;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+
+    height: 35rem;
+    width: 100%;
+
+    cursor: pointer;
+    padding: 4rem 0;
+    .menu-inner {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 2rem;
+        color: #ef1b1c;
+        font-family: Ivy Mode;
+        font-weight: normal;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+      }
+      a {
+        color: #fff;
+        padding: 1rem 0;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+    .menu-inner {
+      width: 15%;
+      height: 40rem;
+    }
+  }
+}

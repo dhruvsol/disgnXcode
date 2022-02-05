@@ -4,9 +4,13 @@ export const Partner = () => {
   return (
     <>
       <div className="partnerwithus">
-        <h1>PARTNER WITH US</h1>
+        <div className="partner-heading">
+          <h1>PARTNER WITH US</h1>
+        </div>
         <div className="partner-value1">
-          <img src="/img/partner.png" alt="Partner" />
+          <div>
+            <img src="/img/partner.png" alt="Partner" />
+          </div>
           <div className="partner-content">
             <h2>VALUE ADDED REATAILER</h2>
             <p>

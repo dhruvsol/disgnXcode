@@ -7,7 +7,7 @@ export const Navbar = () => {
   const burgerRef = useRef();
   useEffect(() => {
     gsap.from(burgerRef.current, {
-      y: -10,
+      y: -100,
       opacity: 0,
     });
   });
@@ -25,7 +25,48 @@ export const Navbar = () => {
           <div className="line-4"></div>
         </div>
       </div>
-      {navbar && <Menu ref={burgerRef} />}
+      {navbar && (
+        <div className="menu-main" useRef={burgerRef}>
+          <div className="X">
+            <span
+              onClick={() => {
+                setNavbar(false);
+              }}
+            >
+              X
+            </span>
+          </div>
+          <div className="menu">
+            <div className="menu-pages menu-inner">
+              <h2>Pages</h2>
+              <a href="/aboutus">About us</a>
+              <a href="/blogs">Blogs</a>
+            </div>
+            <div className="menu-kitchens menu-inner">
+              <h2>Kitchens</h2>
+              <a href="/interwood">Interwood</a>
+              <a href="/interwoodplus">Interwood Plus</a>
+            </div>
+            <div className="menu-bedroom menu-inner">
+              <h2>Bedroom</h2>
+              <a href="/interwood">Interwood</a>
+              <a href="/wodrobs">wardrobs</a>
+              <a href="/interwoodplus">Interwood Plus wardrobe</a>
+              <a href="/tvunits">TV Units</a>
+              <a href="/Variables">Variables</a>
+            </div>
+            <div className="menu-brands menu-inner">
+              <h2>Brands</h2>
+              <a href="/interwood">Interwood</a>
+              <a href="/interwoodplus">Interwood Plus</a>
+            </div>
+            <div className="menu-image menu-inner">
+              image
+              {/* <img src="" alt="" /> */}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

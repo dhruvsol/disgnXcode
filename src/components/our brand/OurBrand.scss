@@ -1,15 +1,14 @@
 .ourbrand {
   width: 100%;
-  height: 250vh;
   .ourbrand-title {
-    padding: 5rem 7rem;
+    padding: 4rem 6rem;
     span {
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
       color: white;
       font-size: 5.5rem;
-      line-height: 8rem;
+      line-height: 6rem;
       text-align: justify;
       letter-spacing: 0.04em;
     }
@@ -22,14 +21,25 @@
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 2rem;
+      img {
+        width: 19rem;
+      }
     }
     .brand1 {
       grid-row: 1 / 3;
+      img {
+        height: 36.5rem;
+      }
     }
   }
   .brandyoutube {
     display: flex;
     padding-top: 10rem;
+    height: 40rem;
+    // width: 0rem;
     justify-content: center;
+    iframe {
+      width: 55rem;
+    }
   }
 }
