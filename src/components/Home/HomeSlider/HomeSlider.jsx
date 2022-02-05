@@ -1,5 +1,4 @@
 import React from "react";
-import { SliderSlide } from "../../Slider/Slider";
 import "./HomeSlider.scss";
 export const HomeSlider = () => {
   return (

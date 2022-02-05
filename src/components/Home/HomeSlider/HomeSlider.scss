@@ -4,21 +4,21 @@
   justify-content: space-evenly;
   align-items: center;
   .homeslider-heading {
-    width: 698px;
+    width: 40rem;
     h2 {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
-      font-size: 48px;
-      line-height: 72px;
+      font-size: 2rem;
+      line-height: 4rem;
       color: #fff;
     }
     h1 {
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
-      font-size: 113px;
-      line-height: 143px;
+      font-size: 5.5rem;
+      line-height: 8rem;
       letter-spacing: 0.04em;
       color: #fff;
     }
@@ -30,15 +30,15 @@
       font-family: Poppins;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
-      line-height: 36px;
+      font-size: 1.6rem;
+      line-height: 2rem;
       text-align: justify;
     }
   }
 }
 .homeslider {
   // display: flex;
-  margin-left: -25rem;
+  // margin-left: -25rem;
 }
 .homeslider-legacy {
   height: 100vh;
@@ -50,8 +50,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.6rem;
+    line-height: 2rem;
     text-align: justify;
     color: #fff;
   }
@@ -60,8 +60,8 @@
     font-family: Ivy Mode;
     font-style: normal;
     font-weight: normal;
-    font-size: 113px;
-    line-height: 143px;
+    font-size: 5.5rem;
+    line-height: 7.5rem;
     letter-spacing: 0.04em;
     color: #fff;
   }
