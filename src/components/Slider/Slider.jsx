@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Slider.scss";
 
-export const SliderSlide = () => {
+export const SliderSlide = ({ url1, url2, url3 }) => {
   return (
     <>
       <div className="slider">
@@ -35,25 +35,13 @@ export const SliderSlide = () => {
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="/img/Aboutpageslide.png"
-                class="d-block banner"
-                alt="..."
-              />
+              <img src={url1} class="d-block banner" alt="..." />
             </div>
             <div class="carousel-item">
-              <img
-                src="/img/Aboutpageslide.png"
-                class="d-block banner"
-                alt="..."
-              />
+              <img src={url2} class="d-block banner" alt="..." />
             </div>
             <div class="carousel-item">
-              <img
-                src="/img/Aboutpageslide.png"
-                class="d-block banner"
-                alt="..."
-              />
+              <img src={url3} class="d-block banner" alt="..." />
             </div>
           </div>
           <button

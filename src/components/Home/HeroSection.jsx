@@ -1,11 +1,11 @@
 import React from "react";
 import "./HeroSection.scss";
-export const HeroSection = () => {
+export const HeroSection = ({ heading, subheading }) => {
   return (
     <div className="herosection">
       <div className="herosection-heading">
-        <h1>ECHOING CLASS</h1>
-        <h3>CLASSY AND PERFECT KITCHEN</h3>
+        <h1>{heading}</h1>
+        <h3>{subheading}</h3>
       </div>
       <div className="herosection-arrow">
         <img src="/img/Vector.png" alt="arrow" />

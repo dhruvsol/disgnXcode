@@ -19,17 +19,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 7rem;
+    padding: 3rem 7rem;
     .leadership-bar {
       display: flex;
-      // width: 10rem;
       width: 1062px;
       height: 8px;
-      // input {
-      //   width: 1062px;
-      //   background: #292929;
-      //   // -webkit-appearance: none;
-      // }
+      background-color: #ef1b1c;
+      border-radius: 8px;
+    }
+    .leadership-button {
+      width: 20%;
+      display: flex;
+      justify-content: space-evenly;
     }
   }
 }

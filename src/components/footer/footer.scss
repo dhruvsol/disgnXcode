@@ -2,7 +2,7 @@
   width: 100%;
   height: 33rem;
   display: flex;
-  background-color: 171717;
+  background-color: #171717;
   justify-content: space-evenly;
   color: #fff;
   padding: 6rem 0;
@@ -47,21 +47,30 @@
     font-style: normal;
     font-weight: normal;
     padding-bottom: 2rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+    }
     .footer-contact-input {
       padding: 1.5rem 0;
       display: flex;
       justify-content: center;
-      align-items: center;
+
       input {
         border-style: none;
         background: #424242;
-        height: 2.5rem;
-        width: 14rem;
+        // height: 3rem;
+        height: 66px;
+        width: 18rem;
         border-radius: 7px;
       }
       button {
-        // padding: 0.4rem 0.4rem;
         height: 2.5rem;
         width: 3rem;
         margin-left: 0.5rem;
@@ -69,9 +78,6 @@
 
         border-radius: 0.5rem;
         background-color: #424242;
-        img {
-          align-items: center;
-        }
       }
     }
   }

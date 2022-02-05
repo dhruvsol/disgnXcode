@@ -22,7 +22,11 @@ export const AboutUs = () => {
           signature="Signature"
         />
         <Leadership />
-        <SliderSlide />
+        <SliderSlide
+          url1="/img/Aboutpageslide.png"
+          url2="/img/Aboutpageslide.png"
+          url3="/img/Aboutpageslide.png"
+        />
         <Partner />
         <Footer />
       </div>

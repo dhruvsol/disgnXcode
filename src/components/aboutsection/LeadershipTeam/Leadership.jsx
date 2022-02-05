@@ -20,9 +20,7 @@ export const Leadership = () => {
           <h1>LEADERSHIP TEAM</h1>
         </div>
         <div className="leadership-change">
-          <div className="leadership-bar">
-            <input type="range" />
-          </div>
+          <div className="leadership-bar"></div>
           <div className="leadership-button">
             <img src="/img/prev.svg" alt="previous" />
             <img src="/img/next.svg" alt="next" />

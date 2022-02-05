@@ -37,7 +37,19 @@ export const Footer = () => {
           <div className="footer-contact-input">
             <input type="text" />
             <button>
-              <img src="/img/arrow.svg" alt="logo" />
+              <svg
+                width="76"
+                height="66"
+                viewBox="0 0 76 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="76" height="66" rx="7" fill="#424242" />
+                <path
+                  d="M28.9065 45.24L41.1198 33L28.9065 20.76L32.6665 17L48.6665 33L32.6665 49L28.9065 45.24Z"
+                  fill="#292929"
+                />
+              </svg>
             </button>
           </div>
           <p>support@interwood.in</p>
