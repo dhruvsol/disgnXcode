@@ -13,11 +13,11 @@ const Home = () => {
   return (
     <div className="Home-page">
       <div className="HeroSection">
-        {/* <Navbar />
+        <Navbar />
         <HeroSection
           heading="ECHOING CLASS"
           subheading="CLASSY AND PERFECT KITCHEN"
-        /> */}
+        />
       </div>
       <HomeSlider />
       <Signature

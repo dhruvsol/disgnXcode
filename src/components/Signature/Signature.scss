@@ -63,6 +63,9 @@
 @media (max-width: 1300px) {
   .signature {
     height: 150vh;
+    h1 {
+      font-size: 3.5rem;
+    }
     .signature-image {
       .signataure-h2 {
         .signature-sign {
@@ -74,6 +77,9 @@
 }
 @media (max-width: 1200px) {
   .signature {
+    h1 {
+      font-size: 3rem;
+    }
     .signature-image {
       .signataure-h2 {
         .signature-sign {
