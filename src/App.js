@@ -4,7 +4,6 @@ import Home from "./pages/home/Home";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Slider2 } from "./components/slider2/Slider2";
 import { Interwood } from "./pages/Interwood/Interwood";
 import { InterwoodPlus } from "./pages/InterwoodPlus/InterwoodPlus";
 import { DetailPage } from "./pages/DetailPage/DetailPage";
@@ -16,6 +15,7 @@ import { Partner } from "./pages/Partner/Partner";
 import { ValuePartner } from "./pages/ValuePartner/ValuePartner";
 import { ValueRetailer } from "./pages/ValueRetailer/ValueRetailer";
 import { Brands } from "./pages/Brands/Brands";
+import { Card1 } from "./components/SpecialCard/Card1/Card1";
 
 const App = () => {
   return (
@@ -34,7 +34,10 @@ const App = () => {
         <Route path="/value/partner" element={<ValuePartner />} />
         <Route path="/value/retailer" element={<ValueRetailer />} />
         <Route path="/brands" element={<Brands />} />
-        <Route path="/test" element={<Slider2 />} />
+        <Route
+          path="/test"
+          element={<Card1 url="/img/SpecialCard/Frame 14.png" name="ANDREA" />}
+        />
       </Routes>
     </BrowserRouter>
   );

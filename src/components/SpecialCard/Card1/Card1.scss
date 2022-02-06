@@ -1,0 +1,21 @@
+.card1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #292929;
+  .card1-image {
+    z-index: 10;
+    img {
+      width: 20vw;
+    }
+  }
+  .dottedline {
+    width: 15rem;
+    z-index: 1;
+    height: 0;
+
+    transform: rotate(90deg);
+
+    border-top: 2px dashed #ef1b1c;
+  }
+}
