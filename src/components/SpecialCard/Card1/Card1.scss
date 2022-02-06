@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #292929;
+  align-items: center;
+  padding: 2rem;
+  width: 20rem;
   .card1-image {
     z-index: 10;
     img {
-      width: 20vw;
+      width: 20rem;
     }
   }
   .dottedline {
@@ -17,5 +19,9 @@
     transform: rotate(90deg);
 
     border-top: 2px dashed #ef1b1c;
+  }
+  .card1-name {
+    margin-top: 9rem;
+    color: #fff;
   }
 }

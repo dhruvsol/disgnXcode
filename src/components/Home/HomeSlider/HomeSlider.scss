@@ -53,7 +53,6 @@
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 2rem;
-    // padding-left: ;
     padding-left: 4.5rem;
     text-align: justify;
     color: #fff;
@@ -89,7 +88,6 @@
     }
   }
   .homeslider-legacy {
-    // padding-left: 10rem;
     padding: 0 7rem;
     h1 {
       font-size: 3rem;
@@ -121,8 +119,8 @@
     }
   }
   .homeslider-legacy {
-    // padding-left: 10rem;
-    padding: 0 7rem;
+    // padding: 0 7rem;
+    margin-left: 2rem;
     h1 {
       font-size: 3.5rem;
       line-height: 3.5rem;
@@ -131,6 +129,7 @@
       font-size: 1rem;
       line-height: 1.2rem;
       padding-left: 0;
+      width: 22rem;
     }
   }
 }

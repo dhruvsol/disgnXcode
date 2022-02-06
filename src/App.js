@@ -4,7 +4,7 @@ import Home from "./pages/home/Home";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Interwood } from "./pages/Interwood/Interwood";
+
 import { InterwoodPlus } from "./pages/InterwoodPlus/InterwoodPlus";
 import { DetailPage } from "./pages/DetailPage/DetailPage";
 import { Bedroom } from "./pages/Bedroom/Bedroom";
@@ -15,7 +15,7 @@ import { Partner } from "./pages/Partner/Partner";
 import { ValuePartner } from "./pages/ValuePartner/ValuePartner";
 import { ValueRetailer } from "./pages/ValueRetailer/ValueRetailer";
 import { Brands } from "./pages/Brands/Brands";
-import { Card1 } from "./components/SpecialCard/Card1/Card1";
+import { Interwood1 } from "./pages/Interwood/interwood1/Interwood1";
 
 const App = () => {
   return (
@@ -24,7 +24,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/kitchen/interwoodplus" element={<InterwoodPlus />} />
-        <Route path="/kitchen/interwood" element={<Interwood />} />
         <Route path="/details" element={<DetailPage />} />
         <Route path="/bedroom" element={<Bedroom />} />
         <Route path="/bedroom/wardrobe" element={<BedroomWardrobe />} />
@@ -34,10 +33,7 @@ const App = () => {
         <Route path="/value/partner" element={<ValuePartner />} />
         <Route path="/value/retailer" element={<ValueRetailer />} />
         <Route path="/brands" element={<Brands />} />
-        <Route
-          path="/test"
-          element={<Card1 url="/img/SpecialCard/Frame 14.png" name="ANDREA" />}
-        />
+        <Route path="/kitchen/interwood/interwood1" element={<Interwood1 />} />
       </Routes>
     </BrowserRouter>
   );
