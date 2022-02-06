@@ -41,13 +41,13 @@
   margin-left: -20rem;
 }
 .homeslider-legacy {
-  height: 100vh;
+  height: 60rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12rem;
+  padding: 0 8rem;
   p {
-    width: 30vw;
+    width: 30rem;
     font-family: "Poppins";
     font-style: normal;
     font-weight: normal;
@@ -59,7 +59,7 @@
     color: #fff;
   }
   h1 {
-    width: 30vw;
+    width: 35vw;
     font-family: Ivy Mode;
     font-style: normal;
     font-weight: normal;
@@ -76,6 +76,7 @@
         font-size: 1rem;
       }
       h1 {
+        // width: vw;
         font-size: 3rem;
         line-height: 3.5rem;
       }
