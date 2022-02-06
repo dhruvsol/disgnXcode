@@ -1,7 +1,6 @@
 .testimonial-card {
   height: 40rem;
   width: 30rem;
-
   background-color: #292929;
   border-radius: 10px;
   display: flex;
@@ -18,5 +17,53 @@
     text-align: justify;
     color: #fff;
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 1500px) {
+  .testimonial-card {
+    width: 25rem;
+    height: 35rem;
+    h2 {
+      padding-bottom: 0;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .testimonial-card {
+    width: 20rem;
+    height: 30rem;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 15rem;
+    height: 25rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-card {
+    width: 12rem;
+    height: 20rem;
+    // margin-left: 3rem;
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      padding: 0.8rem;
+      font-size: 0.5rem;
+    }
   }
 }

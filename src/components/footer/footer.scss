@@ -6,8 +6,9 @@
   justify-content: space-evenly;
   color: #fff;
   margin-top: 4rem;
-  padding: 7rem 2rem;
+  padding: 7rem 0;
   align-items: flex-start;
+  flex-wrap: wrap;
   .footerlogo {
     .footer-socials {
       padding: 2rem 0;
@@ -83,6 +84,26 @@
         border-radius: 0.5rem;
         background-color: #424242;
       }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    height: 100vh;
+    .footer-contact {
+      margin-top: 3rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    height: 130vh;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    .footer-contact {
+      margin-top: 3rem;
     }
   }
 }

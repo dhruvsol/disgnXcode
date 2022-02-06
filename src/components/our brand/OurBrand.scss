@@ -1,45 +1,107 @@
 .ourbrand {
   width: 100%;
+  .brandyoutube {
+    display: flex;
+    justify-content: center;
+    padding-top: 15rem;
+    iframe {
+      width: 70rem;
+      height: 50rem;
+    }
+  }
   .ourbrand-title {
-    padding: 4rem 6rem;
-    span {
+    display: flex;
+    padding: 2rem 6rem;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 5rem;
+      color: #fff;
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
-      color: white;
-      font-size: 5.5rem;
-      line-height: 6rem;
-      text-align: justify;
-      letter-spacing: 0.04em;
     }
   }
   .ourbrand-images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    // width: 80%;s
     .ourbrand-grid {
+      padding-top: 5rem;
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 2rem;
-      img {
-        width: 19rem;
+      .brand1 {
+        grid-row: 1 / 3;
+        img {
+          height: 35rem;
+        }
+      }
+      .brand {
+        img {
+          width: 18rem;
+        }
       }
     }
-    .brand1 {
-      grid-row: 1 / 3;
-      img {
-        height: 36.5rem;
+    .ourband-arrow {
+      width: 15rem;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .ourbrand {
+    .brandyoutube {
+      iframe {
+        width: 55rem;
+        height: 45rem;
+      }
+    }
+    .ourbrand-images {
+      .ourbrand-grid {
+        padding-top: 2rem;
+        .brand1 {
+          img {
+            height: 28rem;
+          }
+        }
+        .brand {
+          img {
+            width: 14rem;
+          }
+        }
+      }
+      .ourband-arrow {
+        width: 10rem;
       }
     }
   }
-  .brandyoutube {
-    display: flex;
-    padding-top: 10rem;
-    height: 55rem;
-    // width: 0rem;
-    justify-content: center;
-    iframe {
-      width: 70rem;
+}
+@media (max-width: 768px) {
+  .ourbrand {
+    .brandyoutube {
+      padding-top: 8rem;
+      iframe {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
+    .ourbrand-images {
+      .ourbrand-grid {
+        .brand1 {
+          img {
+            height: 21rem;
+          }
+        }
+        .brand {
+          img {
+            width: 10rem;
+          }
+        }
+      }
+      .ourband-arrow {
+        width: 8rem;
+      }
     }
   }
 }

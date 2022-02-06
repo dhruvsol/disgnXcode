@@ -26,8 +26,34 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     li.slick-active button {
       display: none;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .testimonials {
+    height: 100vh;
+    padding: 3rem 0;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 2rem 0;
+    height: 100vh;
+    h1 {
+      font-size: 3rem;
+      margin-left: 1.5rem;
+    }
+    .slider {
+      div {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }

@@ -3,9 +3,9 @@ import "./AboutHero.scss";
 export const AboutHero = () => {
   return (
     <>
-      <div className="abouthero"></div>
+      {/* <div className="abouthero"></div>
       <div className="abouthero-card1"></div>
-      <div className="abouthero-card2"></div>
+      <div className="abouthero-card2"></div> */}
       <div className="abouthero-ourstory">
         <h1>OUR STORY</h1>
         <p>

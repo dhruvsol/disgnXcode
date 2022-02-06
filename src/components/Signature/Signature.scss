@@ -26,7 +26,7 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-
+      align-items: baseline;
       .signature-sign {
         font-size: 7.5rem;
         color: white;
@@ -41,10 +41,48 @@
       }
       p {
         text-align: justify;
-        width: 30rem;
+        width: 30vw;
         font-size: 1.2rem;
         line-height: 2rem;
         color: #fff;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .signature {
+    .signature-image {
+      .signataure-h2 {
+        .signature-sign {
+          margin-left: -23rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .signature {
+    height: 150vh;
+    .signature-image {
+      .signataure-h2 {
+        .signature-sign {
+          margin-left: -18rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .signature {
+    .signature-image {
+      .signataure-h2 {
+        .signature-sign {
+          margin-left: -14rem;
+        }
+        p {
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+        }
       }
     }
   }

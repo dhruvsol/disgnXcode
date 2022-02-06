@@ -11,8 +11,26 @@ export const Testimonials = () => {
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
+    speed: 500,
     autoplay: true,
     autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="testimonials">

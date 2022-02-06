@@ -59,3 +59,77 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .blogs {
+    .blogs-grid {
+      .blog1 {
+        img {
+          width: 32rem;
+          height: 20rem;
+        }
+      }
+      .blog2 {
+        img {
+          height: 15rem;
+          width: 15rem;
+        }
+      }
+      .blog3 {
+        img {
+          width: 15rem;
+          height: 10rem;
+        }
+      }
+      .blog4 {
+        img {
+          width: 15rem;
+          height: 10rem;
+        }
+      }
+      .blog5 {
+        margin-top: -5rem;
+        img {
+          height: 15rem;
+          width: 15rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .blogs {
+    .blogs-grid {
+      .blog1 {
+        img {
+          width: 22rem;
+          height: 15rem;
+        }
+      }
+      .blog2 {
+        img {
+          height: 10rem;
+          width: 10rem;
+        }
+      }
+      .blog3 {
+        img {
+          width: 10rem;
+          height: 5rem;
+        }
+      }
+      .blog4 {
+        img {
+          width: 10rem;
+          height: 5rem;
+        }
+      }
+      .blog5 {
+        margin-top: -5rem;
+        img {
+          height: 10rem;
+          width: 10rem;
+        }
+      }
+    }
+  }
+}

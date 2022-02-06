@@ -6,7 +6,7 @@
   width: 100%;
   .partner-heading {
     margin-top: 5rem;
-    width: 80%;
+    width: 90%;
     align-items: flex-start;
     h1 {
       font-size: 5.5rem;
@@ -14,7 +14,7 @@
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
-      width: 35vw;
+      width: 45vw;
     }
   }
   .partner-value1 {
@@ -75,6 +75,74 @@
         text-align: justify;
         width: 30vw;
         font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .partnerwithus {
+    .partner-value1 {
+      padding: 5rem 7rem;
+      .partner-content {
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .partner-value2 {
+      padding: 5rem 8rem;
+      .partner-content {
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .partnerwithus {
+    .partner-value1 {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 20rem;
+      }
+      .partner-content {
+        h2 {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          width: 40vw;
+          font-size: 2rem;
+        }
+        p {
+          width: 35vw;
+          margin-left: 1.5srem;
+        }
+      }
+    }
+    .partner-value2 {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 20rem;
+      }
+      .partner-content {
+        h2 {
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          width: 40vw;
+          font-size: 2rem;
+        }
+        p {
+          width: 35vw;
+          margin-left: 1.5rem;
+        }
       }
     }
   }
