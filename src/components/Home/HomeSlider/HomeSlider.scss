@@ -1,6 +1,6 @@
 .homeslider-center {
   display: flex;
-  height: 150vh;
+  height: 130vh;
   justify-content: space-evenly;
   align-items: center;
   .homeslider-heading {
@@ -17,7 +17,7 @@
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
-      font-size: 4.5rem;
+      font-size: 4rem;
       line-height: 7rem;
       letter-spacing: 0.04em;
       color: #fff;
@@ -50,7 +50,7 @@
   }
 }
 .homeslider-legacy {
-  height: 60rem;
+  height: 35rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,5 +1,6 @@
 .interwood {
   background-color: #171717;
+  padding-top: 10rem;
   .interwood-card {
     display: flex;
     justify-content: space-between;
@@ -43,18 +44,19 @@
   display: flex;
   width: 100%;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  // padding-bottom: 8rem;
   justify-content: space-between;
-  padding-left: 8rem;
+  padding-left: 7rem;
   background-color: #171717;
   .about-content {
+    width: 40%;
     h1 {
       color: #fff;
       font-family: Ivy Mode;
       font-style: normal;
       font-weight: normal;
       font-size: 3.5rem;
-      width: 25%;
+      width: 30%;
     }
     p {
       color: #fff;
@@ -63,14 +65,14 @@
       font-style: normal;
       font-weight: normal;
       text-align: justify;
-      width: 25%;
+      // width: 35%;
     }
   }
   .about-card {
     background-color: #292929;
     height: 30rem;
     border-radius: 14px;
-    width: 40rem;
+    width: 25rem;
   }
 }
 @media (max-width: 1024px) {
