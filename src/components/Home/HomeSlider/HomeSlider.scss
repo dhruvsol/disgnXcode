@@ -38,7 +38,16 @@
   }
 }
 .homeslider {
-  margin-left: -20rem;
+  margin-left: -18rem;
+  .indicator-after {
+    position: relative;
+    &:after {
+      position: absolute;
+      background-color: red;
+      content: "";
+      top: 5rem;
+    }
+  }
 }
 .homeslider-legacy {
   height: 60rem;
@@ -100,6 +109,7 @@
     }
   }
 }
+
 @media (max-width: 1304px) {
   .homeslider-center {
     .homeslider-heading {

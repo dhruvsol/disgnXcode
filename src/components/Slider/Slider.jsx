@@ -11,7 +11,7 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          {/* <div class="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
@@ -32,7 +32,7 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
-          </div>
+          </div> */}
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src={url1} class="d-block banner" alt="..." />

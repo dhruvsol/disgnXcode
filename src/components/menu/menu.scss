@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  z-index: 100;
+  // z-index: 100;
   .menu {
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +32,7 @@
     }
     .menu-inner {
       width: 15%;
-      height: 40rem;
+      // height: 40rem;
     }
   }
 }

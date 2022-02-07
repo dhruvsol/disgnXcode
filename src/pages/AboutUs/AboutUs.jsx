@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer } from "../../components/footer/Footer";
-import { Navbar } from "../../components/Navbar/Navbar";
+import { Navbar1 } from "../../components/Navbar/Navbar";
 import { Signature } from "../../components/Signature/Signature";
 import { AboutHero } from "../../components/aboutsection/aboutHero/AboutHero";
 import "./AboutUs.scss";
@@ -13,7 +13,7 @@ export const AboutUs = () => {
     <>
       <div className="AboutUs">
         <div>
-          {/* <Navbar /> */}
+          {/* <Navbar1 /> */}
           <AboutHero />
         </div>
         <Signature

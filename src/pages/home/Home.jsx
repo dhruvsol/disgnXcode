@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.scss";
-import { Navbar } from "../../components/Navbar/Navbar";
+import { Navbar1 } from "../../components/Navbar/Navbar";
 import { HeroSection } from "../../components/Home/HeroSection";
 import { Footer } from "../../components/footer/Footer";
 import { Blog } from "../../components/Blogs/Blog";
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="Home-page">
       <div className="HeroSection">
-        <Navbar />
+        <Navbar1 />
         <HeroSection
           heading="ECHOING CLASS"
           subheading="CLASSY AND PERFECT KITCHEN"

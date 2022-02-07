@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer/Footer";
 export const InterwoodPlus = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Footer />
     </>
   );

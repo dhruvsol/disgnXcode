@@ -5,7 +5,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 export const Partner = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Footer />
     </>
   );

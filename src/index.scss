@@ -1,2 +1,14 @@
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 // @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.offcanvas-body {
+  padding: 0 0;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./burger.svg");
+  &:hover {
+    border: none;
+  }
+}
