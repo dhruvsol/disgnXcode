@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Footer } from "../../../components/footer/Footer";
 import { Card2 } from "../../../components/SpecialCard/Card2/Card2";
 import { Card1 } from "../../../components/SpecialCard/Card1/Card1";
@@ -44,23 +45,33 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
       <div className="interwood">
         <div className="interwood-card">
           <div>
-            <Card1 name="ANDREA" url={url1} />
+            <Link to="/kitchen/interwood/andrea">
+              <Card1 name="ANDREA" url={url1} />
+            </Link>
           </div>
           <div>
-            <Card2 name="MONTANA" url={url2} />
-          </div>
-        </div>
-        <div className="interwood-card">
-          <div>
-            <Card1 name="CECILIA" url={url3} />
-          </div>
-          <div>
-            <Card2 name="ALEXIA" url={url4} />
+            <Link to="/kitchen/interwood/erika">
+              <Card2 name="ERIKA" url={url2} />
+            </Link>
           </div>
         </div>
         <div className="interwood-card">
           <div>
-            <Card1 name="CECILIA" url={url5} />
+            <Link to="/kitchen/interwood/cecilia">
+              <Card1 name="CECILIA" url={url3} />
+            </Link>
+          </div>
+          <div>
+            <Link to="/kitchen/interwood/alexia">
+              <Card2 name="ALEXIA" url={url4} />
+            </Link>
+          </div>
+        </div>
+        <div className="interwood-card">
+          <div>
+            <Link to="/kitchen/interwood/montana">
+              <Card1 name="MONTANA" url={url5} />
+            </Link>
           </div>
           {/* <div>
             <Card2 name="hello" url="/img/SpecialCard/Frame 14.png" />

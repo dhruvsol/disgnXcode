@@ -12,8 +12,8 @@ export const Menu = () => {
           </div>
           <div className="menu-kitchens menu-inner">
             <h2>Kitchens</h2>
-            <a href="/interwood">Interwood</a>
-            <a href="/interwoodplus">Interwood Plus</a>
+            <a href="/kitchen/interwood">Interwood</a>
+            <a href="/kitchen/interwoodplus">Interwood Plus</a>
           </div>
           <div className="menu-bedroom menu-inner">
             <h2>Bedroom</h2>

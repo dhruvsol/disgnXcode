@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: #292929;
-    height: 35rem;
+    height: 27rem;
     width: 100%;
     cursor: pointer;
     padding: 4rem 0;
@@ -33,6 +33,9 @@
     .menu-inner {
       width: 15%;
       // height: 40rem;
+      h2 {
+        padding-bottom: 2.5rem;
+      }
     }
   }
 }
