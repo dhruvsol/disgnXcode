@@ -1,0 +1,112 @@
+// ul {
+//   display: flex;
+//   min-height: 100vh;
+//   max-height: 100vh;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+//   list-style-type: none;
+// }
+
+// li {
+//   flex: 1;
+//   display: flex;
+//   align-items: stretch;
+//   padding: 20px;
+//   background: #e74c3c;
+//   cursor: pointer;
+//   transition: all 0.5s ease;
+
+//   &:hover {
+//     background: darken(#e74c3c, 3);
+//   }
+
+//   &.active {
+//     flex: 4;
+//     background: #fff;
+//     cursor: default;
+
+//     h2 {
+//       color: #e74c3c;
+//     }
+
+//     .section-content {
+//       flex: 4;
+//       opacity: 1;
+//       transform: scaleX(1);
+//       color: #e74c3c;
+//     }
+//   }
+
+//   .section-title {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     text-align: center;
+//     color: white;
+
+//     h2 {
+//       margin: 0;
+//       transform: rotate(-90deg);
+//       white-space: nowrap;
+//     }
+//   }
+
+//   .section-content {
+//     flex: 1;
+//     display: flex;
+//     align-items: center;
+//     margin: 0;
+//     padding: 0;
+//     opacity: 0;
+//     transition: all 0.25s 0.1s ease-out;
+//   }
+// }
+.acordian {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #171717;
+  div {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    background: #171717;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      flex: 4;
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    &.active {
+      flex: 4;
+      background: #fff;
+      cursor: default;
+    }
+
+    .img {
+      background: linear-gradient(180deg, transparent, #000 100%),
+        url("./home.svg");
+
+      h1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #fff;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+        font-family: Ivy Mode;
+      }
+    }
+  }
+}

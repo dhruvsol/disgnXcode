@@ -12,7 +12,7 @@ export const Navbar1 = () => {
           </Navbar.Brand>
           <Navbar.Toggle className="" aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
-            className="h-2/3 "
+            className="h-[30rem] "
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="top"

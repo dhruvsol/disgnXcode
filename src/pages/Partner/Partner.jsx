@@ -1,12 +1,15 @@
 import React from "react";
 import { Footer } from "../../components/footer/Footer";
-import { Navbar } from "../../components/Navbar/Navbar";
-
+import { Navbar1 } from "../../components/Navbar/Navbar";
+import { Acordian } from "../../components/acordian/Acordian";
 export const Partner = () => {
   return (
     <>
-      {/* <Navbar /> */}
-      <Footer />
+      <div className="bg-[#171717]">
+        <Navbar1 />
+        <Acordian />
+        <Footer />
+      </div>
     </>
   );
 };

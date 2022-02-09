@@ -1,0 +1,28 @@
+.blogcard {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  img {
+    width: 25rem;
+  }
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: Ivy Mode;
+    font-weight: normal;
+    padding: 1rem;
+  }
+  p {
+    color: #fff;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    padding: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .blogcard {
+    width: 18rem;
+  }
+}

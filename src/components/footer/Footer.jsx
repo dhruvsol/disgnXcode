@@ -15,7 +15,7 @@ export const Footer = () => {
         </div>
         <div className="footer-quicklinks">
           <h2>Quick links</h2>
-          <a href="/kitchen">Kitchen</a>
+          <a href="/kitchen/interwood">Kitchen</a>
           <a href="/wardrobes">Wardrobes</a>
           <a href="/brands">Brands</a>
           <a href="/aboutus">About Us</a>

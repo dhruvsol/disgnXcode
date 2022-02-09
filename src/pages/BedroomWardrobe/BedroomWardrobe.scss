@@ -1,0 +1,30 @@
+.wardrobe-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  padding: 6rem 8rem;
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: Ivy Mode;
+    width: 25rem;
+  }
+  p {
+    color: #fff;
+    font-size: 1rem;
+    width: 25rem;
+    text-align: justify;
+    font-family: Poppins;
+    font-style: normal;
+  }
+}
+
+.wardrobe-card {
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+  }
+}
