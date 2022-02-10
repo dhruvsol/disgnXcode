@@ -28,10 +28,10 @@ export const Bedroom = () => {
             <div className="about-line"></div>
           </div>
         </div>
-        <img src="/img/bedroom/bedroom1.png" alt="..." />
+        <img src="/img/bedroom1.png" alt="..." />
         <div className="flex justify-evenly items-center pt-20">
           <div>
-            <Card1 name="INTERWOOD" url="/img/SpecialCard/Frame 14.png" />
+            <Card1 name="INTERWOOD" url="/img/Frame 14.png" />
           </div>
           <div>
             <Card2 name="INTERWOOD PLUS" />

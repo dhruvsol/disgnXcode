@@ -28,6 +28,8 @@ import Montana1 from "./pages/DetailWardrobe/Page/Montana";
 import Cecilia1 from "./pages/DetailWardrobe/Page/Montana";
 import ProfiloSliding from "./pages/DetailWardrobe/Page/ProfiloSliding";
 import SublimeSliding from "./pages/DetailWardrobe/Page/SublimeSliding";
+import { Tvunits } from "./pages/Bedroom/Tvunits";
+import { Vanties } from "./pages/Bedroom/Vanties";
 const App = () => {
   return (
     <BrowserRouter>
@@ -38,7 +40,7 @@ const App = () => {
         <Route path="/details" element={<DetailPage />} />
 
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/partnerwithus" element={<Partner />} />
         {/*************** values ************/}
         <Route path="/value/partner" element={<ValuePartner />} />
@@ -75,13 +77,16 @@ const App = () => {
               glaze="/img/interwoodplus/glaze.png"
               lack7="/img/interwoodplus/lack.png"
               form5="/img/interwoodplus/form5.png"
-              naturale="/ima/interwoodplus/naturale.pngs"
+              naturale="/img/interwoodplus/naturale.png"
             />
           }
         />
         {/***************Bedroom *************/}
         <Route path="/bedroom" element={<Bedroom />} />
+        <Route path="/bedroom/tvunits" element={<Tvunits />} />
+        <Route path="/bedroom/vanties" element={<Vanties />} />
         <Route path="/bedroom/wardrobe" element={<BedroomWardrobe />} />
+
         <Route path="/bedroom/wardrobe/andrea" element={<Andrea1 />} />
         <Route path="/bedroom/wardrobe/alexia" element={<Alexia1 />} />
         <Route path="/bedroom/wardrobe/montana" element={<Montana1 />} />
