@@ -1,0 +1,39 @@
+.valueretailer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  h1 {
+    width: 25rem;
+    color: white;
+    font-family: Ivy Mode;
+    font-size: 3rem;
+  }
+  p {
+    width: 25rem;
+    color: white;
+    font-size: 1rem;
+  }
+}
+.valueretailer-req {
+  padding: 4rem 6rem;
+  h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Ivy Mode;
+    width: 25rem;
+  }
+  .value-card {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+    div {
+      width: 10rem;
+      span {
+        color: white;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

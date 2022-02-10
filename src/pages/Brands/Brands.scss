@@ -1,0 +1,24 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-family: Ivy Mode;
+    line-height: 4rem;
+  }
+  .brands-bar {
+    padding-top: 6rem;
+    h2 {
+      color: white;
+      font-size: 2rem;
+      padding: 1rem;
+      font-family: Ivy Mode;
+    }
+    .line1 {
+      border-top: 2px solid white;
+    }
+  }
+}

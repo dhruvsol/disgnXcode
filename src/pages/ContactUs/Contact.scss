@@ -1,0 +1,108 @@
+.contactus-main {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .contactus {
+    h1 {
+      color: white;
+      font-size: 3rem;
+      font-family: Ivy Mode;
+    }
+    .corporate-address {
+      width: 25rem;
+      padding: 3rem 0;
+      h2 {
+        color: white;
+        font-family: Ivy Mode;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      p {
+        color: white;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+    }
+    .work-address {
+      width: 25rem;
+      padding: 3rem 0;
+      h2 {
+        color: white;
+        font-family: Ivy Mode;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+      }
+      p {
+        color: white;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: normal;
+      }
+    }
+  }
+}
+.getintouch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 6rem;
+  background: #292929;
+  .getintouch-data {
+    width: 20rem;
+    h1 {
+      color: white;
+      font-size: 3rem;
+      font-family: Ivy Mode;
+      padding-bottom: 3rem;
+    }
+    p {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+  .getintouch-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    form {
+      textarea:focus,
+      input:focus {
+        outline: none;
+        // background: #171717;
+      }
+      input {
+        color: #fff;
+        margin: 1rem;
+        background: #292929;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 1.2rem 0;
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+    a {
+      color: white;
+      background: #171717;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Ivy Mode;
+      height: 3rem;
+      width: 8rem;
+    }
+  }
+}
