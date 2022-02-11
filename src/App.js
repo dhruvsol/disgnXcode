@@ -21,7 +21,7 @@ import Andera from "./pages/DetailPage/Andera";
 import Erika from "./pages/DetailPage/Erika";
 import Montana from "./pages/DetailPage/Montana";
 import { Interwood1 } from "./pages/Interwood/interwood1/Interwood1";
-import { DetailWardrobe } from "./pages/DetailWardrobe/DetailWardrobe";
+// import { DetailWardrobe } from "./pages/DetailWardrobe/DetailWardrobe";
 import Alexia1 from "./pages/DetailWardrobe/Page/Alexia";
 import Andrea1 from "./pages/DetailWardrobe/Page/Andrea";
 import Montana1 from "./pages/DetailWardrobe/Page/Montana";
@@ -30,6 +30,7 @@ import ProfiloSliding from "./pages/DetailWardrobe/Page/ProfiloSliding";
 import SublimeSliding from "./pages/DetailWardrobe/Page/SublimeSliding";
 import { Tvunits } from "./pages/Bedroom/Tvunits";
 import { Vanties } from "./pages/Bedroom/Vanties";
+
 const App = () => {
   return (
     <BrowserRouter>

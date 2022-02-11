@@ -97,13 +97,14 @@
       background: linear-gradient(180deg, transparent, #000 100%),
         url("./home.svg");
 
-      h1 {
+      a {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         color: #fff;
         font-size: 4rem;
+        line-height: 3rem;
         padding-bottom: 3rem;
         font-family: Ivy Mode;
       }

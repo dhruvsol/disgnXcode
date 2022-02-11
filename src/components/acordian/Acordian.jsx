@@ -1,5 +1,6 @@
 import React from "react";
 import "./Acordian.scss";
+import { Link } from "react-router-dom";
 export const Acordian = () => {
   return (
     <>
@@ -7,7 +8,7 @@ export const Acordian = () => {
         <div className="acordian1">
           {/* <img src="/img/home.svg" alt="..." /> */}
           <div className="img">
-            <h1>
+            <a href="/value/retailer">
               Value Added With Retailer
               <span>
                 <svg
@@ -23,13 +24,14 @@ export const Acordian = () => {
                   />
                 </svg>
               </span>
-            </h1>
+            </a>
           </div>
         </div>
+
         <div className="acordian2">
           {/* <img src="/img/home.svg" alt="..." /> */}
           <div className="img">
-            <h1>
+            <a href="/value/partner">
               Value Added With Partner
               <span>
                 <svg
@@ -45,7 +47,7 @@ export const Acordian = () => {
                   />
                 </svg>
               </span>
-            </h1>
+            </a>
           </div>
         </div>
       </div>
