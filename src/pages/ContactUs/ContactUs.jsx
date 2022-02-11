@@ -50,14 +50,14 @@ export const ContactUs = () => {
           </div>
           <div className="getintouch-form">
             <form action="">
-              <input type="text" placeholder="NAME" />
+              <input className="w-[29rem]" type="text" placeholder="NAME" />
               <div>
                 <input type="tel" placeholder="NUMBER" />
                 <input type="email" placeholder="EMAIL ID" />
               </div>
-              <input type="text" placeholder="MESSAGE" />
+              <input className="w-[29rem]" type="text" placeholder="MESSAGE" />
             </form>
-            <a href="#">Summit</a>
+            <a href="/s">Summit</a>
           </div>
         </div>
         <Footer />

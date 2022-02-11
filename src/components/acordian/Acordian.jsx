@@ -1,6 +1,5 @@
 import React from "react";
 import "./Acordian.scss";
-import { Link } from "react-router-dom";
 export const Acordian = () => {
   return (
     <>

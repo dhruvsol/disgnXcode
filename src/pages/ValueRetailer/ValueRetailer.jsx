@@ -363,7 +363,7 @@ export const ValueRetailer = () => {
                 </div>
                 <input type="text" placeholder="MESSAGE" />
               </form>
-              <a href="#">Summit</a>
+              <a href="/s">Summit</a>
             </div>
           </div>
         </div>
