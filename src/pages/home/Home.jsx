@@ -39,6 +39,11 @@ const Home = () => {
               subheading="CLASSY AND PERFECT KITCHEN"
             />
           </div>
+          <div className="">
+            <video className="w-full pt-20" autoPlay muted>
+              <source src="/img/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
           <HomeSlider />
           <Signature
             heading="Core Team Comitted towards our legacy"
