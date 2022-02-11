@@ -13,7 +13,7 @@ export const AboutUs = () => {
     <>
       <div className="AboutUs">
         <div>
-          {/* <Navbar1 /> */}
+          <Navbar1 />
           <AboutHero />
         </div>
         <Signature

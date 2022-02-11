@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./menu.scss";
 export const Menu = () => {
+  // const [page,setPage]=useState ('');
+  // const [kitchen,setKitchen]=useState ('');
+  // const [bedroom,setBedroom]=useState ('');
+  // const [brand,setBrand]=useState ('');
+  const [imgsrc, setImgsrc] = useState("/img/blog2.png");
+  const pages = () => {
+    setImgsrc("");
+  };
+  const unset = () => {
+    setImgsrc("/img/blog2.png");
+  };
   return (
     <>
       <div className="menu-main">
         <div className="menu">
-          <div className="menu-pages menu-inner">
+          <div
+            onMouseEnter={pages}
+            onMouseLeave={unset}
+            className="menu-pages menu-inner"
+          >
             <h2>Pages</h2>
             <a href="/aboutus">About us</a>
             <a href="/blogs">Blogs</a>
@@ -22,7 +37,7 @@ export const Menu = () => {
             <a href="/bedroom/wardrobe">wardrobs</a>
             <a href="/bedroom/interwoodplus">Interwood Plus</a>
             <a href="/bedroom/tvunits">TV Units</a>
-            <a href="/bedroom/Variables">Variables</a>
+            <a href="/bedroom/vanties">Vanties</a>
           </div>
           <div className="menu-brands menu-inner">
             <h2>Brands</h2>
@@ -30,8 +45,7 @@ export const Menu = () => {
             <a href="/interwoodplus">Interwood Plus</a>
           </div>
           <div className="menu-image menu-inner">
-            image
-            {/* <img src="" alt="" /> */}
+            <img src={imgsrc} alt="...." />
           </div>
         </div>
       </div>
