@@ -16,7 +16,7 @@ const Home = () => {
     setTimeout(() => {
       setPreloader(false);
       setPage(true);
-    }, 1800);
+    }, 1500);
   };
   useEffect(() => {
     handlePreloader();
@@ -24,9 +24,9 @@ const Home = () => {
   return (
     <>
       {preloader && (
-        <div className="bg-[#151715] h-screen flex">
+        <div className="bg-[#151715] h-screen flex justify-center">
           <video autoPlay muted>
-            <source src="/img/preloader.mp4" type="video/mp4" />
+            <source src="/img/preloader1.mp4" type="video/mp4" />
           </video>
         </div>
       )}
