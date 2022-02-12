@@ -5,9 +5,9 @@ import { HeroSection } from "../../components/Home/HeroSection";
 import { Card1 } from "../../components/SpecialCard/Card1/Card1";
 import { Card2 } from "../../components/SpecialCard/Card2/Card2";
 import { SliderSlide } from "../../components/Slider/Slider";
-import "./BedroomWardrobe.scss";
+import "../BedroomWardrobe/BedroomWardrobe.scss";
 import { Link } from "react-router-dom";
-export const BedroomWardrobe = () => {
+export const WardrobeInterwoodplus = () => {
   return (
     <>
       <div className="bg-[#171717]">
@@ -19,12 +19,12 @@ export const BedroomWardrobe = () => {
           <div className="interwood-about">
             <Link to="/bedroom/wardrobe/interwood" className="about-name1 ">
               <div className="about-line"></div>
-              <h1 className="text1">INTERWOOD</h1>
+              <h1 className="text2">INTERWOOD</h1>
               <div className="about-line"></div>
             </Link>
             <Link to="/bedroom/wardrobe/interwoodplus" className="about-name1">
               <div className="about-line"></div>
-              <h1 className="text2">INTERWOOD PLUS</h1>
+              <h1 className="text1">INTERWOOD PLUS</h1>
               <div className="about-line"></div>
             </Link>
           </div>

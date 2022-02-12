@@ -6,27 +6,26 @@ import { Card1 } from "../../components/SpecialCard/Card1/Card1";
 import { Card2 } from "../../components/SpecialCard/Card2/Card2";
 import { SliderSlide } from "../../components/Slider/Slider";
 import "./BedroomWardrobe.scss";
-import { Link } from "react-router-dom";
-export const BedroomWardrobe = () => {
+const TvunitsInterwood = () => {
   return (
     <>
       <div className="bg-[#171717]">
         <div className="">
           <Navbar1 />
-          <HeroSection heading="WARDROBES" />
+          <HeroSection heading="TV UNITS" />
         </div>
         <div>
           <div className="interwood-about">
-            <Link to="/bedroom/wardrobe/interwood" className="about-name1 ">
+            <div className="about-name1 ">
               <div className="about-line"></div>
               <h1 className="text1">INTERWOOD</h1>
               <div className="about-line"></div>
-            </Link>
-            <Link to="/bedroom/wardrobe/interwoodplus" className="about-name1">
+            </div>
+            <div className="about-name1">
               <div className="about-line"></div>
               <h1 className="text2">INTERWOOD PLUS</h1>
               <div className="about-line"></div>
-            </Link>
+            </div>
           </div>
           <div className="wardrobe-about">
             <h1>WARDROBE DESIGN IDEAS FOR YOUR BEDROOM</h1>
@@ -60,3 +59,5 @@ export const BedroomWardrobe = () => {
     </>
   );
 };
+
+export default TvunitsInterwood;

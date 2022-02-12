@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Footer } from "../../components/footer/Footer";
 import { HeroSection } from "../../components/Home/HeroSection";
 import { Navbar1 } from "../../components/Navbar/Navbar";
@@ -10,21 +11,21 @@ export const Vanties = () => {
       <Navbar1 />
       <HeroSection heading="BEDROOM" />
       <div className="bedroom-about pb-20">
-        <div className="about-name1 ">
+        <Link to="/bedroom/wardrobe" className="about-name1 ">
           <div className="about-line"></div>
           <h1 className="text2">WARDROBE</h1>
           <div className="about-line"></div>
-        </div>
-        <div className="about-name1">
+        </Link>
+        <Link to="/bedroom/tvunits" className="about-name1">
           <div className="about-line"></div>
           <h1 className="text2">TV UNITS</h1>
           <div className="about-line"></div>
-        </div>
-        <div className="about-name1">
+        </Link>
+        <Link to="/bedroom/vanities" className="about-name1">
           <div className="about-line"></div>
           <h1 className="text1">VANITIES</h1>
           <div className="about-line"></div>
-        </div>
+        </Link>
       </div>
       <img src="/img/bedroom1.png" alt="..." />
       <div className="flex justify-evenly items-center pt-20">
