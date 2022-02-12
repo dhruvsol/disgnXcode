@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Routing";
 import Home from "./pages/home/Home";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import "slick-carousel/slick/slick.css";
@@ -15,7 +16,7 @@ import { Partner } from "./pages/Partner/Partner";
 import { ValuePartner } from "./pages/ValuePartner/ValuePartner";
 import { ValueRetailer } from "./pages/ValueRetailer/ValueRetailer";
 import { Brands } from "./pages/Brands/Brands";
-import Alexia from "./pages/DetailPage/Alexia";
+import { Alexia } from "./pages/DetailPage/Alexia";
 import Cecilia from "./pages/DetailPage/Cecilia";
 import Andera from "./pages/DetailPage/Andera";
 import Erika from "./pages/DetailPage/Erika";
@@ -39,99 +40,101 @@ import { WardrobeInterwoodplus } from "./pages/BedroomInterwoodplus/WardrobeInte
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
 
-        <Route path="/details" element={<DetailPage />} />
+          <Route path="/details" element={<DetailPage />} />
 
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
-        <Route path="/partnerwithus" element={<Partner />} />
-        {/*************** values ************/}
-        <Route path="/value/partner" element={<ValuePartner />} />
-        <Route path="/value/retailer" element={<ValueRetailer />} />
-        <Route path="/brands" element={<Brands />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/partnerwithus" element={<Partner />} />
+          {/*************** values ************/}
+          <Route path="/value/partner" element={<ValuePartner />} />
+          <Route path="/value/retailer" element={<ValueRetailer />} />
+          <Route path="/brands" element={<Brands />} />
 
-        {/*************** interwood ************/}
-        <Route
-          path="/kitchen/interwood"
-          element={
-            <Interwood1
-              main="/img/home.svg"
-              url1="/img/interwood/andrea.png"
-              url2="/img/interwood/erika.png"
-              url3="/img/interwood/cecilia.png"
-              url4="/img/interwood/alexia.png"
-              url5="/img/interwood/montana.png"
-            />
-          }
-        />
-        <Route path="/kitchen/interwood/alexia" element={<Alexia />} />
-        <Route path="/kitchen/interwood/andrea" element={<Andera />} />
-        <Route path="/kitchen/interwood/cecilia" element={<Cecilia />} />
-        <Route path="/kitchen/interwood/erika" element={<Erika />} />
-        <Route path="/kitchen/interwood/montana" element={<Montana />} />
-        {/***************InterwoodPlus *************/}
-        <Route
-          path="/kitchen/interwoodplus"
-          element={
-            <InterwoodPlus
-              amaze="/img/interwoodplus/amaze.png"
-              bliss="/img/interwoodplus/bliss.jpg"
-              struct="/img/interwoodplus/struct.png"
-              glaze="/img/interwoodplus/glaze.png"
-              lack7="/img/interwoodplus/lack.png"
-              form5="/img/interwoodplus/form5.png"
-              naturale="/img/interwoodplus/naturale.png"
-            />
-          }
-        />
-        {/***************Bedroom *************/}
-        <Route path="/bedroom/wardrobe" element={<Bedroom />} />
-        <Route path="/bedroom/tvunits" element={<Tvunits />} />
-        <Route path="/bedroom/vanities" element={<Vanties />} />
+          {/*************** interwood ************/}
+          <Route
+            path="/kitchen/interwood"
+            element={
+              <Interwood1
+                main="/img/home.svg"
+                url1="/img/interwood/andrea.png"
+                url2="/img/interwood/erika.png"
+                url3="/img/interwood/cecilia.png"
+                url4="/img/interwood/alexia.png"
+                url5="/img/interwood/montana.png"
+              />
+            }
+          />
+          <Route path="/kitchen/interwood/alexia" element={<Alexia />} />
+          <Route path="/kitchen/interwood/andrea" element={<Andera />} />
+          <Route path="/kitchen/interwood/cecilia" element={<Cecilia />} />
+          <Route path="/kitchen/interwood/erika" element={<Erika />} />
+          <Route path="/kitchen/interwood/montana" element={<Montana />} />
+          {/***************InterwoodPlus *************/}
+          <Route
+            path="/kitchen/interwoodplus"
+            element={
+              <InterwoodPlus
+                amaze="/img/interwoodplus/amaze.png"
+                bliss="/img/interwoodplus/bliss.jpg"
+                struct="/img/interwoodplus/struct.png"
+                glaze="/img/interwoodplus/glaze.png"
+                lack7="/img/interwoodplus/lack.png"
+                form5="/img/interwoodplus/form5.png"
+                naturale="/img/interwoodplus/naturale.png"
+              />
+            }
+          />
+          {/***************Bedroom *************/}
+          <Route path="/bedroom/wardrobe" element={<Bedroom />} />
+          <Route path="/bedroom/tvunits" element={<Tvunits />} />
+          <Route path="/bedroom/vanities" element={<Vanties />} />
 
-        {/***************wardrobe*************/}
-        <Route
-          path="/bedroom/wardrobe/interwood"
-          element={<BedroomWardrobe />}
-        />
-        <Route
-          path="/bedroom/wardrobe/interwoodplus"
-          element={<WardrobeInterwoodplus />}
-        />
-        <Route path="/bedroom/wardrobe/andrea" element={<Andrea1 />} />
-        <Route path="/bedroom/wardrobe/alexia" element={<Alexia1 />} />
-        <Route path="/bedroom/wardrobe/montana" element={<Montana1 />} />
-        <Route path="/bedroom/wardrobe/cecilia" element={<Cecilia1 />} />
-        <Route
-          path="/bedroom/wardrobe/profilosliding"
-          element={<ProfiloSliding />}
-        />
-        <Route
-          path="/bedroom/wardrobe/sublimesliding"
-          element={<SublimeSliding />}
-        />
-        {/***************Tv units*************/}
-        <Route
-          path="/bedroom/tvunits/interwood"
-          element={<TvunitsInterwood />}
-        />
-        <Route
-          path="/bedroom/tvunits/interwoodplus"
-          element={<TvunitsInterwoodplus />}
-        />
-        {/***************vanities*************/}
-        <Route
-          path="/bedroom/vanities/interwood"
-          element={<VanitiesInterwood />}
-        />
-        <Route
-          path="/bedroom/vanities/interwoodplus"
-          element={<VanitiesInterwoodplus />}
-        />
-      </Routes>
+          {/***************wardrobe*************/}
+          <Route
+            path="/bedroom/wardrobe/interwood"
+            element={<BedroomWardrobe />}
+          />
+          <Route
+            path="/bedroom/wardrobe/interwoodplus"
+            element={<WardrobeInterwoodplus />}
+          />
+          <Route path="/bedroom/wardrobe/andrea" element={<Andrea1 />} />
+          <Route path="/bedroom/wardrobe/alexia" element={<Alexia1 />} />
+          <Route path="/bedroom/wardrobe/montana" element={<Montana1 />} />
+          <Route path="/bedroom/wardrobe/cecilia" element={<Cecilia1 />} />
+          <Route
+            path="/bedroom/wardrobe/profilosliding"
+            element={<ProfiloSliding />}
+          />
+          <Route
+            path="/bedroom/wardrobe/sublimesliding"
+            element={<SublimeSliding />}
+          />
+          {/***************Tv units*************/}
+          <Route
+            path="/bedroom/tvunits/interwood"
+            element={<TvunitsInterwood />}
+          />
+          <Route
+            path="/bedroom/tvunits/interwoodplus"
+            element={<TvunitsInterwoodplus />}
+          />
+          {/***************vanities*************/}
+          <Route
+            path="/bedroom/vanities/interwood"
+            element={<VanitiesInterwood />}
+          />
+          <Route
+            path="/bedroom/vanities/interwoodplus"
+            element={<VanitiesInterwoodplus />}
+          />
+        </Routes>
+      </ScrollToTop>
     </BrowserRouter>
   );
 };
