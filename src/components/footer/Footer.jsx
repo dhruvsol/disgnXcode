@@ -5,12 +5,27 @@ export const Footer = () => {
     <>
       <div className="footer">
         <div className="footerlogo">
-          <img src="/img/logo.svg" alt="logo" />
+          <img
+            src="https://ik.imagekit.io/grfidbs4suq/icons/logo_k20mAzVFy.svg"
+            alt="logo"
+          />
           <div className="footer-socials">
-            <img src="/img/facebook.svg" alt="facebook" />
-            <img src="/img/linkedin.svg" alt="linkedin" />
-            <img src="/img/twitter.svg" alt="twitter" />
-            <img src="/img/insta.svg" alt="instagram" />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/facebook_kgLFwflAm.svg"
+              alt="facebook"
+            />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
+              alt="linkedin"
+            />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/twitter_CvIlSg-9P3C.svg"
+              alt="twitter"
+            />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/insta_3Y0oPbbk5.svg"
+              alt="instagram"
+            />
           </div>
         </div>
         <div className="footer-quicklinks">

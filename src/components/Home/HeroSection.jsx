@@ -8,7 +8,10 @@ export const HeroSection = ({ heading, subheading }) => {
         <h3>{subheading}</h3>
       </div>
       <div className="herosection-arrow">
-        <img src="/img/Vector.png" alt="arrow" />
+        <img
+          src="https://ik.imagekit.io/grfidbs4suq/icons/Vector_9OZVBfgtg2C.png"
+          alt="arrow"
+        />
         <span>SCROLL</span>
       </div>
     </div>

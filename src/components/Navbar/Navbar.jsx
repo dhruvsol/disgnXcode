@@ -8,7 +8,10 @@ export const Navbar1 = () => {
       <Navbar className="bg-[#171717]" expand={false}>
         <Container fluid>
           <Navbar.Brand href="/">
-            <img src="/img/logo.svg" alt="logo" />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/logo_k20mAzVFy.svg"
+              alt="logo"
+            />
           </Navbar.Brand>
           <Navbar.Toggle className="" aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas

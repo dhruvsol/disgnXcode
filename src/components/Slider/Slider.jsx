@@ -50,7 +50,10 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <img src="/img/prev.svg" alt="mext" />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/prev_nK1cW0lM9.svg"
+              alt="prev"
+            />
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -59,7 +62,10 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <img src="/img/next.svg" alt="next" />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/next_dIm8iWXfJ.svg"
+              alt="next"
+            />
             <span class="visually-hidden">Next</span>
           </button>
         </div>

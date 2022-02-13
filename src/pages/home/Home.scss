@@ -6,7 +6,13 @@
 .Home-page {
   background-color: #171717;
   .HeroSection {
-    background-image: url("../img/home.svg");
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.4430147058823529) 100%,
+        rgba(231, 231, 231, 1) 100%
+      ),
+      url("https://ik.imagekit.io/grfidbs4suq/Home/home_qH1S0dI9f.svg");
+    object-fit: contain;
   }
 }
 .acordian-home {
@@ -39,7 +45,7 @@
 
     .image {
       background: linear-gradient(180deg, transparent, #000 100%),
-        url("./home.svg");
+        url("https://ik.imagekit.io/grfidbs4suq/Home/home_qH1S0dI9f.svg");
 
       a {
         width: 100%;
@@ -88,6 +94,17 @@
       color: #ef1b1c;
       font-size: 2rem;
       font-family: Ivy Mode;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .acordian-home {
+    div {
+      .image {
+        a {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

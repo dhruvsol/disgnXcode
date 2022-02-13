@@ -6,8 +6,9 @@ export const Signature = ({ heading, description, signature }) => {
       <div className="signature">
         <h1>{heading}</h1>
         <div className="signature-image">
-          <div>
+          <div className="flex">
             <img src="/img/chairman.png" alt="chairman" />
+            <h2 className="signature-hide">{signature}</h2>
           </div>
 
           <div className="signataure-h2">

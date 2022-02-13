@@ -15,12 +15,16 @@
     color: #fff;
     width: 55vw;
   }
+
   .signature-image {
     width: 80%;
     display: flex;
     justify-content: space-between;
     img {
       width: 25rem;
+    }
+    .signature-hide {
+      display: none;
     }
     .signataure-h2 {
       display: flex;
@@ -90,6 +94,61 @@
         p {
           font-size: 0.9rem;
           line-height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .signature {
+    padding: 2rem;
+    h1 {
+      width: 100%;
+      margin: 0;
+      padding-top: 4rem;
+      font-size: 2rem;
+      padding-left: 0;
+      text-align: center;
+    }
+    .signature-image {
+      width: 100%;
+      flex-direction: column;
+      padding: 2rem;
+      align-items: center;
+
+      img {
+        width: 18rem;
+      }
+      .signature-hide {
+        display: block;
+        font-size: 3.5rem;
+        color: white;
+
+        font-weight: normal;
+        margin-left: -8rem;
+        margin-top: 4rem;
+        letter-spacing: 0.4;
+        font-family: "Alex Brush", cursive;
+        z-index: 10;
+      }
+
+      .signataure-h2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: baseline;
+        .signature-sign {
+          margin-left: 0;
+          padding-top: 0;
+          display: none;
+        }
+        p {
+          text-align: justify;
+          width: 100%;
+          font-size: 1rem;
+          padding-top: 1.5rem;
+          line-height: 1.5rem;
+          color: #fff;
         }
       }
     }

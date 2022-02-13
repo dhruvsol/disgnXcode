@@ -14,7 +14,7 @@ export const Menu = () => {
   };
   return (
     <>
-      <div className="menu-main">
+      <div className="menu-main bg-[#171717]">
         <div className="menu">
           <div
             onMouseEnter={pages}

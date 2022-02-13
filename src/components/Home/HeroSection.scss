@@ -33,11 +33,29 @@
     span {
       font-family: "Cormorant", serif;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 16px;
       line-height: 19px;
       letter-spacing: 0.04em;
       color: #ef1b1c;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .herosection {
+    padding-top: 24rem;
+    .herosection-heading {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+    .herosection-arrow {
+      padding-top: 2rem;
+      span {
+      }
     }
   }
 }
