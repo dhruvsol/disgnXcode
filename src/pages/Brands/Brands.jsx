@@ -19,7 +19,7 @@ export const Brands = () => {
             <div className="line1"></div>
           </div>
         </div>
-        <div className="flex justify-center pt-20">
+        <div className="flex justify-center items-center pt-20 w-[65%]">
           <img
             src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailPlus/VIEW_6_zqMo6Y6c7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644837733905"
             alt=".."
