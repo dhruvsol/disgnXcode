@@ -41,8 +41,8 @@ export const Menu = () => {
           </div>
           <div className="menu-brands menu-inner">
             <h2>Brands</h2>
-            <a href="/interwood">Interwood</a>
-            <a href="/interwoodplus">Interwood Plus</a>
+            <a href="/brands">Interwood</a>
+            <a href="/brands">Interwood Plus</a>
           </div>
           <div className="menu-image menu-inner">
             <img src={imgsrc} alt="...." />

@@ -20,8 +20,14 @@ export const Brands = () => {
           </div>
         </div>
         <div className="flex justify-center pt-20">
-          <img src="" alt=".." />
-          <img src="" alt=".." />
+          <img
+            src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailPlus/VIEW_6_zqMo6Y6c7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644837733905"
+            alt=".."
+          />
+          <img
+            src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailPlus/VIEW_3__1__T_B5scG6M.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644837306551"
+            alt=".."
+          />
         </div>
         <Footer />
       </div>
