@@ -33,9 +33,9 @@ export const Menu = () => {
           </div>
           <div className="menu-bedroom menu-inner">
             <h2>Bedroom</h2>
-            <a href="/bedroom/interwood">Interwood</a>
+            {/* <a href="/bedroom/interwood">Interwood</a> */}
             <a href="/bedroom/wardrobe">wardrobs</a>
-            <a href="/bedroom/interwoodplus">Interwood Plus</a>
+            {/* <a href="/bedroom/interwoodplus">Interwood Plus</a> */}
             <a href="/bedroom/tvunits">TV Units</a>
             <a href="/bedroom/vanties">Vanties</a>
           </div>

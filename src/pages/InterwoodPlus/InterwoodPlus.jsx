@@ -18,20 +18,20 @@ export const InterwoodPlus = ({
 }) => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="kitcInterwoodplus">
         <Navbar1 />
         <HeroSection heading="KITCHEN" />
         <div className="interwood-about">
-          <div className="about-name1 ">
+          <Link to="/kitchen/interwood" className="about-name1 ">
             <div className="about-line"></div>
             <h1 className="text3">INTERWOOD</h1>
             <div className="about-line"></div>
-          </div>
-          <div className="about-name1">
+          </Link>
+          <Link to="/kitchen/interwoodplus" className="about-name1">
             <div className="about-line"></div>
             <h1 className="text4">INTERWOOD PLUS</h1>
             <div className="about-line"></div>
-          </div>
+          </Link>
         </div>
         <div className="interwood-about-card">
           <div className="about-content">
@@ -90,11 +90,11 @@ export const InterwoodPlus = ({
                 <Card1 name="FORM 5" url={form5} />
               </Link>
             </div>
-            <div>
+            {/* <div>
               <Link to="/kitchen/interwoodplus/naturale">
                 <Card2 name="NATURALE" url={naturale} />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <Footer />

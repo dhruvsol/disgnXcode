@@ -8,23 +8,23 @@ const Andera = () => {
     <>
       <div className="andrea ">
         <Navbar1 />
-        <HeroSection heading="Alexia" />
+        <HeroSection heading="Andrea" />
       </div>
       <DetailPage
-        url1="/img/Gallery/Rectangle 6.png"
-        url2="/img/Gallery/Rectangle 6.png"
-        url3="/img/Gallery/Rectangle 6.png"
-        url4="/img/Gallery/Rectangle 6.png"
-        url5="/img/Gallery/Rectangle 6.png"
-        url6="/img/Gallery/Rectangle 6.png"
+        url1="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_3__2__yxDCFILSW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836115785"
+        url2="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_2_ru26vx2xK7DG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644836115032"
+        url3="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/AD.1_crop_3_VRbvtQhzM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836113559"
+        url4="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_2_ru26vx2xK7DG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644836115032"
+        url5="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/AD.1_crop_3_VRbvtQhzM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836113559"
+        url6="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/AD.1_crop_3_VRbvtQhzM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836113559"
         proofHead="Why you’ll love Andrea"
         proof1="TERMITE PROOF"
         proof2="FIRE RETARDENT UPTO 45 MIN"
         proof3="SUPERIOR SCREW HOLDING ABILITY"
         proof4="CARCINOGENIC"
-        main1="/img/home.svg"
-        main2="/img/home.svg"
-        formimg="/img/enqireform/Rectangle 11.png"
+        main1="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_1_SWzp4lPZw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836116284"
+        main2="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_1_SWzp4lPZw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836116284"
+        formimg="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/AD.1_crop_3_VRbvtQhzM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836113559"
       />
     </>
   );

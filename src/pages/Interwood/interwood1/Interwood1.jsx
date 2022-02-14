@@ -9,21 +9,21 @@ import "./Interwood1.scss";
 export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="kitinterwood">
         <Navbar1 />
         <HeroSection heading="KITCHEN" subheading="" />
       </div>
       <div className="interwood-about">
-        <div className="about-name1 ">
+        <Link to="/kitchen/interwood" className="about-name1 ">
           <div className="about-line"></div>
           <h1 className="text1">INTERWOOD</h1>
           <div className="about-line"></div>
-        </div>
-        <div className="about-name1">
+        </Link>
+        <Link to="/kitchen/interwoodplus" className="about-name1">
           <div className="about-line"></div>
           <h1 className="text2">INTERWOOD PLUS</h1>
           <div className="about-line"></div>
-        </div>
+        </Link>
       </div>
       <div className="interwood-about-card">
         <div className="about-content">

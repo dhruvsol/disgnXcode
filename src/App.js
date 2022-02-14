@@ -36,7 +36,13 @@ import { TvunitsInterwoodplus } from "./pages/BedroomInterwoodplus/TvunitsInterw
 import VanitiesInterwood from "./pages/BedroomWardrobe/VanitiesInterwood";
 import { VanitiesInterwoodplus } from "./pages/BedroomInterwoodplus/VanitiesInterwoodplus";
 import { WardrobeInterwoodplus } from "./pages/BedroomInterwoodplus/WardrobeInterwoodplus";
-
+import Amaze from "./pages/DetailPage/InterwoodPlus/Amaze";
+import Amaze2 from "./pages/DetailPage/InterwoodPlus/Amaze2";
+import Bliss from "./pages/DetailPage/InterwoodPlus/Bliss";
+import Form from "./pages/DetailPage/InterwoodPlus/Form";
+import Glaze from "./pages/DetailPage/InterwoodPlus/Glaze";
+import Struct from "./pages/DetailPage/InterwoodPlus/Struct";
+import Lack from "./pages/DetailPage/InterwoodPlus/Lack";
 const App = () => {
   return (
     <BrowserRouter>
@@ -79,16 +85,25 @@ const App = () => {
             path="/kitchen/interwoodplus"
             element={
               <InterwoodPlus
-                amaze="/img/interwoodplus/amaze.png"
-                bliss="/img/interwoodplus/bliss.jpg"
-                struct="/img/interwoodplus/struct.png"
-                glaze="/img/interwoodplus/glaze.png"
-                lack7="/img/interwoodplus/lack.png"
-                form5="/img/interwoodplus/form5.png"
-                naturale="/img/interwoodplus/naturale.png"
+                amaze2="https://ik.imagekit.io/grfidbs4suq/kitchen/detailsInterwoodPLus/lack/KITCHEN_VIEW_2_9JhsZgtCZMQF.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644839777536"
+                amaze="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/AMAZE__K5uMoRYx1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834706253"
+                bliss="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/BLISS_7_W1978H2uhW.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1644834705485"
+                struct="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/STRUCT_KITCHEN__1__HBFAIUIpv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834705472"
+                glaze="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/GLAZE_1__1__2yuPUSbi5fcR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834704715"
+                lack7="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/LACK7__1__xQhDzrxw6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834705068"
+                form5="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/view_1__1__IPXo9pxKd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834705186"
+                naturale="https://ik.imagekit.io/grfidbs4suq/kitchen/Interwoodplus/GLAZE_1__1__2yuPUSbi5fcR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834704715"
               />
             }
           />
+          <Route path="/kitchen/interwoodplus/amaze" element={<Amaze />} />
+          <Route path="/kitchen/interwoodplus/amaze2" element={<Amaze2 />} />
+          <Route path="/kitchen/interwoodplus/bliss" element={<Bliss />} />
+          <Route path="/kitchen/interwoodplus/form5" element={<Form />} />
+          <Route path="/kitchen/interwoodplus/glaze" element={<Glaze />} />
+
+          <Route path="/kitchen/interwoodplus/struct" element={<Struct />} />
+          <Route path="/kitchen/interwoodplus/lack7" element={<Lack />} />
           {/***************Bedroom *************/}
           <Route path="/bedroom/wardrobe" element={<Bedroom />} />
           <Route path="/bedroom/tvunits" element={<Tvunits />} />

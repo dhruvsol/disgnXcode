@@ -8,21 +8,21 @@ const Montana = () => {
     <>
       <div className="montana">
         <Navbar1 />
-        <HeroSection heading="Alexia" />
+        <HeroSection heading="Montana" />
       </div>
       <DetailPage
-        url1="/img/Gallery/Rectangle 6.png"
-        url2="/img/Gallery/Rectangle 6.png"
-        url3="/img/Gallery/Rectangle 6.png"
-        url4="/img/Gallery/Rectangle 6.png"
-        url5="/img/Gallery/Rectangle 6.png"
-        url6="/img/Gallery/Rectangle 6.png"
-        proofHead="Why you’ll love Andrea"
+        url1="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MO._4_crop_3_ZOtElyd33.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836332108"
+        url2="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MONTANA_KITCHEN_NO.3__2__ergurTHqPB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836331872"
+        url3="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MO._4_crop_4_F1bw_95Fz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836331641"
+        url4="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MONTANA_KITCHEN_NO.1_S35cDn0Ku.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644836330671"
+        url5="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MO._4_crop_3_ZOtElyd33.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836332108"
+        url6="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MO._4_crop_4_F1bw_95Fz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836331641"
+        proofHead="Why you’ll love Montana"
         proof1="TERMITE PROOF"
         proof2="FIRE RETARDENT UPTO 45 MIN"
         proof3="SUPERIOR SCREW HOLDING ABILITY"
         proof4="CARCINOGENIC"
-        main1="/img/home.svg"
+        main1="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/Montana/MONTANA_KITCHEN_NO.4_jWVs91_iS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644836332475"
         main2="/img/home.svg"
         formimg="/img/enqireform/Rectangle 11.png"
       />
