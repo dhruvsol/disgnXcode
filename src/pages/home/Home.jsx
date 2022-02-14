@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Home.scss";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import { HeroSection } from "../../components/Home/HeroSection";
@@ -8,24 +8,76 @@ import { Testimonials } from "../../components/Testimonials/Testimonials";
 import { OurBrands } from "../../components/our brand/OurBrands";
 import { HomeSlider } from "../../components/Home/HomeSlider/HomeSlider";
 import { Signature } from "../../components/Signature/Signature";
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
   const [page, setPage] = useState(false);
+  const preRef = useRef("");
+  const our1Ref = useRef("");
+  const our2Ref = useRef("");
+  const our3Ref = useRef("");
+  const our4Ref = useRef("");
   const handlePreloader = () => {
+    let el = preRef.current;
     setTimeout(() => {
       setPreloader(false);
       setPage(true);
+    }, 2000);
+    setTimeout(() => {
+      gsap.to(el, {
+        duration: 1.5,
+        opacity: 0,
+        y: "-200%",
+        ease: "power1",
+      });
     }, 1500);
+  };
+  const OurStory = () => {
+    let el1 = our1Ref.current;
+    let el2 = our2Ref.current;
+    let el3 = our3Ref.current;
+    let el4 = our4Ref.current;
+
+    gsap.from(el1, {
+      duration: 1,
+      y: "200%",
+      scrollTrigger: {
+        trigger: el1,
+      },
+    });
+    gsap.from(el2, {
+      duration: 1.2,
+      y: "250%",
+      scrollTrigger: {
+        trigger: el2,
+      },
+    });
+    gsap.from(el3, {
+      duration: 1.4,
+      y: "300%",
+      scrollTrigger: {
+        trigger: el2,
+      },
+    });
+    gsap.from(el4, {
+      duration: 1.6,
+      y: "350%",
+      scrollTrigger: {
+        trigger: el2,
+      },
+    });
   };
   useEffect(() => {
     handlePreloader();
+    OurStory();
   }, []);
   return (
     <>
       {preloader && (
         <div className="bg-[#151715] h-screen flex justify-center">
-          <video autoPlay muted>
+          <video ref={preRef} autoPlay muted>
             <source src="/img/preloader1.mp4" type="video/mp4" />
           </video>
         </div>
@@ -51,13 +103,14 @@ const Home = () => {
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac a rutrum interdum facilisi donec phasellus. Velit purus varius eu consectetur blandit placerat viverra tellus. Volutpat, maecenas tellus et turpis. A dictum ipsum sit volutpat. In nunc sed urna, suspendisse dui donec rhoncus scelerisque. Molestie volutpat augue habitant purus diam suscipit dignissim. Massa pharetra metus feugiat lectus. Et luctus morbi id congue ornare et in aenean enim. Scelerisque morbi justo, faucibus turpis vitae, ornare amet. Vestibulum ut est, lectus pellentesque nunc ac quis id. Placerat massa id m"
           />
           <div className="home-story">
-            <h1>Don't compromise,</h1>
-            <h1>Make your living space exceptional!</h1>
-            <p>
+            <h1 ref={our1Ref}>Don't compromise,</h1>
+            <h1 ref={our2Ref}>Make your living space exceptional!</h1>
+            <p ref={our3Ref}>
               Choose the latest in kitchen trends, high-tech appliances &
               gorgeous finishes.
             </p>
-            <div className="home-story-line">
+
+            <div ref={our4Ref} className="home-story-line">
               <div className="home-story-bar"></div>
               <h2>Our Story</h2>
               <div className="home-story-bar"></div>

@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./HeroSection.scss";
+import gsap from "gsap";
 export const HeroSection = ({ heading, subheading }) => {
+  const h1Ref = useRef();
+  const h3Ref = useRef();
+  useEffect(() => {
+    gsap.from(h1Ref.current, {
+      duration: 1,
+      ease: "slow(0.7, 0.7, false)",
+      y: "200%",
+    });
+    gsap.from(h3Ref.current, {
+      duration: 1,
+      ease: "slow(0.7, 0.7, false)",
+      y: "200%",
+    });
+  }, []);
   return (
     <div className="herosection">
-      <div className="herosection-heading">
-        <h1>{heading}</h1>
-        <h3>{subheading}</h3>
+      <div className="herosection-heading ">
+        <h1>
+          <span ref={h1Ref}>{heading}</span>
+        </h1>
+        <h3>
+          <span ref={h3Ref}>{subheading}</span>
+        </h3>
       </div>
       <div className="herosection-arrow">
         <img
