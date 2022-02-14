@@ -17,7 +17,7 @@ export const InterwoodPlus = ({
   naturale,
 }) => {
   return (
-    <>
+    <div className="bg-[#171717]">
       <div className="kitcInterwoodplus">
         <Navbar1 />
         <HeroSection heading="KITCHEN" />
@@ -99,6 +99,6 @@ export const InterwoodPlus = ({
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
