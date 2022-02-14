@@ -61,11 +61,11 @@ const App = () => {
             element={
               <Interwood1
                 main="/img/home.svg"
-                url1="/img/interwood/andrea.png"
-                url2="/img/interwood/erika.png"
-                url3="/img/interwood/cecilia.png"
-                url4="/img/interwood/alexia.png"
-                url5="/img/interwood/montana.png"
+                url1="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/ANDREA_KITCHEN_NO_4_D06ZEOobi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834091790"
+                url2="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/ERIKA_KITCHEN_NO.1__2__M8SkY7XrP0yE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834090863"
+                url3="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/CECILIA_KITCHEN_NO_4_Ue7Bk4-Q-D.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834090838"
+                url4="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/ALEXIA_KITCHEN_NO_2__1__SXiTg7Thz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834090681"
+                url5="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/MONTANA_KITCHEN_NO.5_rbLsyIe5r.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834093766"
               />
             }
           />
