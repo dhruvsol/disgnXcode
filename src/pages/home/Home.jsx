@@ -14,25 +14,25 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
   const [page, setPage] = useState(false);
-  const preRef = useRef("");
-  const our1Ref = useRef("");
-  const our2Ref = useRef("");
-  const our3Ref = useRef("");
-  const our4Ref = useRef("");
+  const preRef = useRef(null);
+  const our1Ref = useRef(null);
+  const our2Ref = useRef(null);
+  const our3Ref = useRef(null);
+  const our4Ref = useRef(null);
   const handlePreloader = () => {
     let el = preRef.current;
     setTimeout(() => {
       setPreloader(false);
       setPage(true);
-    }, 2000);
+    }, 2200);
     setTimeout(() => {
       gsap.to(el, {
-        duration: 1.5,
+        duration: 2,
         opacity: 0,
         y: "-200%",
-        ease: "power1",
+        ease: "power",
       });
-    }, 1500);
+    }, 1800);
   };
   const OurStory = () => {
     let el1 = our1Ref.current;
@@ -43,6 +43,7 @@ const Home = () => {
     gsap.from(el1, {
       duration: 1,
       y: "200%",
+      delay: 0.3,
       scrollTrigger: {
         trigger: el1,
       },
@@ -50,6 +51,7 @@ const Home = () => {
     gsap.from(el2, {
       duration: 1.2,
       y: "250%",
+      delay: 0.3,
       scrollTrigger: {
         trigger: el2,
       },
@@ -57,6 +59,7 @@ const Home = () => {
     gsap.from(el3, {
       duration: 1.4,
       y: "300%",
+      delay: 0.3,
       scrollTrigger: {
         trigger: el3,
       },
@@ -64,6 +67,7 @@ const Home = () => {
     gsap.from(el4, {
       duration: 1.6,
       y: "350%",
+      delay: 0.3,
       scrollTrigger: {
         trigger: el4,
       },
@@ -71,7 +75,7 @@ const Home = () => {
   };
   useEffect(() => {
     handlePreloader();
-    // OurStory();
+    OurStory();
   }, []);
   return (
     <>

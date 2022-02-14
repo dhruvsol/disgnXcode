@@ -19,7 +19,7 @@ export const Signature = ({ heading, description, signature }) => {
           trigger: el,
         },
       },
-      []
+      [el]
     );
   });
   return (
