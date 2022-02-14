@@ -9,14 +9,19 @@ export const Signature = ({ heading, description, signature }) => {
   const signRef = useRef(null);
   useEffect(() => {
     let el = signRef.current;
-    gsap.to(el, {
-      duration: 4,
-      text: `${signature}`,
-      scrollTrigger: {
-        trigger: el,
+    gsap.to(
+      el,
+      {
+        duration: 4,
+        delay: 2,
+        text: "Signature",
+        scrollTrigger: {
+          trigger: el,
+        },
       },
-    });
-  }, []);
+      []
+    );
+  });
   return (
     <>
       <div className="signature">

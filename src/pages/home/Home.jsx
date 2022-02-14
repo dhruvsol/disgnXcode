@@ -58,20 +58,20 @@ const Home = () => {
       duration: 1.4,
       y: "300%",
       scrollTrigger: {
-        trigger: el2,
+        trigger: el3,
       },
     });
     gsap.from(el4, {
       duration: 1.6,
       y: "350%",
       scrollTrigger: {
-        trigger: el2,
+        trigger: el4,
       },
     });
   };
   useEffect(() => {
     handlePreloader();
-    OurStory();
+    // OurStory();
   }, []);
   return (
     <>
