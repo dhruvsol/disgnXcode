@@ -19,6 +19,7 @@ const Home = () => {
   const our2Ref = useRef(null);
   const our3Ref = useRef(null);
   const our4Ref = useRef(null);
+  const ourTri = useRef(null);
   const handlePreloader = () => {
     let el = preRef.current;
     setTimeout(() => {
@@ -39,13 +40,13 @@ const Home = () => {
     let el2 = our2Ref.current;
     let el3 = our3Ref.current;
     let el4 = our4Ref.current;
-
+    let tri = ourTri.current;
     gsap.from(el1, {
       duration: 1,
       y: "200%",
       delay: 0.3,
       scrollTrigger: {
-        trigger: el1,
+        trigger: tri,
       },
     });
     gsap.from(el2, {
@@ -53,23 +54,23 @@ const Home = () => {
       y: "250%",
       delay: 0.3,
       scrollTrigger: {
-        trigger: el2,
+        trigger: tri,
       },
     });
     gsap.from(el3, {
       duration: 1.4,
-      y: "300%",
+      y: "200%",
       delay: 0.3,
       scrollTrigger: {
-        trigger: el3,
+        trigger: tri,
       },
     });
     gsap.from(el4, {
       duration: 1.6,
-      y: "350%",
+      y: "200%",
       delay: 0.3,
       scrollTrigger: {
-        trigger: el4,
+        trigger: tri,
       },
     });
   };
