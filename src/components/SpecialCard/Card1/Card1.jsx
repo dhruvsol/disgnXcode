@@ -6,7 +6,7 @@ export const Card1 = ({ url, name }) => {
       <div
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2500"
+        data-aos-duration="2000"
         className="card1"
       >
         <div className="card1-image">
