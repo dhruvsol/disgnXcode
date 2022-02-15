@@ -11,21 +11,21 @@ export const Leadership = () => {
         </div>
 
         <div className="flex justify-evenly">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="2500">
             <LeaderCard
               name="HARDEEP SAWHNEY"
               position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
               img="/img/Leadership.png"
             />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="2500">
             <LeaderCard
               name="HARDEEP SAWHNEY"
               position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
               img="/img/Leadership.png"
             />
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="2500">
             <LeaderCard
               name="HARDEEP SAWHNEY"
               position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"

@@ -8,10 +8,14 @@ export const Partner = () => {
           <h1>PARTNER WITH US</h1>
         </div>
         <div className="partner-value1">
-          <div>
+          <div data-aos="zoom-out-right" data-aos-duration="2500">
             <img src="/img/partner.png" alt="Partner" />
           </div>
-          <div className="partner-content">
+          <div
+            data-aos="zoom-out-left"
+            data-aos-duration="3000"
+            className="partner-content"
+          >
             <h2>VALUE ADDED REATAILER</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, est
@@ -22,8 +26,17 @@ export const Partner = () => {
           </div>
         </div>
         <div className="partner-value2">
-          <img src="/img/partner.png" alt="Partner" />
-          <div className="partner-content">
+          <img
+            data-aos="zoom-out-left"
+            data-aos-duration="2500"
+            src="/img/partner.png"
+            alt="Partner"
+          />
+          <div
+            data-aos="zoom-out-right"
+            data-aos-duration="3000"
+            className="partner-content"
+          >
             <h2>VALUE ADDED REATAILER</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, est

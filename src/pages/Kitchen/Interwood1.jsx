@@ -26,7 +26,12 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
         </Link>
       </div>
       <div className="interwood-about-card">
-        <div className="about-content">
+        <div
+          data-aos="fade-up-right"
+          data-aos-anchor=".about-name1"
+          data-aos-duration="2500"
+          className="about-content"
+        >
           <h1>ABOUT INTERWOOD</h1>
           <p>
             Since 1989, Interwood has inspired fragments of your life stories
@@ -36,7 +41,12 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
             innovation.
           </p>
         </div>
-        <div className="about-card"></div>
+        <div
+          data-aos="fade-up-left"
+          data-aos-anchor=".about-name1"
+          data-aos-duration="2500"
+          className="about-card"
+        ></div>
       </div>
       <div className="interwood-image">
         {/* <img src="/img/interwood/interwood1.svg" alt="...." /> */}

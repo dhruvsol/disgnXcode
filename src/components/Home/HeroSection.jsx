@@ -7,11 +7,13 @@ export const HeroSection = ({ heading, subheading }) => {
   useEffect(() => {
     gsap.from(h1Ref.current, {
       duration: 1,
+      delay: 0.5,
       ease: "slow(0.7, 0.7, false)",
       y: "200%",
     });
     gsap.from(h3Ref.current, {
       duration: 1,
+      delay: 0.5,
       ease: "slow(0.7, 0.7, false)",
       y: "200%",
     });

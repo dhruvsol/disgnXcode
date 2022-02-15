@@ -1,12 +1,31 @@
 import React from "react";
 import "./AboutHero.scss";
+
 export const AboutHero = () => {
   return (
     <>
-      <div className="abouthero"></div>
-      <div className="abouthero-card1"></div>
-      <div className="abouthero-card2"></div>
-      <div className="abouthero-ourstory">
+      <div
+        data-aos="zoom-out-up"
+        data-aos-duration="1800"
+        className="abouthero"
+      ></div>
+      <div
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="abouthero-card1"
+      ></div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="abouthero-card2"
+      ></div>
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="4000"
+        className="abouthero-ourstory"
+      >
         <h1>OUR STORY</h1>
         <p>
           Established nearly three decades ago, Interwood has specialized in
@@ -29,7 +48,12 @@ export const AboutHero = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
       </div>
-      <div className="abouthero-aboutinterwood">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-duration="4000"
+        className="abouthero-aboutinterwood"
+      >
         <span>ABOUT INTERWOOD</span>
         <p>
           Since 1989, Interwood has inspired fragments of your life stories with
