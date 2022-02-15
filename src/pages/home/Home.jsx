@@ -43,32 +43,32 @@ const Home = () => {
     let tri = ourTri.current;
     gsap.from(el1, {
       duration: 1,
-      y: "200%",
-      delay: 0.3,
+      y: "400%",
+      delay: 1,
       scrollTrigger: {
         trigger: tri,
       },
     });
     gsap.from(el2, {
       duration: 1.2,
-      y: "250%",
-      delay: 0.3,
+      y: "400%",
+      delay: 1,
       scrollTrigger: {
         trigger: tri,
       },
     });
     gsap.from(el3, {
       duration: 1.4,
-      y: "200%",
-      delay: 0.3,
+      y: "400%",
+      delay: 1,
       scrollTrigger: {
         trigger: tri,
       },
     });
     gsap.from(el4, {
       duration: 1.6,
-      y: "200%",
-      delay: 0.3,
+      y: "400%",
+      delay: 1,
       scrollTrigger: {
         trigger: tri,
       },
@@ -77,7 +77,7 @@ const Home = () => {
   useEffect(() => {
     handlePreloader();
     OurStory();
-  }, []);
+  });
   return (
     <>
       {preloader && (
@@ -107,7 +107,7 @@ const Home = () => {
             signature="Signature"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac a rutrum interdum facilisi donec phasellus. Velit purus varius eu consectetur blandit placerat viverra tellus. Volutpat, maecenas tellus et turpis. A dictum ipsum sit volutpat. In nunc sed urna, suspendisse dui donec rhoncus scelerisque. Molestie volutpat augue habitant purus diam suscipit dignissim. Massa pharetra metus feugiat lectus. Et luctus morbi id congue ornare et in aenean enim. Scelerisque morbi justo, faucibus turpis vitae, ornare amet. Vestibulum ut est, lectus pellentesque nunc ac quis id. Placerat massa id m"
           />
-          <div className="home-story">
+          <div ref={ourTri} className="home-story">
             <h1 ref={our1Ref}>Don't compromise,</h1>
             <h1 ref={our2Ref}>Make your living space exceptional!</h1>
             <p ref={our3Ref}>

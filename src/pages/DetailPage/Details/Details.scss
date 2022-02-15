@@ -102,7 +102,7 @@
 }
 .gallery {
   background-color: #171717;
-  padding: 6rem 8rem;
+  padding: 4rem 6rem;
   h1 {
     font-size: 4rem;
     color: #fff;
@@ -110,13 +110,10 @@
     padding-bottom: 5rem;
   }
   .gallery-image {
-    // .slick-list {
-    //   overflow: visible;
-    // }
     div {
       img {
-        width: 18rem;
-        height: 18rem;
+        width: 24rem;
+        height: 16rem;
       }
     }
   }

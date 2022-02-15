@@ -1,4 +1,6 @@
 import React from "react";
+import { Navbar1 } from "../../components/Navbar/Navbar";
+import { HeroSection } from "../../components/Home/HeroSection";
 import { Footer } from "../../components/footer/Footer";
 import "./Detailswardrobe.scss";
 import { SliderSlide } from "../../components/Slider/Slider";
@@ -9,14 +11,17 @@ export const DetailWardrobe = ({
   proof3,
   proof4,
   formimg,
+  url1,
+  url2,
+  url3,
 }) => {
   return (
     <>
       <div className="bg-[#171717]">
-        {/* <div>
+        <div>
           <Navbar1 />
           <HeroSection heading="Wardrobe Andrea" />
-        </div> */}
+        </div>
         <div className="flex justify-evenly items-center wardrobedetails">
           <h1 className="">About Andrea</h1>
           <p>
@@ -28,7 +33,7 @@ export const DetailWardrobe = ({
           </p>
         </div>
         <div>
-          <SliderSlide />
+          <SliderSlide url1={url1} url2={url2} url3={url3} />
         </div>
         <div className=" details-proof ">
           <div className="details-proof-main">

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./menu.scss";
 export const Menu = () => {
-  // const [page,setPage]=useState ('');
-  // const [kitchen,setKitchen]=useState ('');
-  // const [bedroom,setBedroom]=useState ('');
-  // const [brand,setBrand]=useState ('');
   const [imgsrc, setImgsrc] = useState(
     "https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/erika/ER.1_crop_2_-svfS-Cr8e.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644835425050"
   );
@@ -63,9 +59,9 @@ export const Menu = () => {
             className="menu-bedroom menu-inner"
           >
             <h2>Bedroom</h2>
-            {/* <a href="/bedroom/interwood">Interwood</a> */}
+            <a href="/bedroom/wardrobe/interwood">Interwood</a>
             <a href="/bedroom/wardrobe">wardrobs</a>
-            {/* <a href="/bedroom/interwoodplus">Interwood Plus</a> */}
+            <a href="/bedroom/wardrobe/interwoodplus">Interwood Plus</a>
             <a href="/bedroom/tvunits">TV Units</a>
             <a href="/bedroom/vanties">Vanties</a>
           </div>

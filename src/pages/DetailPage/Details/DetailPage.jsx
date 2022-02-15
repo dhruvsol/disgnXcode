@@ -28,6 +28,8 @@ export const DetailPage = ({
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 500,
     responsive: [
       {
         breakpoint: 1024,
