@@ -29,12 +29,12 @@ export const Vanties = () => {
       </div>
       <img src="/img/bedroom1.png" alt="..." />
       <div className="flex justify-evenly items-center pt-20">
-        <div>
+        {/* <div>
           <Card1 name="INTERWOOD" url="/img/SpecialCard/Frame 14.png" />
         </div>
         <div>
           <Card2 name="INTERWOOD PLUS" url="/img/SpecialCard/Frame 14.png" />
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

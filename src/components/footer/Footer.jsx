@@ -26,6 +26,10 @@ export const Footer = () => {
               src="https://ik.imagekit.io/grfidbs4suq/icons/insta_3Y0oPbbk5.svg"
               alt="instagram"
             />
+            <img
+              src="https://ik.imagekit.io/grfidbs4suq/icons/cib_whatsapp_Ky_M8ti2T.png"
+              alt="whatsapp"
+            />
           </div>
         </div>
         <div className="footer-quicklinks">

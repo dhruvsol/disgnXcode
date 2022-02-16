@@ -19,7 +19,7 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
           <h1 className="text1">INTERWOOD</h1>
           <div className="about-line"></div>
         </Link>
-        <Link to="/kitchen/interwoodplus" className="about-name1">
+        <Link to="/kitchen/interwoodplus" className="about-name1 ">
           <div className="about-line"></div>
           <h1 className="text2">INTERWOOD PLUS</h1>
           <div className="about-line"></div>

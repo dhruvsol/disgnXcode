@@ -28,3 +28,15 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .card2 {
+    .card2-image {
+      img {
+        object-fit: cover;
+        width: 20rem;
+        height: 15rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}

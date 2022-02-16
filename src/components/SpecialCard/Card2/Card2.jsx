@@ -5,8 +5,9 @@ export const Card2 = ({ name, url }) => {
     <>
       <div
         data-aos="flip-right"
-        // data-aos-easing="ease-out-cubic"
+        data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
+        data-aos-delay="1500"
         className="card2"
       >
         <h3>{name}</h3>
