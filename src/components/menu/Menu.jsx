@@ -59,11 +59,11 @@ export const Menu = () => {
             className="menu-bedroom menu-inner"
           >
             <h2>Bedroom</h2>
-            <a href="/bedroom/wardrobe/interwood">Interwood</a>
+            {/* <a href="/bedroom/wardrobe/interwood">Interwood</a> */}
             <a href="/bedroom/wardrobe">wardrobs</a>
-            <a href="/bedroom/wardrobe/interwoodplus">Interwood Plus</a>
+            {/* <a href="/bedroom/wardrobe/interwoodplus">Interwood Plus</a> */}
             <a href="/bedroom/tvunits">TV Units</a>
-            <a href="/bedroom/vanties">Vanties</a>
+            <a href="/bedroom/vanities">Vanities</a>
           </div>
           <div
             onMouseEnter={brands}

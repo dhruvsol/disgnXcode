@@ -7,7 +7,7 @@ export const Card2 = ({ name, url }) => {
         data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
-        data-aos-delay="1500"
+        data-aos-delay="1300"
         className="card2"
       >
         <h3>{name}</h3>

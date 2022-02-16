@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss";
+import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <>
@@ -10,26 +11,35 @@ export const Footer = () => {
             alt="logo"
           />
           <div className="footer-socials">
-            <img
-              src="https://ik.imagekit.io/grfidbs4suq/icons/facebook_kgLFwflAm.svg"
-              alt="facebook"
-            />
+            <a href="https://www.facebook.com/Interwood.In/">
+              <img
+                src="https://ik.imagekit.io/grfidbs4suq/icons/facebook_kgLFwflAm.svg"
+                alt="facebook"
+              />
+            </a>
+            <a href=""></a>
             <img
               src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
               alt="linkedin"
             />
-            <img
-              src="https://ik.imagekit.io/grfidbs4suq/icons/twitter_CvIlSg-9P3C.svg"
-              alt="twitter"
-            />
-            <img
-              src="https://ik.imagekit.io/grfidbs4suq/icons/insta_3Y0oPbbk5.svg"
-              alt="instagram"
-            />
-            <img
-              src="https://ik.imagekit.io/grfidbs4suq/icons/cib_whatsapp_Ky_M8ti2T.png"
-              alt="whatsapp"
-            />
+            <a href="https://twitter.com/Interwood4">
+              <img
+                src="https://ik.imagekit.io/grfidbs4suq/icons/twitter_CvIlSg-9P3C.svg"
+                alt="twitter"
+              />
+            </a>
+            <a href="https://www.instagram.com/interwoodindia/">
+              <img
+                src="https://ik.imagekit.io/grfidbs4suq/icons/insta_3Y0oPbbk5.svg"
+                alt="instagram"
+              />
+            </a>
+            <a href="https://wa.me/9108455966">
+              <img
+                src="https://ik.imagekit.io/grfidbs4suq/icons/cib_whatsapp_Ky_M8ti2T.png"
+                alt="whatsapp"
+              />
+            </a>
           </div>
         </div>
         <div className="footer-quicklinks">

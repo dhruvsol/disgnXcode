@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export const WardrobeInterwoodplus = () => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-[#171717] overflow-hidden">
         <div className="">
           <Navbar1 />
           <HeroSection heading="WARDROBES" />
