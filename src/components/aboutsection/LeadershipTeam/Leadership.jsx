@@ -5,12 +5,12 @@ import "./Leadership.scss";
 export const Leadership = () => {
   return (
     <>
-      <div className="leadership">
+      <div className="leadership overflow-hidden">
         <div className="leadership-team">
           <h1>LEADERSHIP TEAM</h1>
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly leadership-card">
           <div data-aos="fade-right" data-aos-duration="2500">
             <LeaderCard
               name="HARDEEP SAWHNEY"

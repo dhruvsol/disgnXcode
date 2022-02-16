@@ -17,7 +17,7 @@
 }
 .acordian-home {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   max-height: 100vh;
   margin: 0;
   padding: 0;
@@ -103,6 +103,56 @@
       .image {
         a {
           font-size: 2rem;
+        }
+      }
+    }
+  }
+  .home-story {
+    padding: 2rem 4rem;
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .home-story-line {
+      padding-top: 3rem;
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .home-story {
+    height: 70vh;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .home-story-line {
+      padding-top: 2rem;
+
+      h2 {
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  .acordian-home {
+    height: 60vh;
+    div {
+      .image {
+        a {
+          font-size: 1.2rem;
         }
       }
     }

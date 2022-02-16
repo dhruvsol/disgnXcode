@@ -55,15 +55,15 @@
 }
 @media (max-width: 768px) {
   .testimonial-card {
-    width: 12rem;
-    height: 20rem;
-    // margin-left: 3rem;
+    width: 18rem;
+    height: 30rem;
+
     h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     p {
       padding: 0.8rem;
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
   }
 }

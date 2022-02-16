@@ -28,8 +28,9 @@ export const HeroSection = ({ heading, subheading }) => {
           <span ref={h3Ref}>{subheading}</span>
         </h3>
       </div>
-      <div className="herosection-arrow">
+      <div className="herosection-arrow ">
         <img
+          className="animate-bounce"
           src="https://ik.imagekit.io/grfidbs4suq/icons/Vector_9OZVBfgtg2C.png"
           alt="arrow"
         />

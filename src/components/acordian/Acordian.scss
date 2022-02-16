@@ -44,14 +44,15 @@
     }
   }
 }
-// @media (max-width: 768px) {
-//   .acordian {
-//     div {
-//       .img {
-//         a {
-//           font-size: 2rem;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (max-width: 568px) {
+  .acordian {
+    min-height: 60vh;
+    div {
+      .img {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
     padding: 9rem 5rem;
     h1 {
       color: white;
-      font-size: 5.5rem;
+      font-size: 5rem;
       line-height: 5rem;
       margin-left: 5rem;
       letter-spacing: 0.04em;
@@ -42,13 +42,28 @@
   .leadership {
     .leadership-team {
       h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-left: 0;
       }
     }
-    .leadership-change {
-      .leadership-bar {
-        width: 45vw;
+  }
+}
+@media (max-width: 868px) {
+  .leadership {
+    height: max-content;
+    .leadership-team {
+      padding: 4rem 3rem;
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 3rem;
+        width: 100%;
+      }
+    }
+    .leadership-card {
+      flex-direction: column;
+      div {
+        padding: 2rem;
       }
     }
   }

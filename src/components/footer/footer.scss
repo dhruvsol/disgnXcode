@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 30rem;
+  height: max-content;
   display: flex;
   background-color: #171717;
   justify-content: space-evenly;
@@ -92,7 +92,6 @@
 }
 @media (max-width: 1024px) {
   .footer {
-    height: 100vh;
     .footer-contact {
       margin-top: 3rem;
     }
@@ -100,13 +99,40 @@
 }
 @media (max-width: 768px) {
   .footer {
-    height: 130vh;
     padding: 0;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     .footer-contact {
       margin-top: 3rem;
+    }
+    .footer-address {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .footer-quicklinks {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .footerlogo {
+      padding: 2rem 1rem;
+    }
+    .footer-contact {
+      h1 {
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+      }
+      p {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+      .footer-contact-input {
+        input {
+          width: 15rem;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 .ourbrand {
   width: 100%;
   padding-top: 5rem;
+  padding: 2rem 6rem;
   .brandyoutube {
     display: flex;
     justify-content: center;
@@ -12,11 +13,11 @@
   }
   .ourbrand-title {
     display: flex;
-    padding: 2rem 6rem;
+
     justify-content: flex-start;
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       color: #fff;
       font-family: Ivy Mode;
       font-style: normal;
@@ -47,9 +48,25 @@
     }
     .ourband-arrow {
       width: 15rem;
+      cursor: pointer;
+      &:hover {
+        animation: bounc 1s infinite;
+      }
+      @keyframes bounc {
+        0%,
+        100% {
+          transform: translateX(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: none;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+      }
     }
   }
 }
+
 @media (max-width: 1250px) {
   .ourbrand {
     .ourbrand-title {
@@ -85,6 +102,7 @@
 }
 @media (max-width: 768px) {
   .ourbrand {
+    padding: 1rem 1rem;
     .brandyoutube {
       padding-top: 8rem;
       iframe {
@@ -92,11 +110,18 @@
         height: 40rem;
       }
     }
+    .ourbrand-title {
+      padding: 2rem;
+      h1 {
+        padding-left: 0;
+        font-size: 2rem;
+      }
+    }
     .ourbrand-images {
       .ourbrand-grid {
         .brand1 {
           img {
-            height: 21rem;
+            height: 16rem;
           }
         }
         .brand {
@@ -106,7 +131,7 @@
         }
       }
       .ourband-arrow {
-        width: 8rem;
+        width: 6rem;
       }
     }
   }

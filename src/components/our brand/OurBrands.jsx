@@ -27,7 +27,7 @@ export const OurBrands = () => {
           </div>
 
           <img
-            className="ourband-arrow"
+            className="ourband-arrow "
             src="/img/ourbrands/ourbrandarrow.svg"
             alt="..."
           />

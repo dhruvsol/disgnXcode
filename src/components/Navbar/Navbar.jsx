@@ -13,9 +13,9 @@ export const Navbar1 = () => {
               alt="logo"
             />
           </Navbar.Brand>
-          <Navbar.Toggle className="" aria-controls="offcanvasNavbar" />
+          <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
-            className="h-[30rem] "
+            className="h-[30rem] menu-size"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="top"

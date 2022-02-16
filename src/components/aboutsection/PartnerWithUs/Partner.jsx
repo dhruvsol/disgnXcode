@@ -3,7 +3,7 @@ import "./Partner.scss";
 export const Partner = () => {
   return (
     <>
-      <div className="partnerwithus">
+      <div className="partnerwithus overflow-hidden">
         <div className="partner-heading">
           <h1>PARTNER WITH US</h1>
         </div>
