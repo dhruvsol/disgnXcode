@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Routing";
 import Home from "./pages/home/Home";
-import BedroomRoute from "./BedroomRoute";
 import { AboutUs } from "./pages/AboutUs/AboutUs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,12 +23,19 @@ import { Tvunits } from "./pages/Bedroom/Tvunits";
 import { Vanties } from "./pages/Bedroom/Vanties";
 
 import KitchenRoutes from "./KitchenRoutes";
+import { BedroomWardrobe } from "./pages/BedroomInterwood/Wardrobe/BedroomWardrobe";
+import { WardrobeInterwoodplus } from "./pages/BedroomInterwoodplus/Wardrobeplus/WardrobeInterwoodplus";
+import { Allure } from "./pages/DetailWardrobe/pagesplus/Allure";
+import { Glaze } from "./pages/DetailWardrobe/pagesplus/Glaze";
+import { Lack7 } from "./pages/DetailWardrobe/pagesplus/Lack7";
+import { Ralph22 } from "./pages/DetailWardrobe/pagesplus/Ralph22";
+import { Ralph29 } from "./pages/DetailWardrobe/pagesplus/Ralph29";
 
 const App = () => {
   return (
     <>
       <KitchenRoutes />
-      <BedroomRoute />
+
       <BrowserRouter>
         <ScrollToTop>
           <Routes>
@@ -52,6 +58,10 @@ const App = () => {
             <Route path="/bedroom/vanities" element={<Vanties />} />
 
             {/***************wardrobe*************/}
+            <Route
+              path="/bedroom/wardrobe/interwood"
+              element={<BedroomWardrobe />}
+            />
 
             <Route path="/bedroom/wardrobe/andrea" element={<Andrea1 />} />
             <Route path="/bedroom/wardrobe/alexia" element={<Alexia1 />} />
@@ -64,6 +74,31 @@ const App = () => {
             <Route
               path="/bedroom/wardrobe/sublimesliding"
               element={<SublimeSliding />}
+            />
+            {/***************wardrobeplus*************/}
+            <Route
+              path="/bedroom/wardrobe/interwoodplus"
+              element={<WardrobeInterwoodplus />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/allure"
+              element={<Allure />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/glaze"
+              element={<Glaze />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/lack7"
+              element={<Lack7 />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/ralph22"
+              element={<Ralph22 />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/ralph29"
+              element={<Ralph29 />}
             />
           </Routes>
         </ScrollToTop>

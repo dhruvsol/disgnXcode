@@ -1,5 +1,7 @@
 import React from "react";
+
 import "./Blog.scss";
+import Slider from "react-slick";
 export const Blog = () => {
   return (
     <>
@@ -24,6 +26,9 @@ export const Blog = () => {
             <img src="/img/blog5.png" alt="blog5" />
           </div>
         </div>
+      </div>
+      <div className="moblie-blogs">
+        <Slider></Slider>
       </div>
     </>
   );

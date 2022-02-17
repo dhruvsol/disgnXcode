@@ -40,26 +40,67 @@ export const WardrobeInterwoodplus = () => {
             </p>
           </div>
         </div>
-        <SliderSlide />
+        <SliderSlide
+          url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_MBR_VIEW_1_eY7qESjf_8mP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310944"
+          url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/MBR_VIEW_1_GXx8wvqTx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086652579"
+          url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_VIEW_-_3_F.F_BR2_O0syiNBcE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310512"
+        />
         <div className="wardrobe-card">
           <div>
-            <Card1 name="ALLURE" />
-            <Card2 name="RALPH 8000" />
+            <Link to="/bedroom/wardrobe/interwoodplus/allure">
+              <Card1
+                name="ALLURE"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/ALURE_VIEW_-_NEW_GNidqpW_K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086654583"
+              />
+            </Link>
+            <Card2
+              name="RALPH 8000"
+              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_8000_f_Fha69Z6yBvBo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158095"
+            />
           </div>
           <div>
-            <Card1 name="RALPH 1500" />
-            <Card2 name="RALPH 22" />
+            <Card1
+              name="RALPH 1500"
+              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/S_1500_q2tgwOeos.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158105"
+            />
+            <Link to="/bedroom/wardrobe/interwoodplus/ralph22">
+              <Card2
+                name="RALPH 22"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_22_fEjXMmOzy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310794"
+              />
+            </Link>
           </div>
           <div>
-            <Card1 name="RALPH 29" />
-            <Card2 name="RALPH UNO" />
+            <Link to="/bedroom/wardrobe/interwoodplus/ralph22">
+              <Card1
+                name="RALPH 29"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_29_M9IrQWNHW0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645087311301"
+              />
+            </Link>
+            <Card2
+              name="RALPH UNO"
+              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_UNO_1_0z0tYJ0hD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645086651415"
+            />
           </div>
           <div>
-            <Card1 name="GLAZE" />
-            <Card2 name="LACK 7" />
+            <Link to="/bedroom/wardrobe/interwoodplus/glaze">
+              <Card1
+                name="GLAZE"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/GLAZE_WR_ED_KK5RYs4RMmW9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086653545"
+              />
+            </Link>
+            <Link to="/bedroom/wardrobe/interwoodplus/lack7">
+              <Card2
+                name="LACK 7"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/LACK7_rDshPRCDL.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645086651610"
+              />
+            </Link>
           </div>
           <div>
-            <Card1 name="STRUCT" />
+            <Card1
+              name="STRUCT"
+              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/STRUCT_WARDROBE1_2QDjz7v5d.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158313"
+            />
           </div>
         </div>
         <Footer />

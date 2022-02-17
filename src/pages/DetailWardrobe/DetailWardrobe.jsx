@@ -1,6 +1,4 @@
 import React from "react";
-import { Navbar1 } from "../../components/Navbar/Navbar";
-import { HeroSection } from "../../components/Home/HeroSection";
 import { Footer } from "../../components/footer/Footer";
 import "./Detailswardrobe.scss";
 import { SliderSlide } from "../../components/Slider/Slider";
@@ -14,23 +12,19 @@ export const DetailWardrobe = ({
   url1,
   url2,
   url3,
+  abouth1,
+  aboutp,
 }) => {
   return (
     <>
       <div className="bg-[#171717]">
-        <div>
+        {/* <div>
           <Navbar1 />
           <HeroSection heading="Wardrobe Andrea" />
-        </div>
+        </div> */}
         <div className="flex justify-evenly items-center wardrobedetails">
-          <h1 className="">About Andrea</h1>
-          <p>
-            Very natural, sensuous and elegant, that’s the feel of Andrea
-            wardrobe. The unique sensation is accompanied by a super matt
-            texture, created by an innovative lacquer process, resulting in a
-            high quality of anti-fingerprint surface ensuring a rich, well
-            appointed finish.
-          </p>
+          <h1 className="">{abouth1}</h1>
+          <p>{aboutp}</p>
         </div>
         <div>
           <SliderSlide url1={url1} url2={url2} url3={url3} />

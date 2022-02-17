@@ -11,7 +11,7 @@ export const Bedroom = () => {
     <>
       <div className="bg-[#171717]">
         <Navbar1 />
-        <HeroSection heading="BEDROOM" />
+        <HeroSection heading="WARDROBE" />
         <div className="bedroom-about pb-20">
           <Link to="/bedroom/wardrobe" className="about-name1">
             <div className="about-line"></div>
@@ -32,7 +32,7 @@ export const Bedroom = () => {
           </Link>
         </div>
         <img src="/img/bedroom1.png" alt="..." />
-        <div className="flex justify-evenly items-center pt-20">
+        <div className="mobile-bedroom">
           <Link to="/bedroom/wardrobe/interwood">
             <Card1 name="INTERWOOD" url="/img/SpecialCard/Frame 14.png" />
           </Link>

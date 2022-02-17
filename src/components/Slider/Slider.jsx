@@ -10,30 +10,33 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
+          data-interval="1000"
         >
-          {/* <div class="carousel-indicators">
+          <div data-interval="1000" class="carousel-indicators ">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0"
-              class="active"
+              class="active  indicator-after "
               aria-current="true"
               aria-label="Slide 1"
             ></button>
             <button
               type="button"
+              class="indicator-after"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
+              class="indicator-after"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
-          </div> */}
-          <div class="carousel-inner">
+          </div>
+          <div data-interval="1000" class="carousel-inner">
             <div class="carousel-item active">
               <img src={url1} class="d-block banner" alt="..." />
             </div>
@@ -44,16 +47,17 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
               <img src={url3} class="d-block banner" alt="..." />
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
-            <img
+            {/* <img
               src="https://ik.imagekit.io/grfidbs4suq/icons/prev_nK1cW0lM9.svg"
               alt="prev"
-            />
+            /> */}
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -62,10 +66,10 @@ export const SliderSlide = ({ url1, url2, url3 }) => {
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
-            <img
+            {/* <img
               src="https://ik.imagekit.io/grfidbs4suq/icons/next_dIm8iWXfJ.svg"
               alt="next"
-            />
+            /> */}
             <span class="visually-hidden">Next</span>
           </button>
         </div>

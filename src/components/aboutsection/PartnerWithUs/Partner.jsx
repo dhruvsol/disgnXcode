@@ -1,6 +1,16 @@
 import React from "react";
 import "./Partner.scss";
+import Slider from "react-slick";
 export const Partner = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <div className="partnerwithus overflow-hidden">

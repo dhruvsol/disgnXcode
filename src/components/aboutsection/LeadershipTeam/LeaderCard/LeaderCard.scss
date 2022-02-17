@@ -42,12 +42,14 @@
       p {
         font-size: 1rem;
         width: 15rem;
+        text-align: center;
       }
     }
   }
 }
 @media (max-width: 500px) {
   .leadercard {
+    text-align: center;
     .leader-details {
       p {
         text-align: center;

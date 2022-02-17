@@ -22,14 +22,14 @@ export const DetailPage = ({
 }) => {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -43,7 +43,7 @@ export const DetailPage = ({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
         },

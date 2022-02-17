@@ -34,6 +34,7 @@
   justify-content: space-between;
   img {
     width: 30rem;
+    object-fit: cover;
   }
   div {
     background-color: #292929;
@@ -114,6 +115,8 @@
       img {
         width: 24rem;
         height: 16rem;
+        object-fit: cover;
+        border-radius: 7px;
       }
     }
   }
@@ -134,6 +137,7 @@
       display: flex;
       justify-content: center;
       font-size: 2.5rem;
+      padding: 1rem;
       font-family: Ivy Mode;
     }
   }
@@ -152,6 +156,130 @@
       align-items: flex-end;
       font-family: Ivy Mode;
       padding: 1.5rem 1rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .enquire-form {
+    flex-direction: column;
+    img {
+      display: none;
+    }
+  }
+  .gallery {
+    .gallery-image {
+      div {
+        img {
+          width: 20rem;
+          height: 15rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .keyfeatures {
+    padding: 4rem;
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .keyfeaturescontent {
+      padding: 1.2rem 0;
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .enquire-form {
+    div {
+      form {
+        div {
+          input {
+            width: 10rem;
+          }
+        }
+      }
+    }
+  }
+  .details-proof {
+    height: 40rem;
+    padding: 2rem 4rem;
+    .details-proof-main {
+      width: 18rem;
+
+      height: 17rem;
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+    .details-proof-content {
+      height: 20rem;
+
+      width: 28rem;
+
+      div {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        text-align: center;
+      }
+    }
+  }
+  .gallery {
+    .gallery-image {
+      div {
+        img {
+          width: 16rem;
+          height: 12rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .enquire-form {
+    div {
+      form {
+        padding: 1rem 2rem;
+        div {
+          flex-direction: column;
+          input {
+            width: 100%;
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    padding: 4rem;
+    h1 {
+      font-size: 2rem;
+      padding-bottom: 3rem;
+      width: 100%;
+      text-align: center;
+    }
+    .gallery-image {
+      div {
+        img {
+          width: 24rem;
+          height: 16rem;
+          object-fit: cover;
+          border-radius: 7px;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .details-proof {
+    padding: 2rem 2rem;
+    .details-proof-content {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
     }
   }
 }

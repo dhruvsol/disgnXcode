@@ -24,7 +24,7 @@ export const AboutHero = () => {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="4000"
+          data-aos-duration="2000"
           className="abouthero-ourstory"
         >
           <h1>OUR STORY</h1>
@@ -52,7 +52,7 @@ export const AboutHero = () => {
         <div
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="4000"
+          data-aos-duration="2000"
           className="abouthero-aboutinterwood"
         >
           <span>ABOUT INTERWOOD</span>

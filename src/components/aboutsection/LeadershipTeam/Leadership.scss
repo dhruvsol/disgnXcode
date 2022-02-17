@@ -38,6 +38,9 @@
     }
   }
 }
+.mobile-leader {
+  display: none;
+}
 @media (max-width: 1024px) {
   .leadership {
     .leadership-team {
@@ -61,10 +64,10 @@
       }
     }
     .leadership-card {
-      flex-direction: column;
-      div {
-        padding: 2rem;
-      }
+      display: none;
+    }
+    .mobile-leader {
+      display: block;
     }
   }
 }
