@@ -29,7 +29,7 @@ export const Acordian = () => {
 
         <div className="acordian2">
           {/* <img src="/img/home.svg" alt="..." /> */}
-          <div className="img">
+          <div className="img2">
             <a href="/value/partner">
               Value Added With Partner
               <span>

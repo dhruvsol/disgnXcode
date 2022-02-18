@@ -1,4 +1,5 @@
 import React from "react";
+import { Carouselvertical } from "../../components/carouselvertical/Carousel";
 import { Footer } from "../../components/footer/Footer";
 import { HeroSection } from "../../components/Home/HeroSection";
 import { Navbar1 } from "../../components/Navbar/Navbar";
@@ -32,6 +33,7 @@ export const ValuePartner = () => {
               accelerators
             </p>
           </div>
+          <Carouselvertical />
         </div>
         <Footer />
       </div>

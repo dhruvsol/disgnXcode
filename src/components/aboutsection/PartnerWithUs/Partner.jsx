@@ -1,6 +1,7 @@
 import React from "react";
 import "./Partner.scss";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 export const Partner = () => {
   const settings = {
     dots: true,
@@ -33,6 +34,9 @@ export const Partner = () => {
               non. Et nisl elit nisl aliquam nunc et eget. Maecenas commodo,
               consectetur ullamcorper nullam ultricies. Nisi justo
             </p>
+            <Link to="/value/partner">
+              <span className="text-red-700 text-2xl pt-3"> Know More</span>
+            </Link>
           </div>
         </div>
         <div className="partner-value2">
@@ -54,6 +58,9 @@ export const Partner = () => {
               non. Et nisl elit nisl aliquam nunc et eget. Maecenas commodo,
               consectetur ullamcorper nullam ultricies. Nisi justo
             </p>
+            <Link to="/value/retailer">
+              <span className="text-red-700 text-2xl pt-3">Know More</span>
+            </Link>
           </div>
         </div>
       </div>

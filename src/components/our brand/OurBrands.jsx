@@ -4,33 +4,22 @@ export const OurBrands = () => {
   return (
     <>
       <div className="ourbrand">
-        <div className="ourbrand-title">
-          <h1>OUR BRANDS</h1>
-        </div>
-        <div className="ourbrand-images">
-          <div className="ourbrand-grid">
-            <div className="brand1 brand">
-              <img src="/img/ourbrands/ourbrand1.png" alt=".." />
-            </div>
-            <div className="brand2 brand">
-              <img src="/img/ourbrands/ourbrand2.png" alt=".." />
-            </div>
-            <div className="brand3 brand">
-              <img src="/img/ourbrands/ourbrand2.png" alt=".." />
-            </div>
-            <div className="brand4 brand">
-              <img src="/img/ourbrands/ourbrand2.png" alt=".." />
-            </div>
-            <div className="brand5 brand">
-              <img src="/img/ourbrands/ourbrand2.png" alt=".." />
-            </div>
+        <div className="py-20">
+          <h1 className="text-3xl text-white flex justify-center font-Ivy lg:text-6xl lg:justify-start md:text-5xl ">
+            Our Brands
+          </h1>
+          <div className="flex pt-20 justify-center items-center  ">
+            <img
+              className="w-1/2 h-2/3 hover:-scale-150 object-cover"
+              src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"
+              alt="..."
+            />
+            <img
+              className="w-1/2 h-2/3 hover:-scale-150 object-cover"
+              src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/1._ANDREA_-_MAIN_WARDROBE_2moYSu6Zv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907398631"
+              alt="..."
+            />
           </div>
-
-          <img
-            className="ourband-arrow "
-            src="/img/ourbrands/ourbrandarrow.svg"
-            alt="..."
-          />
         </div>
         <div className="brandyoutube">
           <iframe

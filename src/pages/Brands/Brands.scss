@@ -22,3 +22,17 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .brands {
+    h1 {
+      font-size: 2rem;
+      line-height: normal;
+      text-align: center;
+    }
+    .brands-bar {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

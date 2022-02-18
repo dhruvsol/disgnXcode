@@ -27,9 +27,26 @@
     }
 
     .img {
-      background: linear-gradient(180deg, transparent, #000 100%),
-        url("./home.svg");
+      background-size: cover;
+      background-image: linear-gradient(180deg, transparent, #000 100%),
+        url("https://ik.imagekit.io/grfidbs4suq/Home/ADITYA_S_VIEW_4__opt2__vcFk-RNp1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645194680048");
 
+      a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #fff;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        padding-bottom: 3rem;
+        font-family: Ivy Mode;
+      }
+    }
+    .img2 {
+      background-size: cover;
+      background-image: linear-gradient(180deg, transparent, #000 100%),
+        url("https://ik.imagekit.io/grfidbs4suq/Home/MBR_VIEW_1_Opt_2__rir_K5cwq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645194680015");
       a {
         width: 100%;
         display: flex;

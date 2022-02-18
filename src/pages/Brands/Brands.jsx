@@ -8,8 +8,10 @@ export const Brands = () => {
   return (
     <>
       <div className="bg-[#171717]">
-        <Navbar1 />
-        <HeroSection />
+        <div>
+          <Navbar1 />
+          <HeroSection heading="Brands" />
+        </div>
         <div className="brands">
           <h1>WE DON'T MAKE HOUSES</h1>
           <h1>WE MAKE HOMES</h1>
@@ -19,16 +21,19 @@ export const Brands = () => {
             <div className="line1"></div>
           </div>
         </div>
-        <div className="flex justify-center items-center pt-20 w-[65%]">
+        <div className="flex pt-20 justify-center items-center  ">
           <img
-            src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailPlus/VIEW_6_zqMo6Y6c7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644837733905"
-            alt=".."
+            className="w-1/2 h-2/3 hover:-scale-150 object-cover"
+            src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"
+            alt="..."
           />
           <img
-            src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailPlus/VIEW_3__1__T_B5scG6M.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644837306551"
-            alt=".."
+            className="w-1/2 h-2/3 hover:-scale-150 object-cover"
+            src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/1._ANDREA_-_MAIN_WARDROBE_2moYSu6Zv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907398631"
+            alt="..."
           />
         </div>
+
         <Footer />
       </div>
     </>

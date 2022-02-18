@@ -123,15 +123,107 @@
   flex-direction: column;
   padding: 4rem 8rem;
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #fff;
+
     font-family: Ivy Mode;
-    width: 35rem;
   }
   p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
+
     font-family: Ivy Mode;
     padding: 3rem 0;
+  }
+}
+.accordion-button {
+  background: #c4c4c4;
+  &:focus {
+    background: #c4c4c4;
+    border-color: #c4c4c4;
+  }
+}
+.accordion-body {
+  background: #c4c4c4;
+}
+.accordion-button:not(.collapsed) {
+  background: #c4c4c4;
+}
+
+@media (max-width: 768px) {
+  .valueretailer {
+    flex-direction: column;
+    h1 {
+      font-size: 2rem;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+  .valueretailer-req {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .value-card {
+      flex-direction: column;
+      align-items: center;
+      div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+    }
+  }
+  .retail-form {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    hr {
+      display: none;
+    }
+    .retail-form-img {
+      h1 {
+        text-align: center;
+      }
+    }
+    .retail-form-main {
+      .getintouch-form {
+        form {
+          align-items: center;
+          input {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .valueretailer {
+    padding: 0 3rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+      padding: 1.5rem 3rem;
+    }
+  }
+  .value-retail-faqs {
+    padding: 2rem 2rem;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
   }
 }

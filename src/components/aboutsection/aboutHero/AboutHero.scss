@@ -1,23 +1,23 @@
-.abouthero {
-  height: 35rem;
-  width: 50rem;
-  background-color: #292929;
-}
-.abouthero-card1 {
-  background-color: #c4c4c4;
-  height: 20rem;
-  width: 25rem;
-  float: right;
-  margin-top: -14rem;
-  margin-right: 9rem;
-}
-.abouthero-card2 {
-  background-color: #c4c4c4;
-  height: 25rem;
-  width: 20rem;
-  margin-top: 12rem;
-  margin-left: 10rem;
-}
+// .abouthero {
+//   height: 35rem;
+//   width: 50rem;
+//   background-color: #292929;
+// }
+// .abouthero-card1 {
+//   background-color: #c4c4c4;
+//   height: 20rem;
+//   width: 25rem;
+//   float: right;
+//   margin-top: -14rem;
+//   margin-right: 9rem;
+// }
+// .abouthero-card2 {
+//   background-color: #c4c4c4;
+//   height: 25rem;
+//   width: 20rem;
+//   margin-top: 12rem;
+//   margin-left: 10rem;
+// }
 .abouthero-ourstory {
   margin-top: 10rem;
   height: 80vh;
@@ -51,7 +51,8 @@
   padding-top: 10rem;
   justify-content: center;
   iframe {
-    width: 70rem;
+    width: 100%;
+    height: 45rem;
   }
 }
 .abouthero-aboutinterwood {
@@ -60,7 +61,7 @@
   height: max-content;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 5rem 10rem;
   span {
     color: white;
     font-size: 4.5rem;

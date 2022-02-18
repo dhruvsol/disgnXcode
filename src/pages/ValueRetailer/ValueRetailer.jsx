@@ -2,9 +2,9 @@ import React from "react";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import { HeroSection } from "../../components/Home/HeroSection";
-import { Signature } from "../../components/Signature/Signature";
 import { Accordion } from "react-bootstrap";
 import "./ValueRetailer.scss";
+import { ValueGallery } from "../../components/valuecomp/ValueGallery";
 export const ValueRetailer = () => {
   return (
     <>
@@ -36,7 +36,7 @@ export const ValueRetailer = () => {
             crafted with an in-built assurance of durability and aesthetics.
           </p>
         </div>
-        <Signature />
+
         <div className="valueretailer-req">
           <h1>REQUISITES TO START WITH</h1>
           <div className="value-card">
@@ -317,6 +317,7 @@ export const ValueRetailer = () => {
             </div>
           </div>
         </div>
+        <ValueGallery />
         <div className="value-retail-faqs">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
           <p>BESIDE YOU THROUGH YOUR JOURNEY OF SUCCESS.</p>
@@ -350,6 +351,16 @@ export const ValueRetailer = () => {
         <div className="retail-form">
           <div className="retail-form-img">
             <h1>JOIN THE CHAIN OF SUCCESS.</h1>
+            {/* <div>
+              <img src="" alt="" />
+              <h1></h1>
+            </div>
+            <div>
+              <img src="" alt="" />
+              <h1></h1>
+              <img src="" alt="" />
+              <h1></h1>
+            </div> */}
           </div>
           <hr />
           <div className="retail-form-main">
