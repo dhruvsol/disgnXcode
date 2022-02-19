@@ -1,8 +1,7 @@
 .herosection {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  padding-top: 30rem;
+  height: max-content;
+  padding-top: 25rem;
   .herosection-heading {
     display: flex;
     justify-content: center;
@@ -64,8 +63,6 @@
     }
     .herosection-arrow {
       padding-top: 2rem;
-      span {
-      }
     }
   }
 }

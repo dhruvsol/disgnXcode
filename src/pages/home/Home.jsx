@@ -11,16 +11,13 @@ import { Signature } from "../../components/Signature/Signature";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Signature2 } from "../../components/signature2/Signature2";
+import { HomeCards } from "../../components/HomeCards/HomeCards";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
   const [page, setPage] = useState(false);
   const preRef = useRef(null);
-  const our1Ref = useRef(null);
-  const our2Ref = useRef(null);
-  const our3Ref = useRef(null);
-  const our4Ref = useRef(null);
-  const ourTri = useRef(null);
+
   const handlePreloader = () => {
     let el = preRef.current;
     setTimeout(() => {
@@ -36,48 +33,9 @@ const Home = () => {
       });
     }, 1800);
   };
-  const OurStory = () => {
-    let el1 = our1Ref.current;
-    let el2 = our2Ref.current;
-    let el3 = our3Ref.current;
-    let el4 = our4Ref.current;
-    let tri = ourTri.current;
-    gsap.from(el1, {
-      duration: 1,
-      y: "400%",
-      delay: 1,
-      scrollTrigger: {
-        trigger: tri,
-      },
-    });
-    gsap.from(el2, {
-      duration: 1.2,
-      y: "400%",
-      delay: 1,
-      scrollTrigger: {
-        trigger: tri,
-      },
-    });
-    gsap.from(el3, {
-      duration: 1.4,
-      y: "400%",
-      delay: 1,
-      scrollTrigger: {
-        trigger: tri,
-      },
-    });
-    gsap.from(el4, {
-      duration: 1.6,
-      y: "400%",
-      delay: 1,
-      scrollTrigger: {
-        trigger: tri,
-      },
-    });
-  };
+
   useEffect(() => {
     handlePreloader();
-    OurStory();
   });
   return (
     <>
@@ -89,7 +47,7 @@ const Home = () => {
         </div>
       )}
       {page && (
-        <div className="Home-page">
+        <div className="Home-page overflow-hidden">
           <div className="HeroSection">
             <Navbar1 />
             <HeroSection
@@ -109,15 +67,21 @@ const Home = () => {
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac a rutrum interdum facilisi donec phasellus. Velit purus varius eu consectetur blandit placerat viverra tellus. Volutpat, maecenas tellus et turpis. A dictum ipsum sit volutpat. In nunc sed urna, suspendisse dui donec rhoncus scelerisque. Molestie volutpat augue habitant purus diam suscipit dignissim. Massa pharetra metus feugiat lectus. Et luctus morbi id congue ornare et in aenean enim. Scelerisque morbi justo, faucibus turpis vitae, ornare amet. Vestibulum ut est, lectus pellentesque nunc ac quis id. Placerat massa id m"
           /> */}
           <Signature2 />
-          <div ref={ourTri} className="home-story">
-            <h1 ref={our1Ref}>Don't compromise,</h1>
-            <h1 ref={our2Ref}>Make your living space exceptional!</h1>
-            <p ref={our3Ref}>
+          <div
+            data-aos="zoom-out-up"
+            data-aos-duration="3000"
+            data-aos-delay="2000"
+            data-aos-anchor=".home-story"
+            className="home-story "
+          >
+            <h1>Don't compromise,</h1>
+            <h1>Make your living space exceptional!</h1>
+            <p>
               Choose the latest in kitchen trends, high-tech appliances &
               gorgeous finishes.
             </p>
 
-            <div ref={our4Ref} className="home-story-line">
+            <div className="home-story-line">
               <div className="home-story-bar"></div>
               <h2>Our Story</h2>
               <div className="home-story-bar"></div>
@@ -149,8 +113,8 @@ const Home = () => {
             </div>
             <div className="acordian2">
               {/* <img src="/img/home.svg" alt="..." /> */}
-              <div className="image">
-                <a href="/bedroom">
+              <div className="imageacc">
+                <a href="/bedroom/wardrobe">
                   Bedroom
                   <span>
                     <svg
@@ -170,6 +134,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <HomeCards />
           <OurBrands />
           <Testimonials />
           <Blog />

@@ -3,8 +3,8 @@ import React from "react";
 export const CaroselCard = () => {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex justify-center flex-col md:justify-evenly md:flex-row-reverse md:py-14 md:w-3/4">
+      <div className="flex justify-center  ">
+        <div className="flex justify-center flex-col md:justify-evenly md:flex-row md:py-10 md:items-center md:w-3/4">
           <div className="flex justify-center w-full  py-10 flex-col px-5 ">
             <h1 className="text-white font-Ivy text-center pb-5 text-4xl md:text-5xl">
               Attain Visibility

@@ -56,7 +56,7 @@ export const DetailWardrobe = ({
               <textarea
                 className="form-area"
                 name="Message"
-                placeholder="MESSAGE"
+                placeholder="Enquiry About "
                 cols="30"
                 rows="10"
               ></textarea>

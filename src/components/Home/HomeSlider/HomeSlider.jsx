@@ -1,37 +1,16 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "./HomeSlider.scss";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 export const HomeSlider = () => {
-  const centerRef = useRef("");
-  const legacyRef = useRef("");
-  useEffect(() => {
-    let el = centerRef.current;
-    gsap.from(el, {
-      y: "50%",
-      duration: 1.2,
-      ease: "slow",
-      delay: 0.3,
-      scrollTrigger: {
-        trigger: el,
-      },
-    });
-    let el2 = legacyRef.current;
-    gsap.from(el2, {
-      y: "100%",
-      duration: 1.2,
-      ease: "slow",
-      delay: 0.3,
-      scrollTrigger: {
-        trigger: el2,
-      },
-    });
-  }, []);
   return (
     <>
-      <div ref={centerRef}>
-        <div className="homeslider-center">
+      <div>
+        <div
+          className="homeslider-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-delay="1000"
+        >
           <div className="homeslider-heading">
             <h2>We don't make kitchen</h2>
             <h1>We MAKE CULINARY EXPERIENCE CENTERS</h1>
@@ -147,7 +126,12 @@ export const HomeSlider = () => {
           </button> */}
         </div>
       </div>
-      <div ref={legacyRef} className="homeslider-legacy">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-delay="1000"
+        className="homeslider-legacy"
+      >
         <p>
           Since 1989, Interwood has inspired fragments of your life stories with
           the finest kitchens, wardrobes, bedroom sets and living & dining

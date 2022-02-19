@@ -8,8 +8,10 @@ export const ValuePartner = () => {
   return (
     <>
       <div className="bg-[#171717]">
-        <Navbar1 />
-        <HeroSection />
+        <div>
+          <Navbar1 />
+          <HeroSection />
+        </div>
         <div className="valuepartner">
           <div className="valuepartner-content">
             <h1>VALUE ADDED PARTNERSHIP MODEL</h1>
@@ -26,14 +28,16 @@ export const ValuePartner = () => {
               differentiators.
             </p>
           </div>
-          <div className="valuepartner-heading">
+          <div className="valuepartner-heading py-10">
             <h1>HOW THIS WORKS?</h1>
             <p>
               The measure of value is brought forth by the following I.W [A]
               accelerators
             </p>
           </div>
-          <Carouselvertical />
+          <div className="bg-[#292929] py-10">
+            <Carouselvertical />
+          </div>
         </div>
         <Footer />
       </div>

@@ -9,13 +9,8 @@ export const Carouselvertical = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     vertical: true,
+    arrows: false,
     verticalSwiping: true,
-    beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function (currentSlide) {
-      console.log("after change", currentSlide);
-    },
   };
   return (
     <>
