@@ -1,4 +1,4 @@
-module.export = (request, response) => {
+module.exports = (request, response) => {
   response.status(200).json({
     body: request.body,
     query: request.query,
