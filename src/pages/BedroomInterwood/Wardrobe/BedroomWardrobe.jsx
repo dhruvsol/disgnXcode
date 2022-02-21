@@ -45,7 +45,7 @@ export const BedroomWardrobe = () => {
           url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/ALEXIA_SCROLL-1_oU-hwIc8k2Jt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907397864"
           url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"
         />
-        <div className="wardrobe-card">
+        <div className="wardrobe-card overflow-hidden">
           <div>
             <Link to="/bedroom/wardrobe/andrea">
               <Card1

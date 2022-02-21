@@ -45,7 +45,7 @@ export const WardrobeInterwoodplus = () => {
           url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/MBR_VIEW_1_GXx8wvqTx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086652579"
           url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_VIEW_-_3_F.F_BR2_O0syiNBcE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310512"
         />
-        <div className="wardrobe-card">
+        <div className="wardrobe-card overflow-hidden">
           <div>
             <Link to="/bedroom/wardrobe/interwoodplus/allure">
               <Card1

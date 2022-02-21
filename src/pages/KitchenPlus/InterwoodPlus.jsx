@@ -29,7 +29,7 @@ export const InterwoodPlus = ({
           </Link>
           <Link to="/kitchen/interwoodplus" className="about-name1">
             <div className="about-line"></div>
-            <h1 className="text4">INTERWOOD PLUS</h1>
+            <h1 className="text4 text-center">INTERWOOD PLUS</h1>
             <div className="about-line"></div>
           </Link>
         </div>
@@ -47,7 +47,7 @@ export const InterwoodPlus = ({
           <div className="about-card"></div>
         </div>
         <img src="/img/home.svg" alt="..." />
-        <div className="interwood">
+        <div className="interwood overflow-hidden">
           <div className="interwood-card">
             <div>
               <Link to="/kitchen/interwoodplus/amaze">

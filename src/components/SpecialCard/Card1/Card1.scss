@@ -10,6 +10,9 @@
     z-index: 10;
     img {
       width: 25rem;
+      object-fit: cover;
+      height: 18rem;
+      border-radius: 5px;
     }
   }
   .dottedline {
@@ -40,3 +43,14 @@
     }
   }
 }
+// @media (max-width: 450px) {
+//   .card1 {
+//     padding: 0;
+//     .card1-image {
+//       img {
+//         width: 18rem;
+//         height: 12rem;
+//       }
+//     }
+//   }
+// }

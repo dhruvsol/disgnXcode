@@ -76,7 +76,6 @@
       font-style: normal;
       font-weight: normal;
       text-align: justify;
-      // width: 35%;
     }
   }
   .about-card {
@@ -145,6 +144,20 @@
     }
     .about-card {
       // padding: 2rem 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .interwood-about-card {
+    .about-content {
+      padding: 2rem;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    .about-card {
+      width: 20rem;
+      height: 25rem;
     }
   }
 }

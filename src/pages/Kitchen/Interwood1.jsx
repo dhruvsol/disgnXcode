@@ -52,7 +52,7 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
         {/* <img src="/img/interwood/interwood1.svg" alt="...." /> */}
         <img src={main} alt="..." />
       </div>
-      <div className="interwood">
+      <div className="interwood overflow-hidden">
         <div className="interwood-card">
           <div>
             <Link to="/kitchen/interwood/andrea">

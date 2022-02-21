@@ -10,6 +10,9 @@
     z-index: 10;
     img {
       width: 25rem;
+      object-fit: cover;
+      height: 18rem;
+      border-radius: 5px;
     }
   }
   .dottedline {

@@ -155,8 +155,29 @@
   }
 }
 @media (max-width: 500px) {
+  .contactus-main {
+    padding: 0;
+    .contactus {
+      h1 {
+        // font-size: 1.5rem;
+      }
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      .corporate-address {
+        padding: 1rem 2rem;
+        width: 80%;
+      }
+      .work-address {
+        width: 80%;
+        padding: 1rem 0;
+      }
+    }
+  }
   .getintouch {
-    padding: 2rem;
+    padding: 0;
     .getintouch-form {
       input {
         width: 70%;
