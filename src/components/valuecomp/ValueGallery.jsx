@@ -1,10 +1,20 @@
 import React, { useState } from "react";
-
+import { ValueCard } from "./ValueCard";
 export const ValueGallery = () => {
   const [change, setChange] = useState(true);
   const handleChange = () => {
     setChange(!change);
   };
+  const arr = [
+    {
+      id: 1,
+      img: "",
+    },
+    {
+      id: 2,
+      img: "",
+    },
+  ];
   return (
     <>
       <div className="flex justify-between px-4">
@@ -20,8 +30,10 @@ export const ValueGallery = () => {
         </div>
       </div>
       {change && (
-        <div>
-          <div></div>
+        <div className="flex justify-center  ">
+          {arr.map(() => {
+            return <ValueCard />;
+          })}
         </div>
       )}
       {!change && (
