@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import Enquire from "../libs/Model.js";
+import test from "./1.crt";
 const app = express();
 app.use(express.json());
 
@@ -9,7 +10,7 @@ mongoose
     dbName: "Enquiry",
     useNewUrlParser: true,
     tls: true,
-    tlsCAFile: "./1.crt",
+    tlsCAFile: test,
   })
   .then(() => {
     console.log("dbconnected");
