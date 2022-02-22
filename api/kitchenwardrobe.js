@@ -16,18 +16,16 @@ mongoose
   });
 
 module.exports = async (request, response) => {
-  if (request.method === "GET") {
-    const enqobj = new Enquire({
-      name: request.body.name,
-      number: request.body.number,
-      email: request.body.email,
-      enquiry: request.body.enquiry,
-    });
-    try {
-      const newEnq = await enqobj.save();
-      response.json(newEnq);
-    } catch (error) {
-      console.log(error.message);
-    }
+  const enqobj = new Enquire({
+    name: request.body.name,
+    number: request.body.number,
+    email: request.body.email,
+    enquiry: request.body.enquiry,
+  });
+  try {
+    const newEnq = await enqobj.save();
+    response.json(newEnq);
+  } catch (error) {
+    console.log(error.message);
   }
 };
