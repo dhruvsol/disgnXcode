@@ -1,15 +1,14 @@
 .menu-main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  // z-index: 100;
+
   .menu {
     display: flex;
     justify-content: space-evenly;
     background-color: #292929;
 
     width: 100%;
-    // flex-wrap: wrap;
+
     cursor: pointer;
     padding: 3rem 0;
     .menu-inner {
@@ -19,24 +18,27 @@
 
       h2 {
         font-size: 2rem;
-        color: #ef1b1c;
+        color: #c5372f;
         font-family: Ivy Mode;
         font-weight: normal;
         text-decoration: underline;
         text-underline-offset: 1rem;
         padding-bottom: 2.5rem;
       }
-      a {
+      .ward1 {
         color: #fff;
         padding: 1rem 0;
         text-decoration: none;
         font-weight: bold;
       }
+      .te {
+        text-decoration: none;
+      }
     }
     .menu-image {
       img {
-        width: 25rem;
-        height: 20rem;
+        width: 20rem;
+        height: 15rem;
         object-fit: cover;
       }
     }
@@ -45,6 +47,7 @@
 
 @media (max-width: 768px) {
   .menu-main {
+    flex-direction: column;
     .menu {
       height: max-content;
       flex-direction: column;
@@ -59,7 +62,7 @@
         h2 {
           font-size: 2rem;
         }
-        a {
+        .ward1 {
           font-size: 1.2rem;
         }
       }

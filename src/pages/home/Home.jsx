@@ -7,11 +7,12 @@ import { Blog } from "../../components/Blogs/Blog";
 import { Testimonials } from "../../components/Testimonials/Testimonials";
 import { OurBrands } from "../../components/our brand/OurBrands";
 import { HomeSlider } from "../../components/Home/HomeSlider/HomeSlider";
-import { Signature } from "../../components/Signature/Signature";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Signature2 } from "../../components/signature2/Signature2";
 import { HomeCards } from "../../components/HomeCards/HomeCards";
+import { Cardl } from "../../components/homeCardss/Cardl";
+import { Cardt } from "../../components/homeCardss/Cardt";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -133,6 +134,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="flex py-16 justify-center flex-col md:flex-row md:justify-evenly">
+            <Cardl />
+            <Cardt />
           </div>
           <HomeCards />
           <OurBrands />

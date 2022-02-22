@@ -18,8 +18,8 @@ AOS.init({
   throttleDelay: 99,
 
   offset: 120,
-  delay: 2,
-  duration: 1000,
+  delay: 500,
+  duration: 2500,
   easing: "ease",
   once: false,
   mirror: false,

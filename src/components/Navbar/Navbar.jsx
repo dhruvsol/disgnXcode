@@ -20,7 +20,10 @@ export const Navbar1 = () => {
             aria-labelledby="offcanvasNavbarLabel"
             placement="top"
           >
-            <Offcanvas.Header closeButton className="bg-[#292929] ">
+            <Offcanvas.Header
+              closeButton
+              className="bg-[#292929] justify-end hidden "
+            >
               {/* <Offcanvas.Title id="offcanvasNavbarLabel">
                 Offcanvas
               </Offcanvas.Title> */}

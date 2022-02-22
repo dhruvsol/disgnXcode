@@ -32,17 +32,23 @@ export const Menu = () => {
 
   return (
     <>
-      <div className="menu-main bg-[#171717]">
-        <div className="menu">
+      <div className="menu-main   bg-[#171717]">
+        <div className="menu ">
           <div
             onMouseEnter={pages}
             onMouseLeave={unset}
             className="menu-pages menu-inner"
           >
             <h2>Pages</h2>
-            <a href="/aboutus">About us</a>
-            <a href="/blogs">Blogs</a>
-            <a href="/partnerwithus">Partner With Us</a>
+            <a className="ward1" href="/aboutus">
+              About us
+            </a>
+            <a className="ward1" href="/blogs">
+              Blogs
+            </a>
+            <a className="ward1" href="/partnerwithus">
+              Partner With Us
+            </a>
           </div>
           <div
             onMouseEnter={kitchen}
@@ -50,8 +56,12 @@ export const Menu = () => {
             className="menu-kitchens menu-inner"
           >
             <h2>Kitchens</h2>
-            <a href="/kitchen/interwood">Interwood</a>
-            <a href="/kitchen/interwoodplus">Interwood Plus</a>
+            <a className="ward1" href="/kitchen/interwood">
+              Interwood
+            </a>
+            <a className="ward1" href="/kitchen/interwoodplus">
+              Interwood Plus
+            </a>
           </div>
           <div
             onMouseEnter={bedroom}
@@ -59,11 +69,24 @@ export const Menu = () => {
             className="menu-bedroom menu-inner"
           >
             <h2>Bedroom</h2>
-            {/* <a href="/bedroom/wardrobe/interwood">Interwood</a> */}
-            <a href="/bedroom/wardrobe">wardrobs</a>
-            {/* <a href="/bedroom/wardrobe/interwoodplus">Interwood Plus</a> */}
-            <a href="/bedroom/tvunits">TV Units</a>
-            <a href="/bedroom/vanities">Vanities</a>
+            <a className="ward1" href="/bedroom/wardrobe">
+              wardrobs
+            </a>
+            <a className="text-sm py-2 te" href="/bedroom/wardrobe/interwood">
+              Interwood
+            </a>
+            <a
+              className="text-sm pb-2 te"
+              href="/bedroom/wardrobe/interwoodplus"
+            >
+              Interwood Plus
+            </a>
+            <a className="ward1" href="/bedroom/tvunits">
+              TV Units
+            </a>
+            <a className="ward1" href="/bedroom/vanities">
+              Vanities
+            </a>
           </div>
           <div
             onMouseEnter={brands}
@@ -71,13 +94,19 @@ export const Menu = () => {
             className="menu-brands menu-inner"
           >
             <h2>Brands</h2>
-            <a href="/brands">Interwood</a>
-            <a href="/brands">Interwood Plus</a>
-          </div>
-          <div className="menu-image menu-inner">
-            <img src={imgsrc} alt="...." />
+            <a className="ward1" href="/brands">
+              Interwood
+            </a>
+            <a className="ward1" href="/brands">
+              Interwood Plus
+            </a>
           </div>
         </div>
+        <img
+          className=" w-[27rem] h-[27rem] object-cover"
+          src={imgsrc}
+          alt="...."
+        />
       </div>
     </>
   );

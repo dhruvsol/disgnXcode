@@ -36,12 +36,13 @@ export const AboutHero = () => {
               alt=".."
             />
             <div className="flex flex-col justify-evenly w-1/3 items-center ">
-              <a href=""></a>
-              <img
-                className="w-4"
-                src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
-                alt="linkedin"
-              />
+              <a href="https://www.linkedin.com/company/interwood-kitchens-pvt-ltd/">
+                <img
+                  className="w-4"
+                  src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
+                  alt="linkedin"
+                />
+              </a>
               <a href="https://www.facebook.com/Interwood.In/">
                 <img
                   className="w-4 h-4"
@@ -92,8 +93,9 @@ export const AboutHero = () => {
             />
             <div
               data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-duration="2000"
+              data-aos-anchor-placement="center-center"
+              data-aos-duration="2500"
+              data-aos-delay="500"
               className="hidden lg:flex lg:justify-evenly lg:flex-col lg:px-16"
             >
               <h1 className="flex justify-center text-4xl font-Ivy text-white ">
@@ -115,8 +117,9 @@ export const AboutHero = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-anchor-placement="bottom-bottom"
-            data-aos-duration="2000"
+            data-aos-anchor-placement="center-center"
+            data-aos-duration="2500"
+            data-aos-delay="500"
             className="flex justify-center flex-col px-4 lg:hidden"
           >
             <h1 className="font-Ivy text-3xl text-white text-center ">
@@ -136,11 +139,21 @@ export const AboutHero = () => {
             </p>
           </div>
         </div>
-
+        <div className="flex justify-center">
+          <img
+            data-aos="zoom-out"
+            data-aos-delay="900"
+            data-aos-duration="2500"
+            data-aos-anchor-placement="center-center"
+            className="w-3/4 h-max object-cover"
+            src="https://ik.imagekit.io/grfidbs4suq/icons/Timeline_2_1_L6FtiQw8DlGt.png"
+            alt="...."
+          />
+        </div>
         <div
           data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-          data-aos-duration="2000"
+          data-aos-duration="2600"
+          data-aos-delay="1000"
           className="abouthero-aboutinterwood"
         >
           <span>ABOUT INTERWOOD</span>
