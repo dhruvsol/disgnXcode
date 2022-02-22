@@ -9,7 +9,7 @@ mongoose
     dbName: "Enquiry",
     useNewUrlParser: true,
     tls: true,
-    tlsCAFile: "../libs/1.crt",
+    tlsCAFile: "./1.crt",
   })
   .then(() => {
     console.log("dbconnected");
