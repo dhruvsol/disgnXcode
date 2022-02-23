@@ -20,14 +20,21 @@
   h1 {
     color: white;
     font-size: 3rem;
+    letter-spacing: 0.2rem;
     font-family: Ivy Mode;
-    width: 25rem;
+    width: 100%;
   }
   .value-card {
     display: flex;
     padding-top: 4rem;
     justify-content: space-evenly;
+    text-align: center;
+
     div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 10rem;
       span {
         color: white;

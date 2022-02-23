@@ -23,7 +23,6 @@ AOS.init({
   easing: "ease",
   once: false,
   mirror: false,
-  anchorPlacement: "center-center",
 });
 ReactDOM.render(
   <React.StrictMode>

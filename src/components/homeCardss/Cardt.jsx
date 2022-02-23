@@ -30,9 +30,10 @@ export const Cardt = () => {
           <h1 className="text-center text-white text-2xl py-3">
             Typical experience
           </h1>
-          {arr.map(() => {
+          {arr.map((value) => {
+            const { id, text } = value;
             return (
-              <div className="">
+              <div key={id}>
                 <hr className="bg-white" />
                 <div className="w-full flex py-3  px-2 text-white justify-center items-center">
                   <img
@@ -40,7 +41,7 @@ export const Cardt = () => {
                     src="https://ik.imagekit.io/grfidbs4suq/icons/Group_1775_nGv_VUWU3bH3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645510650364"
                     alt="..."
                   />
-                  <h1 className="px-2">No hidden costs Price Match Gurantee</h1>
+                  <h1 className="px-2">{text}</h1>
                 </div>
               </div>
             );

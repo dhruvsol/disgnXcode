@@ -170,7 +170,6 @@ export const ContactUs = () => {
             <iframe
               title="map"
               src={map}
-              allowfullscreen="true"
               loading="lazy"
               width="500"
               height="400"

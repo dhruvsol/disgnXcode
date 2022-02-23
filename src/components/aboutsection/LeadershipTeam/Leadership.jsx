@@ -21,34 +21,22 @@ export const Leadership = () => {
         </div>
 
         <div className="flex justify-evenly leadership-card">
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2500">
             <LeaderCard
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="900"
-              data-aos-duration="2000"
               name="HARDEEP SAWHNEY"
               position="CHAIRMAN AND MANAGING DIRECTOR FOUNDER"
               img="https://ik.imagekit.io/grfidbs4suq/founder/9208d6170c7bec8080f1c43e1f8dd863_b6oqTA9IA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645161222853"
             />
           </div>
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2500">
             <LeaderCard
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="900"
-              data-aos-duration="2000"
               name="KASTURI SAWHNEY"
               position="EXECUTIVE DIRECTOR"
               img="https://ik.imagekit.io/grfidbs4suq/founder/848d5fc5b159179935772e6f01e4b9e1_Xjvil89p6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645161222853"
             />
           </div>
-          <div>
+          <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2500">
             <LeaderCard
-              data-aos="zoom-in"
-              data-aos-anchor-placement="bottom-bottom"
-              data-aos-delay="900"
-              data-aos-duration="2000"
               name="TIMOTHY EDWIN"
               position="DIRECTOR"
               img="https://ik.imagekit.io/grfidbs4suq/founder/0a7d36c3eea1a644af2f01bfc3d92b64_8AJSy0_B3u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645161223025"

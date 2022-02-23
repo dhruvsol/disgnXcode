@@ -13,4 +13,11 @@
       color: #fff;
     }
   }
+  .slick-slider {
+    button {
+      &:before {
+        display: none;
+      }
+    }
+  }
 }

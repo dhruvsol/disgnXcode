@@ -3,7 +3,7 @@ import { Footer } from "../../components/footer/Footer";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import { HeroSection } from "../../components/Home/HeroSection";
 import "./Brands.scss";
-
+import { Link } from "react-router-dom";
 export const Brands = () => {
   return (
     <>
@@ -15,11 +15,13 @@ export const Brands = () => {
         <div className="brands">
           <h1>WE DON'T MAKE HOUSES</h1>
           <h1>WE MAKE HOMES</h1>
-          <div className="brands-bar">
-            <div className="line1"></div>
-            <h2>OUR STORY</h2>
-            <div className="line1"></div>
-          </div>
+          <Link to="/aboutus">
+            <div className="brands-bar">
+              <div className="line1"></div>
+              <h2>OUR STORY</h2>
+              <div className="line1"></div>
+            </div>
+          </Link>
         </div>
         <div className="flex pt-20 justify-center items-center  ">
           <img

@@ -20,6 +20,16 @@
     .line1 {
       border-top: 2px solid white;
     }
+    &:hover {
+      h2 {
+        color: #c5372f;
+        transform: scale(1.2);
+      }
+      .line1 {
+        transform: scaleX(1.3);
+        border-top: 2px solid #c5372f;
+      }
+    }
   }
 }
 @media (max-width: 768px) {

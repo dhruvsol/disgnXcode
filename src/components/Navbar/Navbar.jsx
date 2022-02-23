@@ -22,7 +22,7 @@ export const Navbar1 = () => {
           >
             <Offcanvas.Header
               closeButton
-              className="bg-[#292929] justify-end hidden "
+              className="bg-[#292929] justify-end md:hidden "
             >
               {/* <Offcanvas.Title id="offcanvasNavbarLabel">
                 Offcanvas

@@ -17,11 +17,12 @@ export const Footer = () => {
                 alt="facebook"
               />
             </a>
-            <a href=""></a>
-            <img
-              src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
-              alt="linkedin"
-            />
+            <a href="https://www.linkedin.com/company/interwood-kitchens-pvt-ltd/">
+              <img
+                src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
+                alt="linkedin"
+              />
+            </a>
             <a href="https://twitter.com/Interwood4">
               <img
                 src="https://ik.imagekit.io/grfidbs4suq/icons/twitter_CvIlSg-9P3C.svg"
@@ -64,19 +65,21 @@ export const Footer = () => {
         <div className="footer-contact">
           <h1>Get in touch with us</h1>
           <div className="footer-contact-input">
-            <input type="text" />
+            <input type="text" className="px-3" placeholder="Number" />
             <button>
-              <svg
-                viewBox="0 0 76 66"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="76" height="66" rx="7" fill="#424242" />
-                <path
-                  d="M28.9065 45.24L41.1198 33L28.9065 20.76L32.6665 17L48.6665 33L32.6665 49L28.9065 45.24Z"
-                  fill="#292929"
-                />
-              </svg>
+              <Link to="/contactus">
+                <svg
+                  viewBox="0 0 76 66"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="76" height="66" rx="7" fill="#424242" />
+                  <path
+                    d="M28.9065 45.24L41.1198 33L28.9065 20.76L32.6665 17L48.6665 33L32.6665 49L28.9065 45.24Z"
+                    fill="#292929"
+                  />
+                </svg>
+              </Link>
             </button>
           </div>
           <p>support@interwood.in</p>

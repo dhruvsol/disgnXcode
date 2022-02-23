@@ -8,37 +8,13 @@ import { ValueGallery } from "../../components/valuecomp/ValueGallery";
 export const ValueRetailer = () => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-[#171717] overflow-hidden">
         <div>
           <Navbar1 />
           <HeroSection />
         </div>
-        <div className="valueretailer">
-          <h1>JOIN US TO EXPERIENCE THE EXTRA ORDINARy</h1>
-          <p>
-            Established nearly three decades ago, Interwood has specialized in
-            creating a wide range of furniture that accentuates the living
-            ambience in today’s homes. Backed by state-of-the-art German
-            technology, our offering includes kitchens, wardrobes, bedroom sets
-            and living & dining systems incorporating the most modern of
-            materials and manufacturing techniques while reflecting contemporary
-            design. Utmost care and commitment to quality across the product
-            lifecycle ensures each unit is a carefully designed work of art
-            crafted with an in-built assurance of durability and aesthetics.
-            Established nearly three decades ago, Interwood has specialized in
-            creating a wide range of furniture that accentuates the living
-            ambience in today’s homes. Backed by state-of-the-art German
-            technology, our offering includes kitchens, wardrobes, bedroom sets
-            and living & dining systems incorporating the most modern of
-            materials and manufacturing techniques while reflecting contemporary
-            design. Utmost care and commitment to quality across the product
-            lifecycle ensures each unit is a carefully designed work of art
-            crafted with an in-built assurance of durability and aesthetics.
-          </p>
-        </div>
-
         <div className="valueretailer-req">
-          <h1>REQUISITES TO START WITH</h1>
+          <h1>PREQUISITES TO START WITH</h1>
           <div className="value-card">
             <div>
               <svg
@@ -317,6 +293,30 @@ export const ValueRetailer = () => {
             </div>
           </div>
         </div>
+        <div className="valueretailer">
+          <h1>JOIN US TO EXPERIENCE THE EXTRA ORDINARy</h1>
+          <p>
+            Established nearly three decades ago, Interwood has specialized in
+            creating a wide range of furniture that accentuates the living
+            ambience in today’s homes. Backed by state-of-the-art German
+            technology, our offering includes kitchens, wardrobes, bedroom sets
+            and living & dining systems incorporating the most modern of
+            materials and manufacturing techniques while reflecting contemporary
+            design. Utmost care and commitment to quality across the product
+            lifecycle ensures each unit is a carefully designed work of art
+            crafted with an in-built assurance of durability and aesthetics.
+            Established nearly three decades ago, Interwood has specialized in
+            creating a wide range of furniture that accentuates the living
+            ambience in today’s homes. Backed by state-of-the-art German
+            technology, our offering includes kitchens, wardrobes, bedroom sets
+            and living & dining systems incorporating the most modern of
+            materials and manufacturing techniques while reflecting contemporary
+            design. Utmost care and commitment to quality across the product
+            lifecycle ensures each unit is a carefully designed work of art
+            crafted with an in-built assurance of durability and aesthetics.
+          </p>
+        </div>
+
         <ValueGallery />
         <div className="value-retail-faqs">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>

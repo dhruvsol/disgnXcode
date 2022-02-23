@@ -5,22 +5,6 @@ export const AboutHero = () => {
   return (
     <>
       <div className="overflow-hidden">
-        {/* <div
-          data-aos="zoom-out-up"
-          data-aos-duration="1800"
-          className="abouthero"
-        ></div>
-        <div
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          className="abouthero-card1"
-        ></div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          className="abouthero-card2"
-        ></div> */}
         <div>
           <div
             data-aos="zoom-out-up"
@@ -38,35 +22,35 @@ export const AboutHero = () => {
             <div className="flex flex-col justify-evenly w-1/3 items-center ">
               <a href="https://www.linkedin.com/company/interwood-kitchens-pvt-ltd/">
                 <img
-                  className="w-4"
+                  className="w-4 md:hover:scale-150 md:w-6"
                   src="https://ik.imagekit.io/grfidbs4suq/icons/linkedin_nknWUQbOV.svg?"
                   alt="linkedin"
                 />
               </a>
               <a href="https://www.facebook.com/Interwood.In/">
                 <img
-                  className="w-4 h-4"
+                  className="w-4 h-4 md:hover:scale-150 md:w-7"
                   src="https://ik.imagekit.io/grfidbs4suq/icons/facebook_kgLFwflAm.svg"
                   alt="facebook"
                 />
               </a>
               <a href="https://twitter.com/Interwood4">
                 <img
-                  className="w-4"
+                  className="w-4 md:hover:scale-150 md:w-6"
                   src="https://ik.imagekit.io/grfidbs4suq/icons/twitter_CvIlSg-9P3C.svg"
                   alt="twitter"
                 />
               </a>
               <a href="https://www.instagram.com/interwoodindia/">
                 <img
-                  className="w-4"
+                  className="w-4 md:hover:scale-150 md:w-6"
                   src="https://ik.imagekit.io/grfidbs4suq/icons/insta_3Y0oPbbk5.svg"
                   alt="instagram"
                 />
               </a>
               <a href="https://wa.me/9108455966">
                 <img
-                  className="w-4"
+                  className="w-4 md:hover:scale-150 md:w-6"
                   src="https://ik.imagekit.io/grfidbs4suq/icons/cib_whatsapp_Ky_M8ti2T.png"
                   alt="whatsapp"
                 />
@@ -142,18 +126,18 @@ export const AboutHero = () => {
         <div className="flex justify-center">
           <img
             data-aos="zoom-out"
-            data-aos-delay="900"
+            data-aos-delay="500"
             data-aos-duration="2500"
-            data-aos-anchor-placement="center-center"
-            className="w-3/4 h-max object-cover"
+            data-aos-anchor-placement="top-center"
+            className=" w-full  md:w-3/4 h-max object-cover"
             src="https://ik.imagekit.io/grfidbs4suq/icons/Timeline_2_1_L6FtiQw8DlGt.png"
             alt="...."
           />
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="2600"
-          data-aos-delay="1000"
+          data-aos-duration="2500"
+          data-aos-anchor-placement="top-center"
           className="abouthero-aboutinterwood"
         >
           <span>ABOUT INTERWOOD</span>

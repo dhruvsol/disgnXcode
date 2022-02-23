@@ -12,7 +12,7 @@ export const Blogs = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: false,
+
     autoplay: true,
     responsive: [
       {
