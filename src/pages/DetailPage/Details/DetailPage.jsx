@@ -1,8 +1,8 @@
 import React from "react";
-import { Navbar1 } from "../../../components/Navbar/Navbar";
+// import { Navbar1 } from "../../../components/Navbar/Navbar";
 import { Footer } from "../../../components/footer/Footer";
 import "./Details.scss";
-import { HeroSection } from "../../../components/Home/HeroSection";
+// import { HeroSection } from "../../../components/Home/HeroSection";
 import Slider from "react-slick";
 export const DetailPage = ({
   url1,
@@ -19,6 +19,9 @@ export const DetailPage = ({
   main1,
   main2,
   formimg,
+  key1,
+  key2,
+  key3,
 }) => {
   const settings = {
     dots: false,
@@ -59,27 +62,32 @@ export const DetailPage = ({
   };
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-[#171717] overflow-hidden">
         <div className="keyfeatures">
-          <h1>KEY FEATURES</h1>
+          <h1 data-aos="zoom-in-right">KEY FEATURES</h1>
           <hr />
-          <div className="keyfeaturescontent">
+          <div data-aos="zoom-in-right" className="keyfeaturescontent">
             <hr />
-            <h2>Balanced Color Scheme</h2>
+            <h2>{key1}</h2>
           </div>
           <hr />
-          <div className="keyfeaturescontent">
+          <div data-aos="zoom-in-right" className="keyfeaturescontent">
             <hr />
-            <h2>Contrasting Open Storages</h2>
+            <h2>{key2}</h2>
           </div>
           <hr />
-          <div className="keyfeaturescontent">
+          <div data-aos="zoom-in-right" className="keyfeaturescontent">
             <hr />
-            <h2>Contemporary Design</h2>
+            <h2>{key3}</h2>
           </div>
         </div>
-        <img src={main1} alt="..." />
-        <div className="gallery">
+        <img className="w-full" src={main1} alt="..." />
+        <div
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+          className="gallery"
+        >
           <h1>GALLERY</h1>
           <Slider className="gallery-image" {...settings}>
             <div>
@@ -102,7 +110,12 @@ export const DetailPage = ({
             </div>
           </Slider>
         </div>
-        <div className=" details-proof ">
+        <div
+          data-aos="flip-up"
+          data-aos-duration="2500"
+          data-aos-delay="1500"
+          className=" details-proof "
+        >
           <div className="details-proof-main">
             <h1>{proofHead}</h1>
           </div>
@@ -113,8 +126,13 @@ export const DetailPage = ({
             <div>{proof4}</div>
           </div>
         </div>
-        <img src={main2} alt="..." />
-        <div className="enquire-form">
+        <img className="w-full" src={main2} alt="..." />
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="2500"
+          data-aos-delay="1000"
+          className="enquire-form"
+        >
           <img src={formimg} alt=".." />
           <div>
             <form action="">

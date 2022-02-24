@@ -10,8 +10,10 @@ export const Bedroom = () => {
   return (
     <>
       <div className="bg-[#171717]">
-        <Navbar1 />
-        <HeroSection heading="WARDROBE" />
+        <div className="wardrobe-m">
+          <Navbar1 />
+          <HeroSection heading="WARDROBE" />
+        </div>
         <div className="bedroom-about pb-20">
           <Link to="/bedroom/wardrobe" className="about-name1">
             <div className="about-line"></div>
@@ -31,13 +33,22 @@ export const Bedroom = () => {
             <div className="about-line"></div>
           </Link>
         </div>
-        <img src="/img/bedroom1.png" alt="..." />
+        <img
+          src="https://ik.imagekit.io/grfidbs4suq/abo/CBR_01.effectsResult_wbEhT32Wa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645681766143"
+          alt="..."
+        />
         <div className="mobile-bedroom">
           <Link to="/bedroom/wardrobe/interwood">
-            <Card1 name="INTERWOOD" url="/img/SpecialCard/Frame 14.png" />
+            <Card1
+              name="INTERWOOD"
+              url="https://ik.imagekit.io/grfidbs4suq/abo/OFFICE_VIEW_4_J73wMCD1a5Gr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645681206302"
+            />
           </Link>
           <Link to="/bedroom/wardrobe/interwoodplus">
-            <Card2 name="INTERWOOD PLUS" url="/img/SpecialCard/Frame 14.png" />
+            <Card2
+              name="INTERWOOD PLUS"
+              url="https://ik.imagekit.io/grfidbs4suq/abo/ADITYA_S_VIEW_6_7VGsxYYNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645681557482"
+            />
           </Link>
         </div>
         <Footer />

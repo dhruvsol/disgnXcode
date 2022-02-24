@@ -30,6 +30,10 @@ import { Glaze } from "./pages/DetailWardrobe/pagesplus/Glaze";
 import { Lack7 } from "./pages/DetailWardrobe/pagesplus/Lack7";
 import { Ralph22 } from "./pages/DetailWardrobe/pagesplus/Ralph22";
 import { Ralph29 } from "./pages/DetailWardrobe/pagesplus/Ralph29";
+import { Ralphuno } from "./pages/DetailWardrobe/pagesplus/Ralphuno";
+import { Struct } from "./pages/DetailWardrobe/pagesplus/Struct";
+import { Ralph8000 } from "./pages/DetailWardrobe/pagesplus/Ralph8000";
+import { Ralph1500 } from "./pages/DetailWardrobe/pagesplus/Ralph1500";
 
 const App = () => {
   return (
@@ -99,6 +103,22 @@ const App = () => {
             <Route
               path="/bedroom/wardrobe/interwoodplus/ralph29"
               element={<Ralph29 />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/ralphuno"
+              element={<Ralphuno />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/struct"
+              element={<Struct />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/ralph8000"
+              element={<Ralph8000 />}
+            />
+            <Route
+              path="/bedroom/wardrobe/interwoodplus/ralph1500"
+              element={<Ralph1500 />}
             />
           </Routes>
         </ScrollToTop>

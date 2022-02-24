@@ -28,7 +28,7 @@ export const BedroomWardrobe = () => {
               <div className="about-line"></div>
             </Link>
           </div>
-          <div className="wardrobe-about">
+          <div data-aos="fade-up" className="wardrobe-about">
             <h1>WARDROBE DESIGN IDEAS FOR YOUR BEDROOM</h1>
             <p>
               Interwood values your private space and applies its best design to
@@ -40,11 +40,13 @@ export const BedroomWardrobe = () => {
             </p>
           </div>
         </div>
-        <SliderSlide
-          url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/1._ANDREA_-_MAIN_WARDROBE_2moYSu6Zv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907398631"
-          url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/ALEXIA_SCROLL-1_oU-hwIc8k2Jt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907397864"
-          url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"
-        />
+        <div data-aos="zoom-in">
+          <SliderSlide
+            url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/1._ANDREA_-_MAIN_WARDROBE_2moYSu6Zv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907398631"
+            url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/ALEXIA_SCROLL-1_oU-hwIc8k2Jt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907397864"
+            url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"
+          />
+        </div>
         <div className="wardrobe-card overflow-hidden">
           <div>
             <Link to="/bedroom/wardrobe/andrea">

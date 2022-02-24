@@ -2,12 +2,28 @@ import React, { useState } from "react";
 import { ValueCard } from "./ValueCard";
 export const ValueGallery = () => {
   const [change, setChange] = useState(true);
-  const [hit, setHit] = useState(true);
-  const [nod, setnod] = useState(0);
   const handleChange = () => {
     setChange(!change);
   };
-  const arr = [
+  const arr1 = [
+    {
+      id: 1,
+      img: "",
+    },
+    {
+      id: 2,
+      img: "",
+    },
+    {
+      id: 3,
+      img: "",
+    },
+    {
+      id: 4,
+      img: "",
+    },
+  ];
+  const arr2 = [
     {
       id: 1,
       img: "",
@@ -42,15 +58,19 @@ export const ValueGallery = () => {
       {change && (
         <div>
           <div className="flex justify-center flex-wrap gap-4 md:px-20  ">
-            {arr.map(({ id, img }) => {
-              return <ValueCard key={id} />;
+            {arr1.map(({ id, img }) => {
+              return <ValueCard key={id} img={img} />;
             })}
           </div>
         </div>
       )}
       {!change && (
         <div>
-          <h1>Bedroom</h1>
+          <div className="flex justify-center flex-wrap gap-4 md:px-20  ">
+            {arr2.map(({ id, img }) => {
+              return <ValueCard key={id} img={img} />;
+            })}
+          </div>
         </div>
       )}
     </>

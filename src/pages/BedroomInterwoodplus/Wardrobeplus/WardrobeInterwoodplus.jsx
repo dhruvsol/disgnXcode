@@ -11,7 +11,7 @@ export const WardrobeInterwoodplus = () => {
   return (
     <>
       <div className="bg-[#171717] overflow-hidden">
-        <div className="">
+        <div className="wardrobe-m">
           <Navbar1 />
           <HeroSection heading="WARDROBES" />
         </div>
@@ -28,7 +28,7 @@ export const WardrobeInterwoodplus = () => {
               <div className="about-line"></div>
             </Link>
           </div>
-          <div className="wardrobe-about">
+          <div data-aos="fade-up" className="wardrobe-about">
             <h1>WARDROBE DESIGN IDEAS FOR YOUR BEDROOM</h1>
             <p>
               Interwood values your private space and applies its best design to
@@ -40,11 +40,13 @@ export const WardrobeInterwoodplus = () => {
             </p>
           </div>
         </div>
-        <SliderSlide
-          url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_MBR_VIEW_1_eY7qESjf_8mP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310944"
-          url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/MBR_VIEW_1_GXx8wvqTx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086652579"
-          url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_VIEW_-_3_F.F_BR2_O0syiNBcE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310512"
-        />
+        <div data-aos="zoom-in">
+          <SliderSlide
+            url1="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_MBR_VIEW_1_eY7qESjf_8mP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310944"
+            url2="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/MBR_VIEW_1_GXx8wvqTx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086652579"
+            url3="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/Copy_of_VIEW_-_3_F.F_BR2_O0syiNBcE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087310512"
+          />
+        </div>
         <div className="wardrobe-card overflow-hidden">
           <div>
             <Link to="/bedroom/wardrobe/interwoodplus/allure">
@@ -53,16 +55,20 @@ export const WardrobeInterwoodplus = () => {
                 url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/ALURE_VIEW_-_NEW_GNidqpW_K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645086654583"
               />
             </Link>
-            <Card2
-              name="RALPH 8000"
-              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_8000_f_Fha69Z6yBvBo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158095"
-            />
+            <Link to="/bedroom/wardrobe/interwoodplus/ralph8000">
+              <Card2
+                name="RALPH 8000"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_8000_f_Fha69Z6yBvBo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158095"
+              />
+            </Link>
           </div>
           <div>
-            <Card1
-              name="RALPH 1500"
-              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/S_1500_q2tgwOeos.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158105"
-            />
+            <Link to="/bedroom/wardrobe/interwoodplus/ralph1500">
+              <Card1
+                name="RALPH 1500"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/S_1500_q2tgwOeos.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158105"
+              />
+            </Link>
             <Link to="/bedroom/wardrobe/interwoodplus/ralph22">
               <Card2
                 name="RALPH 22"
@@ -77,10 +83,12 @@ export const WardrobeInterwoodplus = () => {
                 url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_29_M9IrQWNHW0.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645087311301"
               />
             </Link>
-            <Card2
-              name="RALPH UNO"
-              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_UNO_1_0z0tYJ0hD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645086651415"
-            />
+            <Link to="/bedroom/wardrobe/interwoodplus/ralphuno">
+              <Card2
+                name="RALPH UNO"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/RALPH_UNO_1_0z0tYJ0hD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1645086651415"
+              />
+            </Link>
           </div>
           <div>
             <Link to="/bedroom/wardrobe/interwoodplus/glaze">
@@ -97,10 +105,12 @@ export const WardrobeInterwoodplus = () => {
             </Link>
           </div>
           <div>
-            <Card1
-              name="STRUCT"
-              url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/STRUCT_WARDROBE1_2QDjz7v5d.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158313"
-            />
+            <Link to="/bedroom/wardrobe/interwoodplus/struct">
+              <Card1
+                name="STRUCT"
+                url="https://ik.imagekit.io/grfidbs4suq/wardrobe/Interwood_Plus/STRUCT_WARDROBE1_2QDjz7v5d.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645087158313"
+              />
+            </Link>
           </div>
         </div>
         <Footer />

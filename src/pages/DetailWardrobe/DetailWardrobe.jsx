@@ -17,19 +17,22 @@ export const DetailWardrobe = ({
 }) => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-[#171717] overflow-hidden">
         {/* <div>
           <Navbar1 />
           <HeroSection heading="Wardrobe Andrea" />
         </div> */}
-        <div className="flex justify-evenly items-center wardrobedetails">
+        <div
+          data-aos="fade-up"
+          className="flex justify-evenly items-center wardrobedetails"
+        >
           <h1 className="">{abouth1}</h1>
           <p>{aboutp}</p>
         </div>
-        <div>
+        <div data-aos="zoom-in-down">
           <SliderSlide url1={url1} url2={url2} url3={url3} />
         </div>
-        <div className=" details-proof ">
+        <div data-aos="flip-up" className=" details-proof ">
           <div className="details-proof-main">
             <h1>{proofHead}</h1>
           </div>
@@ -40,7 +43,7 @@ export const DetailWardrobe = ({
             <div>{proof4}</div>
           </div>
         </div>
-        <div className="enquire-form">
+        <div data-aos="zoom-in-up" className="enquire-form">
           <img src={formimg} alt=".." />
           <div>
             <form action="">

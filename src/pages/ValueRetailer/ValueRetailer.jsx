@@ -5,6 +5,8 @@ import { HeroSection } from "../../components/Home/HeroSection";
 import { Accordion } from "react-bootstrap";
 import "./ValueRetailer.scss";
 import { ValueGallery } from "../../components/valuecomp/ValueGallery";
+import { Cardt } from "../../components/homeCardss/Cardt";
+import { Cardl } from "../../components/homeCardss/Cardl";
 export const ValueRetailer = () => {
   return (
     <>
@@ -316,34 +318,70 @@ export const ValueRetailer = () => {
             crafted with an in-built assurance of durability and aesthetics.
           </p>
         </div>
-
+        <div className="flex py-16 justify-center flex-col md:flex-row md:justify-evenly">
+          <Cardl />
+          <Cardt />
+        </div>
         <ValueGallery />
         <div className="value-retail-faqs">
           <h1>FREQUENTLY ASKED QUESTIONS</h1>
           <p>BESIDE YOU THROUGH YOUR JOURNEY OF SUCCESS.</p>
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>Accordion Item #1</Accordion.Header>
+              <Accordion.Header>
+                What qualifies for a person to become Interwood VAR?
+              </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Primary requirements is that one needs to have a vision to
+                create something niche and different product in market. A good
+                network and reach in market and the set of requisites as
+                mentioned above would qualify a person.
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-              <Accordion.Header>Accordion Item #2</Accordion.Header>
+              <Accordion.Header>
+                What is the minimum and maximum timeline the contract is agreed
+                upon?
+              </Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Though Interwood products set a high standard in market, but
+                still we have range of products to cater multiple requirements.
+                However suggested value of sales quaterly/annually would be
+                mentioned in contract as per the teritirry. Could be anything
+                from 1 cr onwards.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>
+                Is there any minimum amount of sales value?
+              </Accordion.Header>
+              <Accordion.Body>
+                Though Interwood products set a high standard in market, but
+                still we have range of products to cater multiple requirements.
+                However suggested value of sales quaterly/annually would be
+                mentioned in contract as per the teritirry. Could be anything
+                from 1 cr onwards.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>
+                How much time is required to set up from contract signing to
+                open the showroom?
+              </Accordion.Header>
+              <Accordion.Body>
+                Anything between 60 days to 120 days is required for setup and
+                begin the operations. However this could depend on the size of
+                the showroom.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>
+                How early can the breakeven be achieved?
+              </Accordion.Header>
+              <Accordion.Body>
+                Depending on the value of sales achieved, breakeven can be
+                achieved within an year, however ROI would take another couple
+                of years.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

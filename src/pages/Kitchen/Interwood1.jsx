@@ -41,12 +41,15 @@ export const Interwood1 = ({ url1, url2, url3, url4, url5, main }) => {
             innovation.
           </p>
         </div>
-        <div
+
+        <img
           data-aos="fade-up-left"
           data-aos-anchor=".about-name1"
           data-aos-duration="2500"
           className="about-card"
-        ></div>
+          src="https://ik.imagekit.io/grfidbs4suq/abo/VIEW_1_C9qAc7TPy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645678653697"
+          alt=".."
+        />
       </div>
       <div className="interwood-image">
         {/* <img src="/img/interwood/interwood1.svg" alt="...." /> */}

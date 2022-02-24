@@ -8,7 +8,7 @@ export const Brands = () => {
   return (
     <>
       <div className="bg-[#171717]">
-        <div>
+        <div className="brandsss">
           <Navbar1 />
           <HeroSection heading="Brands" />
         </div>
