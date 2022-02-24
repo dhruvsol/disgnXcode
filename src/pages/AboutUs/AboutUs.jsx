@@ -46,6 +46,7 @@ export const AboutUs = () => {
             <AboutHero />
           </div>
           <Signature
+            img="https://ik.imagekit.io/grfidbs4suq/founder/Screenshot_2022-01-31_at_5.53_1_JRkpwUCJu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645709622166"
             heading="CHAIRMAN'S MESSAGE"
             description="With nearly three decades of spatial design expertise, Interwood has passionately curated choicest home interior solutions to enhance your lifestyles, partnered with European component manufacturers to give you international quality products and expand your realm of eminent choices."
             signature="Hardeep Sawhey"
