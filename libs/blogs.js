@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const Blogs = new Schema({
+const blogs = new Schema({
   heading: {
     type: String,
     required: true,
@@ -15,4 +15,4 @@ const Blogs = new Schema({
     required: true,
   },
 });
-export default mongoose.model("blogs", Blogs);
+export default mongoose.model("blogs", blogs);

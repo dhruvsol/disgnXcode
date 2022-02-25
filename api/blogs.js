@@ -19,8 +19,8 @@ module.exports = async (request, response) => {
   if (request.method === "GET") {
     const blogsobj = new blogs({
       heading: request.body.heading,
-      image: request.body.image,
       subheading: request.body.subheading,
+      image: request.body.image,
     });
     try {
       await blogsobj.save();
@@ -29,7 +29,7 @@ module.exports = async (request, response) => {
       console.log(error.message);
     }
   } else {
-    const fet = blogs.find();
+    const fet = await blogs.find();
     response.send(fet);
   }
 };

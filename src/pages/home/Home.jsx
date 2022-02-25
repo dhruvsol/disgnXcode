@@ -63,7 +63,7 @@ const Home = () => {
           </div>
           <HomeSlider />
 
-          {/* <Signature2 /> */}
+          <Signature2 />
           <div
             data-aos="zoom-out-up"
             data-aos-duration="3000"
