@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../../components/footer/Footer";
 import "./Detailswardrobe.scss";
 import { SliderSlide } from "../../components/Slider/Slider";
+import axios from "axios";
 export const DetailWardrobe = ({
   proof1,
   proof2,
@@ -15,6 +16,20 @@ export const DetailWardrobe = ({
   abouth1,
   aboutp,
 }) => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState(0);
+  const [email, setEmail] = useState("");
+  const [city, setCity] = useState("");
+  const [enquiry, setEnquiry] = useState("");
+  const apiHit = ({ name, number, city, email, enquiry }) => {
+    axios.post("/api/kitchenwardrobe", {
+      name,
+      number,
+      city,
+      email,
+      enquiry,
+    });
+  };
   return (
     <>
       <div className="bg-[#171717] overflow-hidden">
@@ -49,21 +64,43 @@ export const DetailWardrobe = ({
             <form action="">
               <h1>ENQUIRE</h1>
               <div>
-                <input type="text" placeholder="NAME" />
-                <input type="tel" placeholder="PHONE NUMBER" />
+                <input
+                  type="text"
+                  placeholder="NAME"
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                  type="tel"
+                  placeholder="PHONE NUMBER"
+                  onChange={(e) => setNumber(e.target.value)}
+                />
               </div>
               <div>
-                <input type="text" placeholder="EMAIL ID" />
-                <input type="text" placeholder="CITY" />
+                <input
+                  type="text"
+                  placeholder="EMAIL ID"
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <input
+                  type="text"
+                  placeholder="CITY"
+                  onChange={(e) => setCity(e.target.value)}
+                />
               </div>
               <textarea
+                onChange={(e) => setEnquiry(e.target.value)}
                 className="form-area"
                 name="Message"
                 placeholder="Enquiry About "
                 cols="30"
                 rows="10"
               ></textarea>
-              <button type="summit">SUMMIT</button>
+              <button
+                onClick={() => apiHit({ name, number, city, email, enquiry })}
+                type="summit"
+              >
+                SUMMIT
+              </button>
             </form>
           </div>
         </div>

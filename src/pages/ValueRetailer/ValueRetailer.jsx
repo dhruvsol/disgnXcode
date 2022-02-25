@@ -11,7 +11,7 @@ import axios from "axios";
 
 export const ValueRetailer = () => {
   const [name, setName] = useState("");
-  const [num, setNum] = useState(0);
+  const [number, setNum] = useState(0);
   const [email, setEmail] = useState("");
   const [enquiry, setEnquiry] = useState("");
   const apihit = ({ name, number, email, enquiry }) => {
@@ -444,7 +444,7 @@ export const ValueRetailer = () => {
               </form>
               <a
                 href="/s"
-                onClick={() => apihit({ name, num, email, enquiry })}
+                onClick={() => apihit({ name, number, email, enquiry })}
               >
                 Summit
               </a>

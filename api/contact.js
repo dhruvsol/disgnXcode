@@ -1,12 +1,12 @@
 import express from "express";
 import mongoose from "mongoose";
-import Enquire from "../libs/Model.js";
+import contactus from "../libs/contactus.js";
 const app = express();
 app.use(express.json());
 
 mongoose
   .connect(process.env.DB_URL, {
-    dbName: "Enquiry",
+    dbName: "Contact",
     useNewUrlParser: true,
     tls: true,
     tlsCAFile: __dirname + "/1.crt",
@@ -16,7 +16,7 @@ mongoose
   });
 
 module.exports = async (request, response) => {
-  const enqobj = new Enquire({
+  const enqobj = new contactus({
     name: request.body.name,
     number: request.body.number,
     email: request.body.email,

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Navbar1 } from "../../../components/Navbar/Navbar";
 import { Footer } from "../../../components/footer/Footer";
 import "./Details.scss";
 // import { HeroSection } from "../../../components/Home/HeroSection";
 import Slider from "react-slick";
+import axios from "axios";
 export const DetailPage = ({
   url1,
   url2,
@@ -23,6 +24,21 @@ export const DetailPage = ({
   key2,
   key3,
 }) => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState(0);
+  const [email, setEmail] = useState("");
+  const [city, setCity] = useState("");
+  const [enquiry, setEnquiry] = useState("");
+  const apiHit = ({ name, number, email, city, enquiry }) => {
+    axios.post("/api/kitchenwardrobe", {
+      name,
+      number,
+      email,
+      city,
+      enquiry,
+    });
+  };
+
   const settings = {
     dots: false,
     infinite: true,
@@ -122,18 +138,36 @@ export const DetailPage = ({
           <div className="details-proof-content">
             <div className="flex justify-center flex-col items-center">
               <img
-                className="w-32 "
-                src="https://ik.imagekit.io/grfidbs4suq/icons/Vector__5__cmc4aDkIpFH2.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645767852687"
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Vector__6__ZjXiZAd3I.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778670048"
                 alt=".."
               />
               {proof1}
             </div>
             <div className="flex justify-center flex-col items-center">
-              <img className="w-32" src="" alt=".." />
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_32_JBBUCwDgPzMR.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778670167"
+                alt=".."
+              />
               {proof2}
             </div>
-            <div>{proof3}</div>
-            <div>{proof4}</div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_30_8gHAqVOfuZuz.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645767623536"
+                alt=".."
+              />
+              {proof3}
+            </div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_31__1__GuPmrI6aG.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778505637"
+                alt="..."
+              />
+              {proof4}
+            </div>
           </div>
         </div>
         <img className="w-full" src={main2} alt="..." />
@@ -148,21 +182,43 @@ export const DetailPage = ({
             <form action="">
               <h1>ENQUIRE</h1>
               <div>
-                <input type="text" placeholder="NAME" />
-                <input type="tel" placeholder="PHONE NUMBER" />
+                <input
+                  type="text"
+                  placeholder="NAME"
+                  onChange={(e) => setName(e.target.value)}
+                />
+                <input
+                  type="tel"
+                  onChange={(e) => setNumber(e.target.value)}
+                  placeholder="PHONE NUMBER"
+                />
               </div>
               <div>
-                <input type="text" placeholder="EMAIL ID" />
-                <input type="text" placeholder="CITY" />
+                <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  placeholder="EMAIL ID"
+                />
+                <input
+                  type="text"
+                  placeholder="CITY"
+                  onChange={(e) => setCity(e.target.value)}
+                />
               </div>
               <textarea
+                onChange={(e) => setEnquiry(e.target.value)}
                 className="form-area"
                 name="Message"
                 placeholder="MESSAGE"
                 cols="30"
                 rows="10"
               ></textarea>
-              <button type="summit">SUMMIT</button>
+              <button
+                onChange={() => apiHit({ name, number, email, city, enquiry })}
+                type="summit"
+              >
+                SUMMIT
+              </button>
             </form>
           </div>
         </div>

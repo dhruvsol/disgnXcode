@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 mongoose
   .connect(process.env.DB_URL, {
-    dbName: "Enquiry",
+    dbName: "Values",
     useNewUrlParser: true,
     tls: true,
     tlsCAFile: __dirname + "/1.crt",
