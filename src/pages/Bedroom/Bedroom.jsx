@@ -34,6 +34,7 @@ export const Bedroom = () => {
           </Link>
         </div>
         <img
+          className="w-full object-cover h-max"
           src="https://ik.imagekit.io/grfidbs4suq/abo/CBR_01.effectsResult_wbEhT32Wa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645681766143"
           alt="..."
         />

@@ -24,7 +24,7 @@ module.exports = async (request, response) => {
     enquiry: request.body.enquiry,
   });
   try {
-    const newEnq = await enqobj.save();
+    await enqobj.save();
     response.status(200).send(1);
   } catch (error) {
     console.log(error.message);

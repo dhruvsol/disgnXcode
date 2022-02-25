@@ -44,7 +44,9 @@
     }
 
     .image {
-      background: linear-gradient(180deg, transparent, #000 100%),
+      background-size: cover;
+
+      background-image: linear-gradient(180deg, transparent, #000 100%),
         url("https://ik.imagekit.io/grfidbs4suq/Home/Copy_of_VIEW_5_b1kkMQH0-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645275765779");
 
       a {
@@ -59,8 +61,11 @@
         font-family: Ivy Mode;
       }
     }
+
     .imageacc {
-      background: linear-gradient(180deg, transparent, #000 100%),
+      background-size: cover;
+
+      background-image: linear-gradient(180deg, transparent, #000 100%),
         url("https://ik.imagekit.io/grfidbs4suq/Home/ADITYA_S_VIEW_5_U_U6f5ijw.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645275765709");
 
       a {

@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import retailer from "../libs/valueretailer.js";
+
 const app = express();
 app.use(express.json());
 mongoose
@@ -21,7 +22,8 @@ module.exports = async (request, response) => {
     enquiry: request.body.enquiry,
   });
   try {
-    const newValue = await valobj.save();
+    await valobj.save();
+    response.status(200).send(1);
   } catch (error) {
     console.log(error.message);
   }

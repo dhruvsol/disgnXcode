@@ -84,7 +84,7 @@ const Home = () => {
               <div className="home-story-bar"></div>
             </div>
           </div>
-          <div className="acordian-home">
+          <div data-aos="flip-up" className="acordian-home">
             <div className="acordian1">
               {/* <img src="/img/home.svg" alt="..." /> */}
 
@@ -131,7 +131,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex py-16 justify-center flex-col md:flex-row md:justify-evenly">
+          <div
+            data-aos="zoom-out"
+            className="flex py-16 justify-center flex-col md:flex-row md:justify-evenly"
+          >
             <Cardl />
             <Cardt />
           </div>

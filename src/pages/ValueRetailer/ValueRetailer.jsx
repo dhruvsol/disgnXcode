@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import { HeroSection } from "../../components/Home/HeroSection";
@@ -7,7 +7,21 @@ import "./ValueRetailer.scss";
 import { ValueGallery } from "../../components/valuecomp/ValueGallery";
 import { Cardt } from "../../components/homeCardss/Cardt";
 import { Cardl } from "../../components/homeCardss/Cardl";
+import axios from "axios";
+
 export const ValueRetailer = () => {
+  const [name, setName] = useState("");
+  const [num, setNum] = useState(0);
+  const [email, setEmail] = useState("");
+  const [enquiry, setEnquiry] = useState("");
+  const apihit = ({ name, number, email, enquiry }) => {
+    axios.post("/api/values", {
+      name,
+      number,
+      email,
+      enquiry,
+    });
+  };
   return (
     <>
       <div className="bg-[#171717] overflow-hidden">
@@ -405,14 +419,35 @@ export const ValueRetailer = () => {
             <h1>Fiill the request</h1>
             <div className="getintouch-form">
               <form action="">
-                <input type="text" placeholder="NAME" />
+                <input
+                  type="text"
+                  placeholder="NAME"
+                  onChange={(e) => setName(e.target.value)}
+                />
                 <div>
-                  <input type="tel" placeholder="NUMBER" />
-                  <input type="email" placeholder="EMAIL ID" />
+                  <input
+                    type="tel"
+                    placeholder="NUMBER"
+                    onChange={(e) => setNum(e.target.value)}
+                  />
+                  <input
+                    type="email"
+                    placeholder="EMAIL ID"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </div>
-                <input type="text" placeholder="MESSAGE" />
+                <input
+                  type="text"
+                  placeholder="MESSAGE"
+                  onChange={(e) => setEnquiry(e.target.value)}
+                />
               </form>
-              <a href="/s">Summit</a>
+              <a
+                href="/s"
+                onClick={() => apihit({ name, num, email, enquiry })}
+              >
+                Summit
+              </a>
             </div>
           </div>
         </div>
