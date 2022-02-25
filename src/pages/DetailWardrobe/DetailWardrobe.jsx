@@ -52,10 +52,38 @@ export const DetailWardrobe = ({
             <h1>{proofHead}</h1>
           </div>
           <div className="details-proof-content">
-            <div>{proof1}</div>
-            <div>{proof2}</div>
-            <div>{proof3}</div>
-            <div>{proof4}</div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Vector__6__ZjXiZAd3I.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778670048"
+                alt=".."
+              />
+              {proof1}
+            </div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_32_JBBUCwDgPzMR.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778670167"
+                alt=".."
+              />
+              {proof2}
+            </div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_30_8gHAqVOfuZuz.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645767623536"
+                alt=".."
+              />
+              {proof3}
+            </div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="md:w-32 w-10"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Group_31__1__GuPmrI6aG.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645778505637"
+                alt="..."
+              />
+              {proof4}
+            </div>
           </div>
         </div>
         <div data-aos="zoom-in-up" className="enquire-form">

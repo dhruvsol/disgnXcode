@@ -16,7 +16,7 @@ AOS.init({
   disableMutationObserver: false,
   debounceDelay: 50,
   throttleDelay: 99,
-
+  anchorPlacement: "top-bottom",
   offset: 120,
   delay: 500,
   duration: 2500,

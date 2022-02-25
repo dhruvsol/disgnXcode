@@ -15,4 +15,4 @@ const Blogs = new Schema({
     required: true,
   },
 });
-export default mongoose.model("blogs", blogs);
+export default mongoose.model("blogs", Blogs);
