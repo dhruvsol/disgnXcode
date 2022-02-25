@@ -11,7 +11,7 @@ import axios from "axios";
 
 export const ValueRetailer = () => {
   const [name, setName] = useState("");
-  const [num, setNum] = useState(null);
+  const [num, setNum] = useState(0);
   const [email, setEmail] = useState("");
   const [enquiry, setEnquiry] = useState("");
   const apihit = ({ name, number, email, enquiry }) => {
