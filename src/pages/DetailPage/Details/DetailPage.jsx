@@ -120,8 +120,18 @@ export const DetailPage = ({
             <h1>{proofHead}</h1>
           </div>
           <div className="details-proof-content">
-            <div>{proof1}</div>
-            <div>{proof2}</div>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="w-32 "
+                src="https://ik.imagekit.io/grfidbs4suq/icons/Vector__5__cmc4aDkIpFH2.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1645767852687"
+                alt=".."
+              />
+              {proof1}
+            </div>
+            <div className="flex justify-center flex-col items-center">
+              <img className="w-32" src="" alt=".." />
+              {proof2}
+            </div>
             <div>{proof3}</div>
             <div>{proof4}</div>
           </div>

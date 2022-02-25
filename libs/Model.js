@@ -18,5 +18,8 @@ const Enquiry = new Schema({
     type: String,
     required: true,
   },
+  path: {
+    type: String,
+  },
 });
 export default mongoose.model("Enquire", Enquiry);

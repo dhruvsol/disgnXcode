@@ -15,6 +15,7 @@ mongoose
     console.log("dbconnected");
   });
 module.exports = async (request, response) => {
+  console.log(request.body);
   const valobj = new retailer({
     name: request.body.name,
     number: request.body.number,

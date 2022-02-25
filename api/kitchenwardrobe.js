@@ -22,6 +22,7 @@ module.exports = async (request, response) => {
     number: request.body.number,
     email: request.body.email,
     enquiry: request.body.enquiry,
+    path: request.query,
   });
   try {
     await enqobj.save();
