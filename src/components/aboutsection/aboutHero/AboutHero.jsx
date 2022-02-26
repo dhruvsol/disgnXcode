@@ -70,16 +70,14 @@ export const AboutHero = () => {
           <div className="px-10 py-5 md:px-20 flex justify-between ">
             <img
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2500"
               className="w-[10rem] h-[13rem] md:w-[18rem] md:h-[20rem]"
               src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/andrea/gbr_1_OuC-0lXHVwyb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645088871143"
               alt="..."
             />
             <div
               data-aos="fade-up"
-              data-aos-anchor-placement="center-center"
-              data-aos-duration="2500"
-              data-aos-delay="500"
+              data-aos-duration="2000"
               className="hidden lg:flex lg:justify-evenly lg:flex-col lg:px-16"
             >
               <h1 className="flex justify-center text-4xl font-Ivy text-white ">
@@ -103,7 +101,6 @@ export const AboutHero = () => {
             data-aos="fade-up"
             data-aos-anchor-placement="center-center"
             data-aos-duration="2500"
-            data-aos-delay="500"
             className="flex justify-center flex-col px-4 lg:hidden"
           >
             <h1 className="font-Ivy text-3xl text-white text-center ">
@@ -126,7 +123,6 @@ export const AboutHero = () => {
         <div className="flex justify-center">
           <img
             data-aos="zoom-out"
-            data-aos-delay="500"
             data-aos-duration="2500"
             data-aos-anchor-placement="top-center"
             className=" w-full  md:w-3/4 h-max object-cover"
@@ -136,7 +132,7 @@ export const AboutHero = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="2000"
           data-aos-anchor-placement="top-center"
           className="abouthero-aboutinterwood"
         >
