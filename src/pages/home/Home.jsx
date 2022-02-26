@@ -58,7 +58,7 @@ const Home = () => {
           </div>
           <div className="">
             <video className="w-full pt-20" autoPlay muted loop>
-              <source src="/img/video1.mp4" type="video/mp4" />
+              <source src="/img/vidhome.mp4" type="video/mp4" />
             </video>
           </div>
           <HomeSlider />

@@ -1,3 +1,15 @@
+.valuere {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.4430147058823529) 100%,
+      rgba(231, 231, 231, 1) 100%
+    ),
+    url("https://ik.imagekit.io/grfidbs4suq/Home/1/PRAJWAL_S_VIEW_3_NdZdV8xch.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645876079475");
+}
+
 .valueretailer {
   display: flex;
   justify-content: space-between;
@@ -66,7 +78,7 @@
     align-items: center;
     h1 {
       color: #fff;
-      font-size: 2rem;
+
       font-family: Ivy Mode;
       width: 25rem;
       display: flex;

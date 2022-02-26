@@ -29,7 +29,7 @@ module.exports = async (request, response) => {
       console.log(error.message);
     }
   } else {
-    const fet = await blogs.find();
-    response.send(fet);
+    const fet = await blogs.find({});
+    return response.json(fet);
   }
 };

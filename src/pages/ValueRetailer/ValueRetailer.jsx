@@ -25,9 +25,9 @@ export const ValueRetailer = () => {
   return (
     <>
       <div className="bg-[#171717] overflow-hidden">
-        <div>
+        <div className="valuere">
           <Navbar1 />
-          <HeroSection />
+          <HeroSection heading="VALUE RETAILER" />
         </div>
         <div className="valueretailer-req">
           <h1>PREQUISITES TO START WITH</h1>
@@ -401,18 +401,40 @@ export const ValueRetailer = () => {
           </Accordion>
         </div>
         <div className="retail-form">
-          <div className="retail-form-img">
-            <h1>JOIN THE CHAIN OF SUCCESS.</h1>
-            {/* <div>
-              <img src="" alt="" />
-              <h1></h1>
+          <div className="retail-form-img flex-col">
+            <h1 className="py-2 text-center">JOIN THE CHAIN OF SUCCESS.</h1>
+            <div className="flex justify-center flex-col items-center">
+              <img
+                className="w-24 border-2 rounded-full p-3 h-24 object-cover"
+                src="https://ik.imagekit.io/grfidbs4suq/icons/fa-solid_hands-helping_N74xFRs-L.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645857982180"
+                alt=".."
+              />
+              <h1 className="text-xl py-2 text-center px-6">
+                HAPPY CUSTOMERS 15,000+
+              </h1>
             </div>
-            <div>
-              <img src="" alt="" />
-              <h1></h1>
-              <img src="" alt="" />
-              <h1></h1>
-            </div> */}
+            <div className="flex ">
+              <div className="flex justify-center flex-col items-center">
+                <img
+                  className="w-24 border-2 rounded-full p-3 h-24 object-cover"
+                  src="https://ik.imagekit.io/grfidbs4suq/icons/clarity_building-line_ctrQRT6feymy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645857982156"
+                  alt="..."
+                />
+                <h1 className="text-xl py-2 text-center px-6">
+                  9 UPCOMING SHOWROOMS across 6 cities
+                </h1>
+              </div>
+              <div className="flex justify-center flex-col  items-center">
+                <img
+                  className="w-24 p-3 border-2 rounded-full  h-24 object-cover"
+                  src="https://ik.imagekit.io/grfidbs4suq/icons/Vector__2__IK76Y3g9g.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645857982486"
+                  alt="..."
+                />
+                <h1 className="text-xl py-2 text-center px-6">
+                  15 EXISTING SHOWROOMS across 12 cities
+                </h1>
+              </div>
+            </div>
           </div>
           <hr />
           <div className="retail-form-main">

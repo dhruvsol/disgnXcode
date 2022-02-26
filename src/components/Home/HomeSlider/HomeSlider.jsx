@@ -41,21 +41,21 @@ export const HomeSlider = () => {
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/img/Aboutpageslide.png"
+                  src="https://ik.imagekit.io/grfidbs4suq/Home/1/ADITYA_S_VIEW_4_xiGpbpybP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645876079890"
                   class="d-block banner"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/img/Aboutpageslide.png"
+                  src="https://ik.imagekit.io/grfidbs4suq/Home/1/VIEW_1__1__-bADtkvgO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645876079450"
                   class="d-block banner"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/img/Aboutpageslide.png"
+                  src="https://ik.imagekit.io/grfidbs4suq/Home/1/PRAJWAL_S_VIEW_3_NdZdV8xch.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645876079475"
                   class="d-block banner"
                   alt="..."
                 />
