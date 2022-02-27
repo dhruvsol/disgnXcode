@@ -16,20 +16,15 @@ mongoose
   });
 
 module.exports = async (request, response) => {
-  if (request.method === "GET") {
-    const blogsobj = new blogs({
-      heading: request.body.heading,
-      subheading: request.body.subheading,
-      image: request.body.image,
-    });
-    try {
-      await blogsobj.save();
-      response.status(200).send(1);
-    } catch (error) {
-      console.log(error.message);
-    }
-  } else {
-    const fet = await blogs.find({});
-    return response.json(fet);
+  const blogsobj = new blogs({
+    heading: request.body.heading,
+    subheading: request.body.subheading,
+    image: request.body.image,
+  });
+  try {
+    await blogsobj.save();
+    response.status(200).send(1);
+  } catch (error) {
+    console.log(error.message);
   }
 };
