@@ -35,7 +35,7 @@ export const AboutUs = () => {
       {preloader && (
         <div ref={preRef} className="bg-[#151715] h-screen flex justify-center">
           <video autoPlay muted>
-            <source src="https://ik.imagekit.io/grfidbs4suq/Home/1/preloader1__2RcAk7Ov.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1645881850421" type="video/mp4" />
+            <source src="/img/preloader1.mp4" type="video/mp4" />
           </video>
         </div>
       )}
