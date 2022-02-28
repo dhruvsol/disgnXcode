@@ -19,7 +19,7 @@ const kitchen = new Schema({
     type: String,
   },
   path: {
-    type: String,
+    type: Object,
   },
 });
 export default mongoose.model("kitchen", kitchen);
