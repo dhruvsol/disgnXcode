@@ -18,5 +18,8 @@ const kitchen = new Schema({
   enquiry: {
     type: String,
   },
+  path: {
+    type: String,
+  },
 });
 export default mongoose.model("kitchen", kitchen);

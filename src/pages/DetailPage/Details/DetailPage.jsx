@@ -5,6 +5,7 @@ import "./Details.scss";
 // import { HeroSection } from "../../../components/Home/HeroSection";
 import Slider from "react-slick";
 import axios from "axios";
+import { useLocation } from "react-router";
 export const DetailPage = ({
   url1,
   url2,
@@ -29,6 +30,8 @@ export const DetailPage = ({
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
   const [enquiry, setEnquiry] = useState("");
+  const location = useLocation();
+  const path = location.pathname;
   const apiHit = ({ name, number, email, city, enquiry }) => {
     axios.post("/api/kitchenwardrobe", {
       name,
@@ -36,6 +39,7 @@ export const DetailPage = ({
       email,
       city,
       enquiry,
+      path,
     });
   };
 
@@ -213,12 +217,18 @@ export const DetailPage = ({
                 cols="30"
                 rows="10"
               ></textarea>
-              <button
+              {/* <button
                 onChange={() => apiHit({ name, number, email, city, enquiry })}
                 type="summit"
               >
                 SUMMIT
-              </button>
+              </button> */}
+              <a
+                href="/s"
+                onClick={() => apiHit({ name, number, email, city, enquiry })}
+              >
+                Summit
+              </a>
             </form>
           </div>
         </div>

@@ -60,7 +60,10 @@ export const InterwoodPlus = ({
           alt="..."
         />
       </div>
-      <img src="/img/home.svg" alt="..." />
+      <img
+        src="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_2_ru26vx2xK7DG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644836115032"
+        alt="..."
+      />
       <div className="interwood overflow-hidden">
         <div className="interwood-card">
           <div>

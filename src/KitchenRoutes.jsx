@@ -26,7 +26,7 @@ const KitchenRoutes = () => {
               path="/kitchen/interwood"
               element={
                 <Interwood1
-                  main="/img/home.svg"
+                  main="https://ik.imagekit.io/grfidbs4suq/kitchen/detailInterwood/andrea/ANDREA_KITCHEN_NO_2_ru26vx2xK7DG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644836115032"
                   url1="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/ANDREA_KITCHEN_NO_4_D06ZEOobi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834091790"
                   url2="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/ERIKA_KITCHEN_NO.1__2__M8SkY7XrP0yE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834090863"
                   url3="https://ik.imagekit.io/grfidbs4suq/kitchen/interwood/CECILIA_KITCHEN_NO_4_Ue7Bk4-Q-D.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644834090838"

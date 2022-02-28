@@ -34,6 +34,7 @@ import { Ralphuno } from "./pages/DetailWardrobe/pagesplus/Ralphuno";
 import { Struct } from "./pages/DetailWardrobe/pagesplus/Struct";
 import { Ralph8000 } from "./pages/DetailWardrobe/pagesplus/Ralph8000";
 import { Ralph1500 } from "./pages/DetailWardrobe/pagesplus/Ralph1500";
+import ThankYou from "./pages/ThankYou";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
       <BrowserRouter>
         <ScrollToTop>
           <Routes>
+            <Route path="/s" element={<ThankYou />} />
             <Route path="/" element={<Home />} />
             <Route path="/aboutus" element={<AboutUs />} />
 

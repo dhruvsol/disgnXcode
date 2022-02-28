@@ -89,13 +89,17 @@
       textarea:focus {
         outline: none;
       }
-      button {
+      a {
         color: #fff;
         background-color: #171717;
         border-radius: 10px;
         text-align: center;
         width: 8.5rem;
         height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
         margin: 5rem 0;
       }
     }

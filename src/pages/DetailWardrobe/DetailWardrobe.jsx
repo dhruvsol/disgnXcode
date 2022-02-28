@@ -3,6 +3,7 @@ import { Footer } from "../../components/footer/Footer";
 import "./Detailswardrobe.scss";
 import { SliderSlide } from "../../components/Slider/Slider";
 import axios from "axios";
+import { useLocation } from "react-router";
 export const DetailWardrobe = ({
   proof1,
   proof2,
@@ -21,6 +22,8 @@ export const DetailWardrobe = ({
   const [email, setEmail] = useState("");
   const [city, setCity] = useState("");
   const [enquiry, setEnquiry] = useState("");
+  const location = useLocation();
+  const path = location.pathname;
   const apiHit = ({ name, number, city, email, enquiry }) => {
     axios.post("/api/kitchenwardrobe", {
       name,
@@ -28,6 +31,7 @@ export const DetailWardrobe = ({
       city,
       email,
       enquiry,
+      path,
     });
   };
   return (
