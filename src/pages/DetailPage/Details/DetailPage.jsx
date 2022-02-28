@@ -217,12 +217,7 @@ export const DetailPage = ({
                 cols="30"
                 rows="10"
               ></textarea>
-              {/* <button
-                onChange={() => apiHit({ name, number, email, city, enquiry })}
-                type="summit"
-              >
-                SUMMIT
-              </button> */}
+
               <a
                 href="/s"
                 onClick={() => apiHit({ name, number, email, city, enquiry })}

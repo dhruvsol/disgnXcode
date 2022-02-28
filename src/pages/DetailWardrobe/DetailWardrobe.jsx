@@ -127,12 +127,18 @@ export const DetailWardrobe = ({
                 cols="30"
                 rows="10"
               ></textarea>
-              <button
+              {/* <button
                 onClick={() => apiHit({ name, number, city, email, enquiry })}
                 type="summit"
               >
                 SUMMIT
-              </button>
+              </button> */}
+              <a
+                href="/s"
+                onClick={() => apiHit({ name, number, city, email, enquiry })}
+              >
+                SUMMIT
+              </a>
             </form>
           </div>
         </div>
