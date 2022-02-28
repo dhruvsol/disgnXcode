@@ -170,7 +170,7 @@ export const DetailPage = ({
             </div>
           </div>
         </div>
-        <img className="w-full" src={main2} alt="..." />
+        {/* <img className="w-full" src={main2} alt="..." /> */}
         <div
           data-aos="zoom-in-up"
           data-aos-duration="2500"
