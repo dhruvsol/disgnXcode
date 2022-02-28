@@ -8,7 +8,7 @@ import "../DetailPage/Details/Details.scss";
 export const Tvunits = () => {
   return (
     <div className="bg-[#171717]">
-      <div className="">
+      <div className="tvunits">
         <Navbar1 />
         <HeroSection heading="TV UNITS" />
       </div>
@@ -32,6 +32,7 @@ export const Tvunits = () => {
 
       <DetailWardrobe
         abouth1="TV  UNITS"
+        aboutp="A well-crafted TV unit is an elegant piece of furniture on its own. A focal point of the living room furniture , the TV cabinet enhances the viewing experience. Our multifunctional TV cabinets are good for storage, display and utilize spaces better."
         url1="https://ik.imagekit.io/grfidbs4suq/tv_units/LIVING_AREA_-_T.V_UNIT_3_nHHYwx-Ex3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645260172134"
         url2="https://ik.imagekit.io/grfidbs4suq/tv_units/FAMILY_AREA_dp_x_RkUw4eEV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645260172954"
         url3="https://ik.imagekit.io/grfidbs4suq/tv_units/LIVING_AREA_RalN8UgXrifK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1645260172220"

@@ -4,7 +4,11 @@ import { Navbar1 } from "../../components/Navbar/Navbar";
 import Slider from "react-slick";
 import "./Blogs.scss";
 import { BlogCard } from "./Card/BlogCard";
+import axios from "axios";
+import { data } from "autoprefixer";
 export const Blogs = () => {
+  const blog = axios.get("/api/blogs");
+  console.log(blog);
   const settings = {
     dots: false,
     infinite: false,
@@ -52,41 +56,13 @@ export const Blogs = () => {
           </div>
           <div>
             <Slider {...settings}>
-              <div>
-                <BlogCard
-                  heading="first blog"
-                  des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo aliquet suspendisse."
-                  url="/img/blog2.png"
-                />
-              </div>
-              <div>
-                <BlogCard
-                  heading="first blog"
-                  des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo aliquet suspendisse."
-                  url="/img/blog2.png"
-                />
-              </div>
-              <div>
-                <BlogCard
-                  heading="first blog"
-                  des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo aliquet suspendisse."
-                  url="/img/blog2.png"
-                />
-              </div>
-              <div>
-                <BlogCard
-                  heading="first blog"
-                  des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo aliquet suspendisse."
-                  url="/img/blog2.png"
-                />
-              </div>
-              <div>
-                <BlogCard
-                  heading="first blog"
-                  des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo aliquet suspendisse."
-                  url="/img/blog2.png"
-                />
-              </div>
+              {data.map(({ _id, heading, subheading, image }) => {
+                return (
+                  <div key={_id}>
+                    <BlogCard heading={heading} des={subheading} url={image} />
+                  </div>
+                );
+              })}
             </Slider>
           </div>
         </div>
