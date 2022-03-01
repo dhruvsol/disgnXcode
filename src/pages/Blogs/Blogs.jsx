@@ -7,7 +7,7 @@ import { BlogCard } from "./Card/BlogCard";
 import axios from "axios";
 import { data } from "autoprefixer";
 export const Blogs = () => {
-  const blog = axios.get("/api/blogs");
+  const blog = axios.get("/api/fetch");
   console.log(blog);
   const settings = {
     dots: false,
