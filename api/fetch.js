@@ -18,5 +18,5 @@ mongoose
 
 module.exports = async (request, response) => {
   const blog = await blogs.find({});
-  response.send(blog);
+  response.json(blog);
 };

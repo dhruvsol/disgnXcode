@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import Slider from "react-slick";
 import "./Blogs.scss";
-import { BlogCard } from "./Card/BlogCard";
+// import { BlogCard } from "./Card/BlogCard";
 import axios from "axios";
-import { data } from "autoprefixer";
+
 export const Blogs = () => {
-  const blog = axios.get("https://interwood.vercel.app/api/fetch");
-  console.log(blog);
+  useEffect(() => {
+    const { body } = axios.get("https://interwood.vercel.app/api/fetch");
+    console.log(body.heading);
+    // return blog;
+  }, []);
+
   const settings = {
     dots: false,
     infinite: false,
@@ -55,15 +59,14 @@ export const Blogs = () => {
             <p>THE ULTIMATE LIST OF BLOG POST IDEAS</p>
           </div>
           <div>
-            <Slider {...settings}>
-              {data.map(({ _id, heading, subheading, image }) => {
-                return (
-                  <div key={_id}>
-                    <BlogCard heading={heading} des={subheading} url={image} />
-                  </div>
-                );
-              })}
-            </Slider>
+            {/* {blog.map(({ _id, heading, subheading, image }) => {
+              return (
+                <div key={_id}>
+                  <BlogCard heading={heading} des={subheading} url={image} />
+                </div>
+              );
+            })} */}
+            <Slider {...settings}></Slider>
           </div>
         </div>
         <Footer />
