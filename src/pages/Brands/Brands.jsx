@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 export const Brands = () => {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-[#171717] overflow-hidden">
         <div className="brandsss">
           <Navbar1 />
           <HeroSection heading="Brands" />
         </div>
-        <div className="brands">
+        <div data-aos="zoom-out" className="brands ">
           <h1>WE DON'T MAKE HOUSES</h1>
           <h1>WE MAKE HOMES</h1>
           <Link to="/aboutus">
@@ -23,7 +23,10 @@ export const Brands = () => {
             </div>
           </Link>
         </div>
-        <div className="flex pt-20 justify-center items-center  ">
+        <div
+          data-aos="flip-up"
+          className="flex pt-20 justify-center items-center  "
+        >
           <img
             className="w-1/2 h-2/3 hover:-scale-150 object-cover"
             src="https://ik.imagekit.io/grfidbs4suq/wardrobe/interwood/PROFILO_SCROLL-2_VfLH2b6GL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644907396614"

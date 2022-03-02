@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import "./font/stylesheet.css";
-import App from "./App";
+// import App from "./App";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Pre from "./Pre";
 AOS.init();
 
 AOS.init({
@@ -24,9 +25,11 @@ AOS.init({
   once: false,
   mirror: false,
 });
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Pre />
   </React.StrictMode>,
   document.getElementById("root")
 );

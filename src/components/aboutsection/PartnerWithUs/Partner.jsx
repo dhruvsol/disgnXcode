@@ -20,7 +20,7 @@ export const Partner = () => {
         </div>
         <div className="partner-value1">
           <div data-aos="zoom-out-right" data-aos-duration="2500">
-            <img src="/img/partner.png" alt="Partner" />
+            <img src="/img/aboutus/1.png" alt="Partner" />
           </div>
           <div
             data-aos="zoom-out-left"
@@ -43,7 +43,7 @@ export const Partner = () => {
           <img
             data-aos="zoom-out-left"
             data-aos-duration="2500"
-            src="/img/partner.png"
+            src="/img/aboutus/2.png"
             alt="Partner"
           />
           <div
