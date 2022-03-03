@@ -22,6 +22,7 @@ export const ContactUs = () => {
       enquiry,
       path,
     });
+    console.log(name, number, email, enquiry, path);
   };
   return (
     <>
