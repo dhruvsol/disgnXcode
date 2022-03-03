@@ -14,7 +14,8 @@ export const ContactUs = () => {
   const [enquiry, setEnquiry] = useState("");
   const location = useLocation();
   const path = location.pathname;
-  const apiHit = ({ name, number, email, enquiry }) => {
+  const apHit = ({ name, number, email, enquiry }) => {
+    console.log(name, number, email, enquiry);
     axios.post("/api/kitchenwardrobe", {
       name,
       number,
@@ -22,7 +23,6 @@ export const ContactUs = () => {
       enquiry,
       path,
     });
-    console.log(name, number, email, enquiry);
   };
   return (
     <>
@@ -233,7 +233,7 @@ export const ContactUs = () => {
                 placeholder="MESSAGE"
               />
             </form>
-            <a href="/s" onClick={() => apiHit(name, number, email, enquiry)}>
+            <a href="/s" onClick={() => apHit(name, number, email, enquiry)}>
               Summit
             </a>
           </div>
