@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import "./Contact.scss";
+import { useLocation } from "react-router";
 export const ContactUs = () => {
   const [map, setMap] = useState(
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.266889930751!2d77.64065941527926!3d12.954766318751467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae141017bce9f1%3A0x5a8470f74f7705e9!2sInterwood%20Kitchens%20Private%20Limited%20-%20Bangalore%20boutique!5e0!3m2!1sen!2sin!4v1644467043949!5m2!1sen!2sin"
@@ -10,13 +11,16 @@ export const ContactUs = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const apiHit = ({ name, number, email, message }) => {
-    axios.post("/api/contact", {
+  const [enquiry, setEnquiry] = useState("");
+  const location = useLocation();
+  const path = location.pathname;
+  const apiHit = ({ name, number, email, enquiry }) => {
+    axios.post("/api/kitchenwardrobe", {
       name,
       number,
       email,
-      message,
+      enquiry,
+      path,
     });
   };
   return (
@@ -222,13 +226,13 @@ export const ContactUs = () => {
                 />
               </div>
               <input
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => setEnquiry(e.target.value)}
                 className="w-[29rem]"
                 type="text"
                 placeholder="MESSAGE"
               />
             </form>
-            <a href="/s" onClick={() => apiHit(name, number, email, message)}>
+            <a href="/s" onClick={() => apiHit(name, number, email, enquiry)}>
               Summit
             </a>
           </div>
