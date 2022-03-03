@@ -10,13 +10,13 @@ export const ContactUs = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
   const [email, setEmail] = useState("");
-  const [enquiry, setEnquiry] = useState("");
-  const apiHit = ({ name, number, email, enquiry }) => {
+  const [message, setMessage] = useState("");
+  const apiHit = ({ name, number, email, message }) => {
     axios.post("/api/contact", {
       name,
       number,
       email,
-      enquiry,
+      message,
     });
   };
   return (
@@ -222,13 +222,13 @@ export const ContactUs = () => {
                 />
               </div>
               <input
-                onChange={(e) => setEnquiry(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-[29rem]"
                 type="text"
                 placeholder="MESSAGE"
               />
             </form>
-            <a href="/s" onClick={() => apiHit(name, number, email, enquiry)}>
+            <a href="/s" onClick={() => apiHit(name, number, email, message)}>
               Summit
             </a>
           </div>
