@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import contactus from "../libs/contactus.js";
+import partner from "../libs/contactus.js";
 const app = express();
 app.use(express.json());
 
@@ -16,7 +16,7 @@ mongoose
   });
 
 module.exports = async (request, response) => {
-  const enqobj = new contactus({
+  const enqobj = new partner({
     name: request.body.name,
     number: request.body.number,
     email: request.body.email,
