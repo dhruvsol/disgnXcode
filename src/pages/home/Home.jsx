@@ -24,7 +24,7 @@ const Home = () => {
             subheading="CLASSY AND PERFECT KITCHEN"
           />
         </div>
-        <div className="">
+        <div className=" hidden lg:block">
           <video className="w-full pt-20" autoPlay muted loop>
             <source src="/img/vidhome.mp4" type="video/mp4" />
           </video>

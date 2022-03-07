@@ -7,6 +7,7 @@ import "./AboutUs.scss";
 import { Partner } from "../../components/aboutsection/PartnerWithUs/Partner";
 
 import { Leadership } from "../../components/aboutsection/LeadershipTeam/Leadership";
+import { Certi } from "../../components/Certificate/Certi";
 
 export const AboutUs = () => {
   return (
@@ -23,6 +24,7 @@ export const AboutUs = () => {
           signature="Hardeep Sawhey"
         />
         <Leadership />
+        <Certi />
         <Partner />
         <Footer />
       </div>

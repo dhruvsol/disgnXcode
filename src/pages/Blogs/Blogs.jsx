@@ -3,14 +3,14 @@ import { Footer } from "../../components/footer/Footer";
 import { Navbar1 } from "../../components/Navbar/Navbar";
 import Slider from "react-slick";
 import "./Blogs.scss";
-// import { BlogCard } from "./Card/BlogCard";
+import { BlogCard } from "./Card/BlogCard";
 import axios from "axios";
 
 export const Blogs = () => {
+  const [blogs, setBlogs] = [];
   useEffect(() => {
-    const { body } = axios.get("https://interwood.vercel.app/api/fetch");
-    console.log(body.heading);
-    // return blog;
+    const { data } = axios.get("http://localhost:3000/blogs/data");
+    setBlogs(data);
   }, []);
 
   const settings = {
@@ -59,13 +59,13 @@ export const Blogs = () => {
             <p>THE ULTIMATE LIST OF BLOG POST IDEAS</p>
           </div>
           <div>
-            {/* {blog.map(({ _id, heading, subheading, image }) => {
+            {blogs.map(({ _id, heading, subheading, image }) => {
               return (
                 <div key={_id}>
                   <BlogCard heading={heading} des={subheading} url={image} />
                 </div>
               );
-            })} */}
+            })}
             <Slider {...settings}></Slider>
           </div>
         </div>

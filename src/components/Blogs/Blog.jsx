@@ -2,53 +2,58 @@ import React from "react";
 
 import "./Blog.scss";
 import Slider from "react-slick";
+import { Card } from "../Testimonials/card/Card";
 export const Blog = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
-      <div className="blogs">
-        <div className="blog-heading">
-          <h1>BLOGS</h1>
+      <div className="testimonials">
+        <div className="flex justify-center md:justify-start md:px-32">
+          <h1 className="text-3xl md:text-7xl text-white font-Ivy">BLOGS</h1>
         </div>
-        <div className="blogs-grid">
-          <div className="blog1">
-            <img
-              className="object-cover rounded-md"
-              src="https://ik.imagekit.io/grfidbs4suq/Blogs/VIEW_1__2__ONUNgmszLBce.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646203115768"
-              alt="blog1"
-            />
+
+        <Slider className="slider" {...settings}>
+          <div>
+            <Card />
           </div>
-          <div className="blog2">
-            <img
-              className="object-cover rounded-md"
-              src="https://ik.imagekit.io/grfidbs4suq/Blogs/Copy_of_LIVE_KITCHEN_View_1_pNMjkfK8R.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646203115462"
-              alt="blog2"
-            />
+          <div>
+            <Card />
           </div>
-          <div className="blog3">
-            <img
-              className="object-cover rounded-md"
-              src="https://ik.imagekit.io/grfidbs4suq/Blogs/Copy_of_LIVE_KITCHEN_View_4_mnyuhJs8v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646203115010"
-              alt="blog3"
-            />
+          <div>
+            <Card />
           </div>
-          <div className="blog4">
-            <img
-              className="object-cover rounded-md"
-              src="https://ik.imagekit.io/grfidbs4suq/Blogs/PRAJWAL_S_VIEW_3__1__GKsf4X6EZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646203114523"
-              alt="blog4"
-            />
+          <div>
+            <Card />
           </div>
-          <div className="blog5">
-            <img
-              className="object-cover rounded-md"
-              src="https://ik.imagekit.io/grfidbs4suq/Blogs/PRAJWAL_S_VIEW_2__1__64q0K4_td.png?ik-sdk-version=javascript-1.4.3&updatedAt=1646203114795"
-              alt="blog5"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="moblie-blogs">
-        <Slider></Slider>
+        </Slider>
       </div>
     </>
   );

@@ -21,11 +21,12 @@ export const OurBrands = () => {
             />
           </div>
         </div>
-        <div className="brandyoutube">
+        <div className="brandyoutube border-[2rem] border-[#333333]">
           <iframe
             src="https://www.youtube.com/embed/YMopu-z7T54"
             title="YouTube video player"
             frameBorder="0"
+
             // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
         </div>

@@ -1,11 +1,13 @@
 .ourbrand {
   width: 100%;
   padding-top: 5rem;
-  padding: 2rem 6rem;
+  padding: 6rem 6rem;
+
   .brandyoutube {
     display: flex;
     justify-content: center;
-    padding-top: 15rem;
+    // padding-top: 15rem;
+    height: max-content;
     iframe {
       width: 100%;
       height: 50rem;
