@@ -24,7 +24,14 @@
       width: 25rem;
     }
     .signature-hide {
-      display: none;
+      font-size: 5rem;
+      padding-top: 2rem;
+
+      color: white;
+
+      font-weight: normal;
+      font-family: "Alex Brush", cursive;
+      z-index: 10;
     }
     .signataure-h2 {
       display: flex;

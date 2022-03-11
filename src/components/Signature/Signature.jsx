@@ -21,7 +21,7 @@ export const Signature = ({ heading, description, signature, img }) => {
 
           <div className="signataure-h2">
             {/* <div className="signature-sign"> */}
-            <h2 className="signature-sign">{signature}</h2>
+            {/* <h2 className="signature-sign">{signature}</h2> */}
             {/* </div> */}
             <p>{description}</p>
           </div>
