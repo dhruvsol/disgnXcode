@@ -31,7 +31,7 @@ const Pre = () => {
     <>
       {preloader && (
         <div className="bg-[#151715] h-screen flex justify-center">
-          <video ref={preRef} autoPlay>
+          <video ref={preRef} autoPlay muted>
             <source src="/img/LogoV1.mp4" type="video/mp4" />
           </video>
         </div>
